@@ -1,0 +1,470 @@
+
+a{
+	color:#d34a54;
+	font-weight: 400;
+}
+a:hover {
+	color:#2d9fea;
+}
+
+.text-primary {
+	color:#d34a54!important;
+}
+.breadcrumb-item.active {
+	color:#d34a54;
+}
+.progress-bar {
+	color: #fff;
+	background-color:#d34a54;
+}
+/*---Colors---*/
+.bg-primary {
+	background-color:#d34a54!important;
+	color: #fff !important;
+}
+
+.bg-gradient {
+	background: linear-gradient(#3d4192,#d34a54) !important;
+}
+/*-- profile --*/
+.profile-head h6 {
+	color:#d34a54;
+}
+.proile-rating span {
+	color:#d34a54;
+}
+.profile-head .nav-tabs .nav-link.active {
+	border-bottom: 2px solid #d34a54;
+}
+.profile-work a:hover {
+	color:#d34a54;
+}
+.profile-tab p {
+	color:#d34a54;
+}
+/*
+ * Pagination
+ * ----------------------
+ */
+.page-item .page-link {
+	color:#d34a54;
+}
+.page-item.active .page-link {
+	background-color:#d34a54;
+	border-color:#d34a54;
+}
+
+/*
+ * Mail inbox
+ * ----------------------
+ */
+ 
+.mailsearch .btn {
+	background-color: #d34a54;
+	border: 1px solid #d34a54;
+	color: #fff;
+}
+/*
+ * Buttons
+ * ----------------------
+ */
+
+.btn-primary {
+	background-color:#d34a54;
+	border-color:#d34a54;
+}
+.btn-primary:focus, .btn-primary:focus:active, .btn-primary:active, .btn-primary:hover {
+	background-color:#bb434c !important;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+	color: #fff;
+	background-color: #bb434c;
+	border-color: #bb434c;
+}
+.btn-outline-primary {
+	color:#d34a54;
+	border-color:#d34a54;
+	background-color: transparent;
+	background-image: none;
+}
+.btn-outline-primary:hover {
+	color: #fff;
+	border-color:#d34a54;
+	background-color:#d34a54;
+}
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+	box-shadow: 0 7px 14px rgba(50, 50, 93, .2), 0 3px 6px rgba(0, 0, 0, .08) !important;
+	border-color:#d34a54!important;
+}
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+	color:#d34a54;
+	background-color: transparent;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show>.btn-outline-primary.dropdown-toggle {
+	color: #fff;
+	border-color:#d34a54;
+	background-color:#d34a54;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-outline-primary.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0 rgba(94, 114, 228, .5);
+	border-color:#d34a54!important;
+}
+
+/*-- end btn  --*/
+
+/*
+ * Nav Bar
+ * ----------------------
+ */
+
+.navbar {
+	background:#d34a54 ;
+	box-shadow:0 2px 17px 2px #c2bad2;
+}
+.navbar.active {
+	background-color:#d34a54;
+}
+.navbar .form-inline .btn {
+	border: 2px solid #d34a54;
+	box-shadow:none;
+}
+.nav-tabs .nav-item .nav-link {
+	color:#d34a54;
+}
+
+/*- end navbar --*/
+
+/*
+ * Form Control
+ * ----------------------
+ */
+
+.form-control:focus {
+	border-color:#d34a54;
+}
+
+/*-- end form control --*/
+
+/*
+ * Alert
+ * ----------------------
+ */
+.alert.alert-primary {
+	background-color:#d34a54;
+}
+/*-- end alert --*/
+
+/*
+ * Cards Design
+ * ----------------------
+ */
+.card.card-primary {
+	border-top: 2px solid #d34a54;
+}
+.card .card-header .card-subtitle{
+	color:#8c8796;
+}
+/*.card .card-header:after{
+	display: block;
+    content: '';
+    width: 50px;
+    height: 3px;
+    background:#d34a54;
+    top: 0;
+    left: 10px;
+    position: absolute;
+}*/
+.card .box h2 span {
+	background:#d34a54;
+}
+.card .box ul li:hover a {
+	color:#d34a54;
+}
+/*-- end card --*/
+/*
+ * FullCalendar
+ * ----------------------
+ */
+.fc button.fc-state-active {
+	background-color:#d34a54;
+}
+/*-- min Calendar ---*/
+
+#calendar_weekdays div {
+	color:#d34a54!important;
+}
+#calendar_content div.today {
+	background:#d34a54!important;
+}
+/*-- end fullcalendar --*/
+
+.jqvmap-circle {
+	background-color:#d34a54;
+}
+.weather ul li {
+	border: 2px solid #d34a54;
+	color:#d34a54;
+}
+
+/*
+ * User Profile
+ * ----------------------
+ */
+
+.tags li a:hover {
+	background:#d34a54;
+	border-color:#d34a54;
+}
+
+/*
+ *  Chat
+ * ----------------------
+ */
+.card-chat .chat-content .chat-item.chat-right .chat-details .chat-text {
+	background-color:#d34a54;
+}
+
+/*-- listgroup --*/
+.list-group-item.active {
+	color: #fff;
+	background-color:#d34a54;
+	border-color:#d34a54;
+}
+
+/*-- Badge --*/
+.badge-primary {
+	color: #fff;
+	background-color:#d34a54;
+}
+
+/*
+ * Media
+ * ----------------------
+ */
+
+.media .media-right {
+	color:#d34a54;
+}
+
+/*
+ * Accordion
+ * ----------------------
+ */
+.accordion .accordion-header[aria-expanded="true"] {
+	background-color:#d34a54;
+}
+/* style-1--*/
+
+.acc-1 .accordion-header:hover {
+	background:#d34a54;
+}
+.acc-1 .accordion__item  .accordion-header[aria-expanded="true"]{
+	background:#d34a54;
+}
+.acc-1 .accordion__item.active .accordion-header{
+	background:#d34a54;
+}
+
+/*
+ * Form Elements
+ * ----------------------
+ */
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color:#d34a54;
+    border-color:#d34a54;
+}
+
+/*---Shop----*/
+
+.prod-cat li ul li a:hover,.prod-cat li ul li a:focus, .prod-cat li ul li.active a , .prod-cat li a:hover,.prod-cat li a:focus, .prod-cat li a.active{
+   color:#d34a54;
+}
+.adtocart {
+    background:#d34a54;   
+}
+
+/*------Switch---*/
+.custom-switch-input:checked~.custom-switch-indicator {
+	background:#d34a54;
+}
+.custom-file-input:focus~.custom-file-label {
+	border-color:#d34a54;
+}
+.custom-file-input:focus~.custom-file-label::after {
+	border-color:#d34a54;
+}
+.custom-file-label::after {
+	background-color:#d34a54;
+    border-left: 1px solid #d34a54;
+}
+/*
+ * Loaders
+ * ----------------------
+ */
+/*--circleloader--*/
+.lds-circle > div {
+  background:#d34a54;
+}
+/*---ring loaders --*/
+.lds-dual-ring:after {
+  border: 5px solid #d34a54;
+  border-color:#d34a54 transparent #d34a54 transparent;
+}
+/*-- lines loader --*/
+.lds-facebook div {
+  background:#d34a54;
+}
+/*--heart loader --*/
+.lds-heart div {
+  background:#d34a54;
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  background:#d34a54;
+}
+/*--Ringloader-2 --*/
+.lds-ring div {
+  border: 6px solid #d34a54;
+  border-color:#d34a54 transparent transparent transparent;
+}
+/**-Ringdots-**/
+.lds-roller div:after {
+  background:#d34a54;
+}
+/*--hourglass loader--*/
+.lds-hourglass:after {
+  border: 26px solid #d34a54;
+  border-color:#d34a54 transparent #d34a54transparent;
+}
+/**-ripple --*/
+.lds-ripple div {
+  border: 4px solid #d34a54;
+}
+/*-- Spinner loader --*/
+.lds-spinner div:after {
+  background:#d34a54;
+}
+
+
+/*
+ * Select styles
+ * ----------------------
+ */
+.selectgroup-input:checked+.selectgroup-button {
+	border-color:#d34a54;
+	color:#d34a54;
+	background: #f1f6f7;
+}
+.selectgroup-input:focus+.selectgroup-button {
+	border-color:#d34a54;
+	color:#d34a54;
+}
+.showmore-button-inner {
+	color:#d34a54;
+}
+
+/*
+ * Chat
+ * ----------------------
+ */
+
+.message-feed:not(.right) .mf-content {
+    background:#d34a54;
+}
+.msb-reply button {
+	background:#d34a54;
+}
+.msb-reply button:hover {
+    background:#d34a54;
+}
+
+/*
+ * Panel
+ * ----------------------
+ */
+.panel-primary{
+	border-color:#d34a54;
+}
+.panel-primary >.panel-heading{
+    color: #fff;
+    background-color:#d34a54;
+    border-color:#d34a54;
+}
+
+/*
+ * Counters
+ * ----------------------
+ */
+.count-timer {
+	color:#d34a54;
+}
+
+/** -- popup-chat -- **/
+
+.popup-box .popup-head {
+    background-color:#d34a54;
+}
+.bg_none i {
+    border: 1px solid #d34a54;
+    color:#d34a54;
+}
+
+/*
+ * Tags
+ * ----------------------
+ */
+.tag-primary {
+    background-color:#d34a54;
+}
+/*
+ * labels
+ * ----------------------
+ */
+.label-primary{
+	background-color:#d34a54;
+}
+
+/*
+ * Switches
+ * ----------------------
+ */
+.custom-switch-input:checked~.custom-switch-indicator {
+	background:#d34a54;
+}
+
+/*
+ * Landing page
+ * ----------------------
+ */
+ .wave {
+	background:#d34a54;
+}
+
+/*-----Back to Top-----*/
+
+#back-to-top:hover {
+	color:#d34a54;
+	border: 2px solid #d34a54;
+}
+.header{
+	background:#d34a54;
+}
+
+/*--bg-transparents--*/
+.bg-primary-transparent {
+    background-color: rgb(126, 110, 230,0.1) ;
+}
+#back-to-top {
+    background: #d34a54;
+}
+#count-down .clock-presenter{
+	background: #d34a54;
+}
+.slide-menu a.active{
+	color: #d34a54 !important;
+    background: #fff;
+}
+.slide-item.active, .slide-item:hover, .slide-item:focus {
+	text-decoration: none;
+	color: #d34a54;
+}
