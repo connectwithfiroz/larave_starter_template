@@ -149,11 +149,8 @@
     document.getElementById('donation-form').addEventListener('submit', function (e) {
         e.preventDefault();
         //show loader and disable button
-        // Update the button text to include a spinner
         document.getElementById("donate-button").innerHTML = `Donate Now <div class="spinner-border" role="status"></div>`;
-
-        // Disable the button
-        document.getElementById("donate-button").disabled = true;
+        document.getElementById("donate-button").disabled = true;//disable
 
 
         const form = document.getElementById('donation-form');
@@ -166,65 +163,66 @@
         })
         .then(response => response.json())
         .then(data => {
+          //after response
           //remove disabled attr and loader
-          $("#donate-button").text(`Donate Now`);
-          $("#donate-button").prop('disabled', false);
-            const options = {
-                key: data.razorpay_key,
-                amount: data.donation_amount * 100,
-                currency: "INR",
-                name: "NGO Donation",
-                description: "Donation for a cause",
-                order_id: data.order_id,
-                prefill: {
-                    name: data.donor_name,
-                    email: data.donor_email,
-                    contact: data.donor_number,
-                },
-                handler: function (response) {
-                    // Verify payment
-                    fetch("{{ route('payment.verify') }}", {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRF-TOKEN': "{{ csrf_token() }}",
-                        },
-                        body: JSON.stringify({
-                            razorpay_order_id: response.razorpay_order_id,
-                            razorpay_payment_id: response.razorpay_payment_id,
-                            razorpay_signature: response.razorpay_signature,
-                        }),
-                    })
-                    .then(res => res.json())
-                    .then(verification => {
-                      if (verification.success) {
-                          // Show a success alert
-                          alert('Payment successful! Redirecting to your donation receipt...');
+          document.getElementById("donate-button").innerHTML = `Donate Now`;
+          document.getElementById("donate-button").disabled = false;
+          const options = {
+              key: data.razorpay_key,
+              amount: data.donation_amount * 100,
+              currency: "INR",
+              name: "NGO Donation",
+              description: "Donation for a cause",
+              order_id: data.order_id,
+              prefill: {
+                  name: data.donor_name,
+                  email: data.donor_email,
+                  contact: data.donor_number,
+              },
+              handler: function (response) {
+                  // Verify payment
+                  fetch("{{ route('payment.verify') }}", {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                          'X-CSRF-TOKEN': "{{ csrf_token() }}",
+                      },
+                      body: JSON.stringify({
+                          razorpay_order_id: response.razorpay_order_id,
+                          razorpay_payment_id: response.razorpay_payment_id,
+                          razorpay_signature: response.razorpay_signature,
+                      }),
+                  })
+                  .then(res => res.json())
+                  .then(verification => {
+                    if (verification.success) {
+                        // Show a success alert
+                        alert('Payment successful! Redirecting to your donation receipt...');
 
-                          // Redirect the user to the donation receipt URL
-                          if (verification.donation_url) {
-                              window.location.href = verification.donation_url;
-                          }
-                      } else {
-                          // Show an error alert for failed verification
-                          console.error('Payment verification failed:', verification.message || 'Unknown error');
-                          alert('Payment verification failed. Please try again or contact support.');
-                      }
+                        // Redirect the user to the donation receipt URL
+                        if (verification.donation_url) {
+                            window.location.href = verification.donation_url;
+                        }
+                    } else {
+                        // Show an error alert for failed verification
+                        console.error('Payment verification failed:', verification.message || 'Unknown error');
+                        alert('Payment verification failed. Please try again or contact support.');
+                    }
 
-                    }).catch((error) => {
-                        alert('There is some error.');
-                        console.error('Error:', error)
-                        } 
-                    );;
+                  }).catch((error) => {
+                      alert('There is some error.');
+                      console.error('Error:', error)
+                      } 
+                  );;
 
-                },
-                theme: {
-                    color: "#528FF0",
-                },
-            };
+              },
+              theme: {
+                  color: "#528FF0",
+              },
+          };
 
-            const rzp = new Razorpay(options);
-            rzp.open();
+          const rzp = new Razorpay(options);
+          rzp.open();
         })
         .catch((error) => {
             alert('there is some error');

@@ -28,8 +28,8 @@
                                                 Your Support Changes Lives </span>
                                         </h1>                                        
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup" data-ani-delay="0.7s">
-                                            <a href="contact.html" class="th-btn style4">Discover Now <i class="fas fa-arrow-up-right ms-2"></i></a>
-                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="th-btn style5 popup-video"><i class="fas fa-play me-2"></i> Watch Video</a>
+                                            <a href="contact.html" class="th-btn donate_btn style4">Discover Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="th-btn donate_btn style5 popup-video"><i class="fas fa-play me-2"></i> Watch Video</a>
                                         </div>
                                     </div>
                                 </div>
@@ -55,8 +55,8 @@
                                                 Donate Today, Impact Tomorrow </span>
                                         </h1>                                        
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup" data-ani-delay="0.7s">
-                                            <a href="contact.html" class="th-btn style4">Discover Now <i class="fas fa-arrow-up-right ms-2"></i></a>
-                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="th-btn style5 popup-video"><i class="fas fa-play me-2"></i> Watch Video</a>
+                                            <a href="contact.html" class="th-btn donate_btn style4">Discover Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="th-btn donate_btn style5 popup-video"><i class="fas fa-play me-2"></i> Watch Video</a>
                                         </div>
                                     </div>
                                 </div>
@@ -82,8 +82,8 @@
                                                 Together, We Can Save Lives </span>
                                         </h1>                                        
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup" data-ani-delay="0.7s">
-                                            <a href="contact.html" class="th-btn style4">Discover Now <i class="fas fa-arrow-up-right ms-2"></i></a>
-                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="th-btn style5 popup-video"><i class="fas fa-play me-2"></i> Watch Video</a>
+                                            <a href="contact.html" class="th-btn donate_btn style4">Discover Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="th-btn donate_btn style5 popup-video"><i class="fas fa-play me-2"></i> Watch Video</a>
                                         </div>
                                     </div>
                                 </div>
@@ -196,7 +196,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Youth Empowerment</a></h3>
                             
-                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn donate_btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +212,7 @@ Service Area
                             <h3 class="box-title"><a href="about.html">
                                 Women Empowerment</a></h3>
                            
-                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn donate_btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -227,7 +227,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Rural Empowerment</a></h3>
                         
-                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn donate_btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -242,7 +242,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Environmental Help</a></h3>
                         
-                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn donate_btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Education Empowerment</a></h3>
                         
-                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn donate_btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +272,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Health Empowerment</a></h3>
                         
-                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn donate_btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -337,7 +337,7 @@ About Area
                         </div>
                     </div>
                     <div class="btn-wrap mt-40">
-                        <a href="about.html" class="th-btn style3 style-radius">About More <i class="fa-solid fa-arrow-up-right ms-2"></i></a>
+                        <a href="about.html" class="th-btn donate_btn style3 style-radius">About More <i class="fa-solid fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -395,7 +395,7 @@ Cta Area
                         </div>
                         <h3 class="box-title">Member Donation</h3>
                         <p class="box-text">Provide resources such as reports, infographics, and educational materials related to the charity's cause. Use a clear and intuitive navigation menu to help users find information quickly.</p>
-                        <a href="contact.html" class="th-btn style5">Learn More <i class="fas fa-arrow-up-right ms-2"></i></a>
+                        <a href="contact.html" class="th-btn donate_btn style5">Learn More <i class="fas fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -405,7 +405,7 @@ Cta Area
                         </div>
                         <h3 class="box-title">Join Us volunteer</h3>
                         <p class="box-text">Provide resources such as reports, infographics, and educational materials related to the charity's cause. Use a clear and intuitive navigation menu to help users find information quickly.</p>
-                        <a href="contact.html" class="th-btn style5">Join Us Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                        <a href="contact.html" class="th-btn donate_btn style5">Join Us Now <i class="fas fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -448,7 +448,7 @@ Donation Area
                                             <span class="donation-card_goal">Goal - ₹10M</span>
                                         </div>
                                     </div>
-                                    <a href="blog-details.html" class="th-btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                    <a href="blog-details.html" class="th-btn donate_btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -473,7 +473,7 @@ Donation Area
                                             <span class="donation-card_goal">Goal - ₹10M</span>
                                         </div>
                                     </div>
-                                    <a href="blog-details.html" class="th-btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                    <a href="blog-details.html" class="th-btn donate_btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -498,7 +498,7 @@ Donation Area
                                             <span class="donation-card_goal">Goal - ₹10M</span>
                                         </div>
                                     </div>
-                                    <a href="blog-details.html" class="th-btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                    <a href="blog-details.html" class="th-btn donate_btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -523,7 +523,7 @@ Donation Area
                                             <span class="donation-card_goal">Goal - ₹10M</span>
                                         </div>
                                     </div>
-                                    <a href="blog-details.html" class="th-btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                    <a href="blog-details.html" class="th-btn donate_btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -548,7 +548,7 @@ Donation Area
                                             <span class="donation-card_goal">Goal - ₹10M</span>
                                         </div>
                                     </div>
-                                    <a href="blog-details.html" class="th-btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                    <a href="blog-details.html" class="th-btn donate_btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -573,7 +573,7 @@ Donation Area
                                             <span class="donation-card_goal">Goal - ₹10M</span>
                                         </div>
                                     </div>
-                                    <a href="blog-details.html" class="th-btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                    <a href="blog-details.html" class="th-btn donate_btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -634,7 +634,7 @@ Story Area
                             <h2 class="sec-title">We Help Fellow Nonprofits Access the Funding Tools, Training</h2>
                             <p class="mt-30">Our secure online donation platform allows you to make contributions quickly and safely. Choose from various payment methods and set up one-time.exactly.</p>
                             <div class="btn-wrap mt-35">
-                                <a href="about.html" class="th-btn style-border">Our Success Story <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                <a href="about.html" class="th-btn donate_btn style-border">Our Success Story <i class="fas fa-arrow-up-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -903,7 +903,7 @@ Video Area
                                 <span class="donation-card_goal text-theme2">Goal - ₹10,0000.00</span>
                             </div>
                         </div>
-                        <a href="blog-details.html" class="th-btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
+                        <a href="blog-details.html" class="th-btn donate_btn style6">Donate Now <i class="fas fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -1091,7 +1091,7 @@ Project Area
                 </div>
                 <div class="col-auto">
                     <div class="sec-btn">
-                        <a href="contact.html" class="th-btn">View All Project<i class="fas fa-arrow-up-right ms-2"></i></a>
+                        <a href="contact.html" class="th-btn donate_btn">View All Project<i class="fas fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -1192,19 +1192,36 @@ Faq Area
                         <h2 class="sec-title">Have Any Questions For Us?</h2>
                     </div>
                     <div class="accordion" id="faqAccordion">
+                        <!-- dyanmic section >>> -->
+                            @foreach ($faqs as $key => $faq)
+                                <div class="accordion-card style2">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header" id="collapse-item-{{ $key }}">
+                                        <button class="accordion-button @if($key == 0) show @endif" 
+                                                type="button" 
+                                                data-bs-toggle="collapse" 
+                                                data-bs-target="#collapse-{{ $key }}" 
+                                                aria-expanded="{{ $key == 0 ? 'true' : 'false' }}" 
+                                                aria-controls="collapse-{{ $key }}">
+                                            {{ $faq->question }}
+                                        </button>
+                                    </div>
 
-
-                        <div class="accordion-card style2">
-                            <div class="accordion-header" id="collapse-item-1">
-                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What motivates you to donate to our charity?</button>
-                            </div>
-                            <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p class="faq-text">Explore the variety of volunteer opportunities available. From event planning and fundraising to fieldwork and administrative support, there are many ways to lend your talents. Find the perfect fit for your skills and interests.</p>
+                                    <!-- Accordion Body -->
+                                    <div id="collapse-{{ $key }}" 
+                                        class="accordion-collapse collapse @if($key == 0) show @endif" 
+                                        aria-labelledby="collapse-item-{{ $key }}" 
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="faq-text">
+                                                {{ $faq->answer }}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            @endforeach
 
+                        <!-- dyanmic section <<< -->
 
                         <div class="accordion-card style2">
                             <div class="accordion-header" id="collapse-item-2">
@@ -1362,8 +1379,8 @@ Blog Area
 @push('js')
 <script>
     $(document).ready(function () {
-        // Attach a click event to all buttons with the class "th-btn"
-        $('.th-btn').on('click', function (e) {
+        // Attach a click event to all buttons with the class "th-btn donate_btn"
+        $('.donate_btn').on('click', function (e) {
             e.preventDefault(); // Prevent default behavior of the link
 
             // Find the nearest `.box-title` and get its text
