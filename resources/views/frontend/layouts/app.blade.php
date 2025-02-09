@@ -333,7 +333,7 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="header-notice">
+                        <div class="header-notice d-none">
                             <a href="#" class="header-login-box">
                                
                                 <i class="fas fa-sign-in-alt"></i> <!-- Login icon -->

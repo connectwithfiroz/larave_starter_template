@@ -36,8 +36,8 @@ class AdminHomeController extends Controller
 
     public function logout()
     {
-        Auth::logout();
-        return redirect()->route('login')->with('message', 'Successfully Logged Out Please Login');
+        Auth::guard('admin')->logout();
+        return redirect()->route('admin-login')->with('message', 'Successfully Logged Out Please Login');
     }
 
     public function dashboard()

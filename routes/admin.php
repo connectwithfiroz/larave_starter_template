@@ -1,13 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\admin\AdminBannerController;
-use App\Http\Controllers\admin\AdminBlogController;
-use App\Http\Controllers\admin\AdminHomeController;
-use App\Http\Controllers\admin\AdminTestimonialController;
-use App\Http\Controllers\admin\AdminFaqController;
-use App\Http\Controllers\admin\AdminprofileController;
-use App\Http\Controllers\admin\DonationController;
+use App\Http\Controllers\Admin\AdminBannerController;
+use App\Http\Controllers\Admin\AdminBlogController;
+use App\Http\Controllers\Admin\AdminHomeController;
+use App\Http\Controllers\Admin\AdminTestimonialController;
+use App\Http\Controllers\Admin\AdminFaqController;
+use App\Http\Controllers\Admin\AdminprofileController;
+use App\Http\Controllers\Admin\DonationController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\ProductController;
 

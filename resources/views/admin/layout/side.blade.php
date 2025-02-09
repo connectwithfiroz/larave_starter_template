@@ -145,8 +145,14 @@
                             <i class="angle fa fa-angle-right"></i>
                         </a>
                         <ul class="slide-menu">
-                            <li><a class="slide-item" href="{{ route('admin-profile') }}"><span>View Admin Profile
-                                    </span></a></li>
+                            <li>
+                                <a class="slide-item" href="{{ route('admin-profile') }}">
+                                    <span>View Admin Profile</span>
+                                </a>
+                                <a class="slide-item" href="{{ route('admin.logout') }}">
+                                    <span>Logout</span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
 
