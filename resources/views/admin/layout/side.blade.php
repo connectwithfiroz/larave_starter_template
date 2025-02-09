@@ -18,11 +18,37 @@
                 </div>
                 <ul class="side-menu toggle-menu">
                     <li>
-                        <a class="side-menu__item" href="{{ route('dashboard') }}">
+                        <a class="side-menu__item" href="{{ route('admin.dashboard') }}">
                             <i class="side-menu__icon fa fa-tachometer" aria-hidden="true"></i>
                             <span class="side-menu__label">Dashboard</span>
                         </a>
                     </li>
+                    <li>
+                        <a class="side-menu__item {{ Request::routeIs('donations.index') ? 'active' : '' }}" href="{{ route('donations.index') }}">
+                            <i class="side-menu__icon fa fa-tachometer" aria-hidden="true"></i>
+                            <span class="side-menu__label">Donation</span>
+                        </a>
+                    </li>
+                    <li class="slide">
+                        <a class="side-menu__item" data-toggle="slide" href="#">
+                            <i class="side-menu__icon fa fa-youtube-play" aria-hidden="true"></i>
+                            <span class="side-menu__label">News</span>
+                            <i class="angle fa fa-angle-right"></i>
+                        </a>
+                        <ul class="slide-menu">
+                            <li>
+                                <a class="slide-item " href="{{ route('news.create') }}">
+                                    <span>Add News</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="slide-item" href="{{ route('news.index') }}">
+                                    <span>View News</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
 
                     <li class="slide">
                         <a class="side-menu__item" data-toggle="slide" href="#">

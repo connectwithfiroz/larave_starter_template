@@ -3,7 +3,7 @@
             <!--Footer-->
             <footer class="main-footer">
                 <div class="text-center">
-                   Copyright &copy; Sabjeewaala 2022. Design By<a href="https://www.webdigitalmantra.in/">  Web Digital Mantra Pvt Ltd</a>
+                   Copyright &copy; {{ config('app.name')}} {{ date('Y') }}.
                 </div>
              </footer>
              <!--/Footer-->

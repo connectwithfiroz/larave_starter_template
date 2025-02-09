@@ -1,8 +1,5 @@
 @extends('admin.layout.app')
 @section('content')
-    <!-- Header End -->
-
-
     <!--app-content open-->
     <div class="app-content">
         <section class="section">

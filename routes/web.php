@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +19,9 @@ Route::get('/optimize', function () {
     Artisan::call('optimize');
     return "optimized";
 });
-Route::get('/', function () {
-    return view('frontend.index');
-});
 
+
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -33,3 +33,11 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+use App\Http\Controllers\RazorpayController;
+
+Route::get('/donate', [RazorpayController::class, 'donationForm'])->name('donate.form');
+Route::post('/process-payment', [RazorpayController::class, 'processPayment'])->name('payment.process');
+Route::post('/verify-payment', [RazorpayController::class, 'verifyPayment'])->name('payment.verify');
+Route::get('/donate-success/{id}', [RazorpayController::class, 'donationSuccess'])->name('donate.success');
+

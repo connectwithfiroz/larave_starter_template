@@ -17,6 +17,8 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'razorpay_key' => env('RAZORPAY_KEY_ID', NULL),
+    'razorpay_secret' => env('RAZORPAY_KEY_SECRET', NULL),
 
     /*
     |--------------------------------------------------------------------------

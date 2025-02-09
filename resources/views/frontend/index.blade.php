@@ -2,12 +2,12 @@
 
 @section('title', 'Home Page')
 
-@push('css')
-<!-- extra css -->
+@push('header')
+<!-- extra header -->
 @endpush
 
 @section('section')
-
+    <!--============================== Hero Area ==============================-->
     <div class="th-hero-wrapper hero-1" id="hero">
         <div class="swiper th-slider hero-slider1" id="heroSlide1" data-slider-options='{"effect":"fade", "autoHeight": "true"}'>
             <div class="swiper-wrapper">
@@ -196,7 +196,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Youth Empowerment</a></h3>
                             
-                            <a href="about.html" class="th-btn">Learn More<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +212,7 @@ Service Area
                             <h3 class="box-title"><a href="about.html">
                                 Women Empowerment</a></h3>
                            
-                            <a href="about.html" class="th-btn">Learn More<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -227,7 +227,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Rural Empowerment</a></h3>
                         
-                            <a href="about.html" class="th-btn">Learn More<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -242,7 +242,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Environmental Help</a></h3>
                         
-                            <a href="about.html" class="th-btn">Learn More<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Education Empowerment</a></h3>
                         
-                            <a href="about.html" class="th-btn">Learn More<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +272,7 @@ Service Area
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Health Empowerment</a></h3>
                         
-                            <a href="about.html" class="th-btn">Learn More<i class="fas fa-arrow-up-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn">Donate Now<i class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1259,6 +1259,31 @@ Blog Area
             <div class="slider-area">
                 <div class="swiper th-slider has-shadow" id="blogSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}, "autoHeight": "true"}'>
                     <div class="swiper-wrapper">
+                        <!-- dynamic section start -->
+                        @foreach ($news as $item)
+                            <div class="swiper-slide">
+                                <div class="blog-single has-post-thumbnail">
+                                    <div class="blog-img" data-overlay="black" data-opacity="5">
+                                        <!-- Thumbnail -->
+                                        <a href="blog-details.html">
+                                            <img src="{{ asset('storage/thumbnail/' . $item->thumbnail) }}" 
+                                                style="height: 320px; object-fit: cover;" 
+                                                alt="{{ $item->title }}">
+                                        </a>
+                                        <!-- YouTube URL -->
+                                        <a href="{{ $item->youtube_url }}" class="play-btn popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                    <!-- Title -->
+                                    <h3>{{ $item->title }}</h3>
+                                    <!-- Description (Optional) -->
+                                    <p>{{ Str::limit($item->description, 100) }}</p>
+                                </div>
+                            </div>
+                        @endforeach
+
+                        <!-- dynamic section end -->
                         <div class="swiper-slide">
                             <div class="blog-single has-post-thumbnail">
                                 <div class="blog-img" data-overlay="black" data-opacity="5">
@@ -1334,6 +1359,20 @@ Blog Area
         </div>
     </section>
 @endsection
-
 @push('js')
+<script>
+    $(document).ready(function () {
+        // Attach a click event to all buttons with the class "th-btn"
+        $('.th-btn').on('click', function (e) {
+            e.preventDefault(); // Prevent default behavior of the link
+
+            // Find the nearest `.box-title` and get its text
+            var boxTitle = $(this).closest('.box-content').find('.box-title a').text().trim();
+
+            // Redirect to the donate page with the box title as a query parameter
+            var redirectUrl = '/donate?for=' + encodeURIComponent(boxTitle);
+            window.location.href = redirectUrl;
+        });
+    });
+</script>
 @endpush

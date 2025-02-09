@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Models\Admin;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Order;
+use Illuminate\Support\Facades\DB;
 class AdminHomeController extends Controller
 {
     public function index()
@@ -41,7 +42,28 @@ class AdminHomeController extends Controller
 
     public function dashboard()
     {
-        $orders = [];
-        return view('admin.dashboard', compact('orders'));
+        // Fetch total donations
+        $totalDonations = DB::table('donations')->where('status', 'Success')->count();
+    
+        // Fetch total donation amount (sum of successful donations)
+        $totalDonationAmount = DB::table('donations')
+            ->where('status', 'success') // Assuming 'success' indicates successful donations
+            ->sum('amount');
+    
+        // Fetch total unique users (by name or email)
+        $totalUsers = DB::table('donations')
+            ->distinct()
+            ->count('email'); // Change to 'name' or another field if needed
+        
+        // Query to get total donations and total amount grouped by donation_for
+        $donationData = DB::select("
+            SELECT donation_for, COUNT(*) AS total_donations, SUM(amount) AS total_amount
+            FROM donations  where status='Success'
+            GROUP BY donation_for
+        ");
+    
+        // Pass data to the view
+        return view('admin.dashboard', compact('totalDonations', 'totalDonationAmount', 'totalUsers', 'donationData'));
     }
+    
 }

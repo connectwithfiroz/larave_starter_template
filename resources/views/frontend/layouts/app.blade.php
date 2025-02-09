@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!doctype html>
+<html class="no-js" lang="zxx" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Al Khair Educational &amp; Charitable Trust &#8211; Lets Empower Society</title>
+    <title>@yield('title') || Al Khair Educational &amp; Charitable Trust &#8211; Lets Empower Society</title>
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -14,7 +14,7 @@
 
     <!-- Favicons - Place favicon.ico in the root directory -->
 
-	<link rel="icon" href="{{ asset('frontend/fev.jpg') }}"type="image/jpg">
+	<link rel="icon" href="{{ asset('frontend/img/fev.jpg') }}" type="image/jpg">
     <!--==============================
 	  Google Fonts
 	============================== -->
@@ -34,13 +34,10 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/swiper-bundle.min.css') }}">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
-
-    <!-- Page-specific CSS -->
-    @stack('css')
+    @stack('header')
 </head>
+
 <body>
-    <!-- =============== HEADER CONTENT  -->
-     
 <!-- popup-form -->
 <div id="ngo-donation-popup" class="ngo-popup">
     <div class="ngo-popup-content">
@@ -51,7 +48,8 @@
      
       </div>
       <p class="ngo-popup-description">Your generous donation helps us to bring change and provide support to those in need.</p> <!-- Line above the form -->
-      <form class="ngo-popup-form">
+      <form class="ngo-popup-form" action="/donate">
+       <input type="hidden" name="for" value="Not Selected">
        <div class="row">
         <div class="col-lg-6">
             <label for="donor-name">Name:</label>
@@ -69,12 +67,6 @@
             <label for="donation-amount">Donation Amount:</label>
             <input type="number" id="donation-amount" name="donation-amount" required>
         </div>
-    
-   
-        
-        
-  
-      
        </div>
         
         <button type="submit">Donate Now</button>
@@ -95,7 +87,7 @@
             </div>
             <button class="popup-close" onclick="closePopup()">×</button>
         </div>
-        <div class="popup-body" style="background-image: url('{{ asset('frontend/img/whatsapp-bg.jpg') }}');">
+        <div class="popup-body" style="background-image: url(assets/img/whatsapp-bg.jpg);">
             <p>Hello, I am interested in your services. Kindly, contact me for more details!</p>
          
         </div>
@@ -358,32 +350,34 @@
                           <div class="language-dropdown" id="language-dropdown">
                             <ul>
                                 <li data-lang="en">
-                                    <img src="https://flagcdn.com/w40/gb.png'" width="20" alt="English Flag"> English
+                                    <img src="https://flagcdn.com/w40/gb.png') }}" width="20" alt="English Flag"> English
                                 </li>
                                 <li data-lang="hi">
-                                    <img src="https://flagcdn.com/w40/in.png'" width="20" alt="Hindi Flag"> हिन्दी
+                                    <img src="https://flagcdn.com/w40/in.png') }}" width="20" alt="Hindi Flag"> हिन्दी
                                 </li>
                             </ul>
                           </div>
-                        <button type="button" class="icon-btn sideMenuToggler">
+                        <button type="button" class="d-none icon-btn sideMenuToggler">
                             <span class="badge">5</span>
                             <i class="fa-regular fa-cart-shopping"></i>
                         </button>
-                        <a href="contact.html" class="th-btn style3 d-lg-block d-none"><i class="fas fa-heart me-2"></i> Donate Now</a>
+                        <a href="{{ route('donate.form') }}" class="th-btn style3 d-lg-block d-none"><i class="fas fa-heart me-2"></i> Donate Now</a>
                         <button type="button" class="icon-btn th-menu-toggle d-lg-none"><i class="far fa-bars"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!-- =============== HEADER CONTENT END -->
-   
-    @yield('section')
 
-    
 
-   <!--============================== Footer Area ==============================-->
-    <footer class="footer-wrapper footer-default" data-bg-src="{{ asset('frontend/bg/footer-default-bg-mask.png') }}">
+
+@yield('section')
+
+
+    <!--==============================
+	Footer Area
+==============================-->
+<footer class="footer-wrapper footer-default" data-bg-src="{{ asset('frontend/img/bg/footer-default-bg-mask.png') }}">
         <div class="footer-bg-shape2 shape-mockup jump" data-top="20%" data-right="0">
             <img src="{{ asset('frontend/img/shape/footer-bg-shape3.png') }}" alt="img">
         </div>
@@ -398,7 +392,7 @@
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo">
-                                    <a href="index.html"><img src="{{ asset('frontend/img/logo.jpg') }}"alt="Donat"></a>
+                                    <a href="index.html"><img src="{{ asset('frontend/img/logo.jpg') }}" alt="Donat"></a>
                                 </div>
                                 <p class="about-text"> Our secure online donation platform allows you to make contributions quickly and safely. Choose from various.</p>
                                 <a href="contact.html" class="th-btn"><i class="fas fa-heart me-2"></i> Donate Now</a>
@@ -496,6 +490,9 @@
         </div>
     </footer>
 
+    <!--********************************
+			Code End  Here 
+	******************************** -->
 
     <!-- Scroll To Top -->
     <div class="scroll-top">
@@ -503,26 +500,27 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
         </svg>
     </div>
-</body>
 
 
     <script>
         window.onload = function() {
-            setTimeout(function() {
-            document.getElementById('ngo-donation-popup').classList.add('show');
-            }, 500);
-        };
-        function closePopup() {
-            var popup = document.getElementById('ngo-donation-popup');
-            popup.classList.remove('show'); 
-        }
-        document.getElementById('ngo-donation-popup').addEventListener('click', function(e) {
-            if (e.target === this) {
-            closePopup();
-            }
-        });
+    setTimeout(function() {
+      document.getElementById('ngo-donation-popup').classList.add('show');
+    }, 500);
+  };
+  function closePopup() {
+    var popup = document.getElementById('ngo-donation-popup');
+    popup.classList.remove('show'); 
+  }
+  document.getElementById('ngo-donation-popup').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closePopup();
+    }
+  });
     </script>
-    <!--============================== All Js File============================== -->
+    <!--==============================
+    All Js File
+============================== -->
     <!-- Jquery -->
     <script src="{{ asset('frontend/js/vendor/jquery-3.7.1.min.js') }}"></script>
     <!-- Swiper Js -->
@@ -540,7 +538,10 @@
     <script src="{{ asset('frontend/js/isotope.pkgd.min.js') }}"></script>
 
 
+    <!-- Main Js File -->
+    <script src="{{ asset('frontend/js/main.js') }}"></script>
     <!-- Page-specific JS -->
     @stack('js')
+</body>
 
 </html>

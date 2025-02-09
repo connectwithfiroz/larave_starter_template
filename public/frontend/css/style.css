@@ -23009,7 +23009,7 @@ span.select2-selection.select2-selection--single:focus {
 .isi-logo {
   position: fixed;
   right: 20px;
-  top: 20%;
+  top: 30%;
   transform: translateY(-50%);
   z-index: 999; /* To ensure it's on top */
 }

@@ -7,6 +7,9 @@ use App\Http\Controllers\admin\AdminHomeController;
 use App\Http\Controllers\admin\AdminTestimonialController;
 use App\Http\Controllers\admin\AdminFaqController;
 use App\Http\Controllers\admin\AdminprofileController;
+use App\Http\Controllers\admin\DonationController;
+use App\Http\Controllers\Admin\NewsController;
+
 
 Route::get('/login', [AdminHomeController::class, 'index'])->name('admin-login');
 Route::post('/login', [AdminHomeController::class, 'login_post']);
@@ -16,6 +19,12 @@ Route::group(['middleware' => 'admin'], function () {
 
     Route::get('/dashboard', [AdminHomeController::class, 'dashboard'])->name('admin.dashboard');
 
+
+    Route::get('/donations', [DonationController::class, 'index'])->name('donations.index');
+
+
+
+    Route::resource('news', NewsController::class);
     
 
     /*Blog Crud */
