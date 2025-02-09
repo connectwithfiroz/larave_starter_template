@@ -19996,6 +19996,61 @@ span.select2-selection.select2-selection--single:focus {
       -ms-flex-item-align: center;
           align-self: center;
 }
+.donation-card .box-content-two {
+ 
+    margin: 0;
+    padding: 0;
+   justify-content: space-between;
+}
+.amount-footer {
+   display: flex;
+   width: 100%;
+   background-color: #c70c52;
+   color: #fff;
+   padding: 1rem;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   align-items: center;
+   justify-content: space-around;
+}
+.amount-footer p{
+   color: #fff;
+   font-size: 2rem;
+   font-weight: 700;
+   padding: 0;
+   margin: 0;
+}
+.amount-footer button{
+   background: #fff;
+   border: none;
+   outline: none;
+   padding: .5rem 1rem;
+   border-radius: 1rem;
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+.amount-footer button:hover{
+   background: #1A685B;
+   transition: all 0.5s ease;
+   color: #fff;
+   outline: 2px solid #fff;
+}
+.donation-card .box-thumb-two {
+   height: 200px;
+   width: 100%;
+   margin-bottom: 1.5rem;
+}
+.donation-card .box-thumb-two img {
+   height: 200px;
+   width: 100%;
+   object-fit: cover;
+   border-radius: .5rem;
+
+}
+.donation-card .box-content-two .box-title-two {
+    font-size: 1.5rem;
+    margin: 0;
+}
 
 .donation-card.style2 .donation-card_progress-wrap .progress {
   overflow: visible;
@@ -23009,7 +23064,7 @@ span.select2-selection.select2-selection--single:focus {
 .isi-logo {
   position: fixed;
   right: 20px;
-  top: 30%;
+  top: 20%;
   transform: translateY(-50%);
   z-index: 999; /* To ensure it's on top */
 }
@@ -23322,4 +23377,109 @@ span.select2-selection.select2-selection--single:focus {
     font-size: 1.3rem;
     line-height: 1.8rem;
     text-align: justify;
+}
+
+.product-card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.heading-essse {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: #000;
+}
+@media (max-width: 576px) {
+  .product-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .product-card h6 {
+    height: 3rem;
+  }
+}
+.product-card h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.qty-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.qty-btn:hover {
+  background-color: #218838;
+}
+.qty-input2 {
+   
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: white;
+  color: #000;
+}
+
+
+.amount-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #f0f8f1;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #28a745;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.amount-btn:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.custom-amount-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
 }

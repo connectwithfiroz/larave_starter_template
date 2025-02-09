@@ -48,6 +48,25 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="slide">
+                        <a class="side-menu__item" data-toggle="slide" href="#">
+                            <i class="side-menu__icon fa fa-youtube-play" aria-hidden="true"></i>
+                            <span class="side-menu__label">Products</span>
+                            <i class="angle fa fa-angle-right"></i>
+                        </a>
+                        <ul class="slide-menu">
+                            <li>
+                                <a class="slide-item " href="{{ route('products.create') }}">
+                                    <span>Add Product</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="slide-item" href="{{ route('products.index') }}">
+                                    <span>View Products</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
 
                     <li class="slide">

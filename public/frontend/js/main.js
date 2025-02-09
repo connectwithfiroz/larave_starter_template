@@ -980,6 +980,8 @@
     }
   });
 
+  
+
 // whatsapp-icon
 document.addEventListener("DOMContentLoaded", function () {
     let whatsappIcon = document.querySelector(".whatsapp-icon");

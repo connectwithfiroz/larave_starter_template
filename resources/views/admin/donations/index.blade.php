@@ -83,8 +83,26 @@
 @endsection
 @section('custom-script')
 <script>
-    $(document).ready(function(){
-        $("#donation_list_table").DataTable();
+   $(document).ready(function () {
+        $("#donation_list_table").DataTable({
+            // Enable server-side processing for larger datasets
+            processing: true,
+            serverSide: false, // Set to true if using server-side processing
+            // Define default sorting column and order
+            order: [[0, "desc"]], // Sort by the first column (index 0) in descending order
+            // Add pagination, search, and length change options
+            pageLength: 10, // Default number of rows per page
+            lengthMenu: [10, 25, 50, 100], // Options for rows per page
+            // Add styling and functionality options
+            responsive: true, // Make the table responsive
+            autoWidth: false, // Disable auto-width to prevent layout issues
+            language: {
+                search: "Search:", // Customize the search box placeholder
+                lengthMenu: "Show _MENU_ entries", // Customize the length menu text
+                info: "Showing _START_ to _END_ of _TOTAL_ donations", // Customize the info text
+            },
+        });
     });
+
 </script>
 @endsection

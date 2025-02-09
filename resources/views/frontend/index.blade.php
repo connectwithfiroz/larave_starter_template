@@ -410,9 +410,8 @@ Cta Area
                 </div>
             </div>
         </div>
-    </div><!--==============================
-Donation Area  
-==============================-->
+    </div>
+    <!--============================== Donation Area  ==============================-->
     <section class="space bg-gray" data-bg-src="{{ asset('frontend/img/bg/donation-bg1-1.png') }}" id="donation-sec">
         <div class="shape-mockup donation-bg-shape1-1" data-bottom="0" data-right="0"><img src="{{ asset('frontend/img/shape/donation-shape1-1.png') }}" alt="shape"></div>
         <div class="container">
@@ -581,23 +580,86 @@ Donation Area
                     </div>
                 </div>
             </div>
+            <!--============================== Essential Item Area  ==============================-->
+            <div class="container mt-5 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="title-area text-center">
+                            <span class="sub-title">Lets Start Donating</span>
+                            <h2 class="sec-title">Donate Essentials</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-area">
+                    <div class="swiper th-slider has-shadow" id="donationSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}, "autoHeight": "true"}'>
+                        <div class="swiper-wrapper">
+                            <!-- dynamic section  -->
+                            @foreach ($products as $key=>$product)
+                            <div class="swiper-slide">
+                                <div class="donation-card" data-theme-color="">
+                                    <!-- Card Shape (Static) -->
+                                    <div class="donation-card-shape" data-mask-src="{{ asset('frontend/img/donation/donation-card-bg-shape1-1.png') }}"></div>
+
+                                    <!-- Product Image -->
+                                    <div class="box-thumb-two">
+                                        <img 
+                                            src="{{ asset('storage/product_img/' . $product->image) }}" 
+                                            alt="{{ $product->name }}" 
+                                            onerror="this.src='https://via.placeholder.com/150'" 
+                                        />
+                                    </div>
+
+                                    <!-- Product Details -->
+                                    <div class="box-content-two">
+                                        <h3 class="box-title-two">
+                                            <a href="#"  id="product_{{$key}}">{{ $product->name }}</a>
+                                        </h3>
+                                        <span id="price_{{$key}}" class="d-none">{{ ($product->price) }}</span>
+                                        <p>Rs. <span >{{ number_format($product->price, 2) }}</span> / Unit</p>
+                                    </div>
+
+                                    <!-- Quantity Control Section -->
+                                    <div class="quantity-control">
+                                        <button class="qty-btn minus-btn" data-id="{{$key}}">−</button>
+                                        <input type="number"  id="quantity_{{$key}}" class="qty-input" value="0" min="1" readonly>
+                                        <button class="qty-btn plus-btn" data-id="{{$key}}">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+
+                            <!-- dynamic section end -->
+                        </div>
+                    </div>
+                </div>
+                <div class="amount-footer">
+                    <div> 
+                        <p>Total Amount : 
+                            <span id="total_amount">0</span> 
+                            <small> <span id="total_items"></span> Items</small>
+                        </p>
+                        <small>Details : <span id="selected_items"></span></small>
+                    </div>
+                    
+                    <button id="donate_essential_items">Donate Now</button>
+                </div>
+            </div>
+            <!-- essential end -->
         </div>
-    </section>
-    <!--==============================
-Cta Area  
-==============================-->
-<div class="video-area-3">
-    <div class="shape-mockup video-bg-shape3-1" data-top="0" data-left="0" data-bottom="0">
-        <img src="{{ asset('frontend/img/shape/video_bg_shape3_1.png') }}" alt="img">
+    </section> 
+    <!--============================== Cta Area  ==============================-->
+    <div class="video-area-3">
+        <div class="shape-mockup video-bg-shape3-1" data-top="0" data-left="0" data-bottom="0">
+            <img src="{{ asset('frontend/img/shape/video_bg_shape3_1.png') }}" alt="img">
+        </div>
+        <div class="shape-mockup video-bg-shape3-2" data-top="0" data-right="0" data-bottom="0">
+            <img src="{{ asset('frontend/img/shape/video_bg_shape3_2.png') }}" alt="img">
+        </div>
+        <div class="video-thumb3-1 video-box-center">
+            <img src="{{ asset('frontend/img/video-bg.jpg') }}" alt="img">
+            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="play-btn style7 popup-video"><i class="fa-sharp fa-solid fa-play"></i></a>
+        </div>
     </div>
-    <div class="shape-mockup video-bg-shape3-2" data-top="0" data-right="0" data-bottom="0">
-        <img src="{{ asset('frontend/img/shape/video_bg_shape3_2.png') }}" alt="img">
-    </div>
-    <div class="video-thumb3-1 video-box-center">
-        <img src="{{ asset('frontend/img/video-bg.jpg') }}" alt="img">
-        <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="play-btn style7 popup-video"><i class="fa-sharp fa-solid fa-play"></i></a>
-    </div>
-</div>
     <!--==============================
 Story Area  
 ==============================-->
@@ -634,7 +696,7 @@ Story Area
                             <h2 class="sec-title">We Help Fellow Nonprofits Access the Funding Tools, Training</h2>
                             <p class="mt-30">Our secure online donation platform allows you to make contributions quickly and safely. Choose from various payment methods and set up one-time.exactly.</p>
                             <div class="btn-wrap mt-35">
-                                <a href="about.html" class="th-btn donate_btn style-border">Our Success Story <i class="fas fa-arrow-up-right ms-2"></i></a>
+                                <a href="{{ route('donate.form') }}" class="th-btn donate_btn style-border">Our Success Story <i class="fas fa-arrow-up-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1392,4 +1454,108 @@ Blog Area
         });
     });
 </script>
+<script>
+    var totalAmount = 0;
+    var totalQuantity = 0;
+    var productText = '';
+    var selected_product = []; // Changed to an array for proper storage
+
+    function setPrice(params = { id, flag }) {
+        const total_amount = document.getElementById("total_amount"); // Use single ID for total amount
+        const total_items = document.getElementById("total_items"); // Use single ID for total items
+        const selected_items = document.getElementById("selected_items"); // Use single ID for total items
+        
+        let product = document.getElementById(`product_${params.id}`)?.innerText ?? ''; // Fetch product name
+        let quantity = parseInt(document.getElementById(`quantity_${params.id}`)?.value ?? 0); // Fetch quantity
+        let price = parseFloat(document.getElementById(`price_${params.id}`)?.innerText ?? 0); // Fetch price
+
+        if (params.flag === '-') {
+            totalAmount -= price; // Subtract price
+            totalQuantity -= quantity; // Subtract quantity
+            selected_product = selected_product.filter(item => item.id !== params.id); // Remove product from the array
+        } else if (params.flag === '+') {
+            totalAmount += price; // Add price
+            totalQuantity += quantity; // Add quantity
+            
+            // Create product object
+            let obj = {
+                id: params.id,
+                quantity: quantity,
+                price: price,
+                product: product,
+            };
+
+            // Check if product already exists in selected_product
+            const existingProductIndex = selected_product.findIndex(item => item.id === params.id);
+            if (existingProductIndex !== -1) {
+                selected_product[existingProductIndex] = obj; // Update existing product
+            } else {
+                selected_product.push(obj); // Add new product
+            }
+        }
+
+   
+        // Update selected_products_text
+        let selected_products_text = selected_product.map(item => {
+            return `${item.product} x ${item.quantity} = Rs. ${item.price * item.quantity}`;
+        }).join(', ');
+
+        // Update the total amount, total items, and selected products in the UI
+        total_amount.innerText = totalAmount.toFixed(2); // Total amount with 2 decimals
+        total_items.innerText = totalQuantity; // Total quantity
+        selected_items.innerText = selected_products_text || 'No items selected'; // Show selected products or fallback text
+
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        const minusBtns = document.querySelectorAll(".minus-btn");
+        const plusBtns = document.querySelectorAll(".plus-btn");
+        
+        minusBtns.forEach(btn => {
+            btn.addEventListener("click", function() {
+                let input = this.nextElementSibling;
+                let value = parseInt(input.value);
+                if (value > 1) {
+                    input.value = value - 1;
+                }
+                //price calculation
+                let id= this.getAttribute('data-id');
+                setPrice({id, flag:'-'});
+            });
+        });
+
+        plusBtns.forEach(btn => {
+            btn.addEventListener("click", function() {
+                let input = this.previousElementSibling;
+                let value = parseInt(input.value);
+                input.value = value + 1;
+                //price calculation
+                let id= this.getAttribute('data-id');
+                setPrice({id, flag:'+'});
+            });
+        });
+    });
+    //donation button event
+    document.getElementById('donate_essential_items').addEventListener('click', function () {
+        const selected_items = document.getElementById('selected_items').innerText;
+        const totalAmount = parseFloat(document.getElementById('total_amount').innerText ?? 0);
+        const totalQuantity = parseInt(document.getElementById('total_items').innerText ?? 0);
+
+        // Validation: Ensure totalAmount and totalQuantity are greater than 0
+        if (totalAmount <= 0 || totalQuantity <= 0) {
+            alert('Please select items and ensure the donation amount is greater than 0.');
+            return; // Stop further execution
+        }
+
+        // Build the URL for donation
+        const donationUrl = `/donate?for=${encodeURIComponent(selected_items)}&donation-amount=${totalAmount}`;
+
+        // Redirect to the donation URL
+        window.location.href = donationUrl;
+    });
+
+
+</script>
+
 @endpush

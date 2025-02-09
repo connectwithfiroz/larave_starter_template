@@ -9,6 +9,7 @@ use App\Http\Controllers\admin\AdminFaqController;
 use App\Http\Controllers\admin\AdminprofileController;
 use App\Http\Controllers\admin\DonationController;
 use App\Http\Controllers\Admin\NewsController;
+use App\Http\Controllers\Admin\ProductController;
 
 
 Route::get('/login', [AdminHomeController::class, 'index'])->name('admin-login');
@@ -25,6 +26,7 @@ Route::group(['middleware' => 'admin'], function () {
 
 
     Route::resource('news', NewsController::class);
+    Route::resource('products', ProductController::class);
     
 
     /*Blog Crud */

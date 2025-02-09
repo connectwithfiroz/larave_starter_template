@@ -12,7 +12,7 @@ class DonationController extends Controller
     public function index(Request $request)
     {
         // Paginate the donations (10 per page)
-        $donations = Donation::paginate(10);
+        $donations = Donation::latest('created_at')->paginate(10);
 
         // Pass donations to the view
         return view('admin.donations.index', compact('donations'));

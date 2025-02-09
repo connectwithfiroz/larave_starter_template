@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\News;
 use App\Models\Faq;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -14,8 +15,16 @@ class HomeController extends Controller
         // Fetch all news from the database
         $news = News::all();
         $faqs = Faq::all();
+        $products = Product::all();
 
         // Pass the news data to the Blade view
-        return view('frontend.index', compact('news','faqs'));
+        return view('frontend.index', compact('news','faqs', 'products'));
+    }
+    public function about()
+    {
+        
+
+        // Pass the news data to the Blade view
+        return view('frontend.about', compact());
     }
 }

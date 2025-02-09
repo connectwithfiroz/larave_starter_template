@@ -57,6 +57,7 @@ class NewsController extends Controller
             'youtube_url' => 'required|url',
             'description' => 'nullable',
         ]);
+        $request_data = $request->all();
 
         $news = News::findOrFail($id);
         // If a new image is uploaded, delete the old one and upload the new one
@@ -69,9 +70,9 @@ class NewsController extends Controller
             
             // Store the new file
             $file->storeAs('public/thumbnail', $filename);
-            $news->thumbnail = $filename;
+            $request_data['thumbnail'] = $filename;
         }
-        $news->update($request->all());
+        $news->update($request_data);
         return redirect()->route('news.index')->with('success', 'News updated successfully.');
     }
 

@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
       <meta content="" name="description">
-      <meta content="" name="author">
+      <meta content="Firoz Ansari 8789701916" name="author">
       <meta name="keywords" content=""/>
       <!-- Title -->
       <title>@yield('title', 'ADMIN PORTAL')</title>
@@ -13,6 +13,8 @@
       <link rel="icon" href="{{asset('admin/assets/img/fav.png') }}" type="image/x-icon"/>
       <!--Bootstrap.min css-->
       <link rel="stylesheet" href="{{asset('admin/assets/plugins/bootstrap/css/bootstrap.min.css') }}">
+      <!-- Color-skins css -->
+      <link id="theme" rel="stylesheet" type="text/css" media="all" href="{{asset('admin/assets/colors/color-skins/color.css') }}" />
       <!--Style css-->
       <link rel="stylesheet" href="{{asset('admin/assets/css/style.css') }}">
       <!--Icons css-->
@@ -27,8 +29,7 @@
       <link href="{{asset('admin/assets/plugins/sidebar/sidebar.css') }}" rel="stylesheet">
       <!-- jvectormap CSS -->
       <link href="{{asset('admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet" />
-      <!-- Color-skins css -->
-      <link id="theme" rel="stylesheet" type="text/css" media="all" href="{{asset('admin/assets/colors/color-skins/color.css') }}" />
+      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- ck editor -->
       <!-- <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script> -->
