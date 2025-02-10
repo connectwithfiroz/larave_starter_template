@@ -14,6 +14,18 @@ use App\Http\Controllers\Frontend\HomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/optimize', function () {
+    Artisan::call('optimize');
+    return "optimized";
+});
+Route::get('/migrate', function () {
+    Artisan::call('migrate');
+    return "Migrate Completed!";
+});
+Route::get('/link-storage', function () {
+    Artisan::call('storage:link');
+    return "Storage Linked!";
+});
 
 Route::get('/optimize', function () {
     Artisan::call('optimize');
