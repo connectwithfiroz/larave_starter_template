@@ -28,6 +28,7 @@ class CreateDonationsTable extends Migration
             $table->string('pan_no')->nullable(); 
             $table->string('bank_name')->nullable(); 
             $table->string('branch_name')->nullable(); 
+            $table->string('donation_id')->nullable(); 
             $table->timestamps(); // Created at and Updated at
         });
     }

@@ -62,15 +62,21 @@ class ProductController extends Controller
         // If a new image is uploaded, delete the old one and upload the new one
         if ($request->hasFile('image')) {
             // Delete the old image from the storage
-            Storage::delete('public/product_img/' . $products->image);
-
+            if (!empty($products->image)) {
+                Storage::delete('public/product_img/' . $products->image);
+            }
+        
             $file = $request->file('image');
-            $filename = time() . '-' . $file->getClientOriginalName();
-            
+        
+            // Generate a unique filename with extension
+            $extension = $file->getClientOriginalExtension(); // Get file extension
+            $filename = uniqid('product_img_') . '_' . time() . '.' . $extension;
+        
             // Store the new file
             $file->storeAs('public/product_img', $filename);
-            $request_data['image'] = $filename;
+            $request_data['image'] = $filename; // Save the filename for the database
         }
+        
         $products->update($request_data);
         return redirect()->route('products.index')->with('success', 'Product updated successfully.');
     }

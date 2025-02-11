@@ -152,6 +152,17 @@
                         <a class="link-btn style2" href="about.html">View Details <i class="fa-solid fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
+                <!-- donation id search -->
+                <div class="col-xl-3 col-lg-4">
+                    <div class="feature-card">
+                        <h3 class="box-title">Verify Donation Certificate</h3>
+                        <!-- Inline Search Form -->
+                        <form action="{{ route('donations.search.post') }}" method="GET" class="d-flex justify-content-center">
+                            <input type="text" name="donation_id" class="form-control w-50 me-2" placeholder="Enter Donation ID" required>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section> 

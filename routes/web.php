@@ -35,6 +35,10 @@ Route::get('/optimize', function () {
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
+
+Route::get('/search-donation', [HomeController::class, 'searchDonation'])->name('donations.search.post');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

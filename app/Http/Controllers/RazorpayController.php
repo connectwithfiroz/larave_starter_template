@@ -51,6 +51,7 @@ class RazorpayController extends Controller
             'pan_no' => $request->pan_no,
             'bank_name' => $request->bank_name,
             'branch_name' => $request->branch_name,
+            'donation_id' => 'DON-' . mt_rand(1000, 9999) . time(),
         ]);
         //SET USER EMAIL IN SESSION
         session(['user_email' => $request->donor_email]);

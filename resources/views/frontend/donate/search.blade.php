@@ -136,6 +136,10 @@
 </head>
 
 <body>
+    @if(empty($donation))
+        <h5 class="text-danger">Invalid Donation Receipt.</h5> <br>
+        <small class="text-danger">Please check donation id.</small>
+    @else
     <div class="receipt-container">
         <!-- Banner Section -->
         <div class="banner">
@@ -167,7 +171,6 @@
             <p>Thank you for your generous donation towards this noble cause. Your kindness
                 and compassion will go a long way in creating a better tomorrow for countless individuals.</p>
                 <p><strong>NGO Name:</strong> Al-Khair</p>
-                <p><strong>Donation ID:</strong> {{$donation->donation_id}}</p>
                 <p><strong>Donor's Name:</strong> {{ $donation->name }}</p>
                 <p><strong>Donor's Address:</strong> {{ $donation->address }}</p>
                 <p><strong>Donation Amount:</strong> ₹{{ number_format($donation->amount, 2) }}</p>
@@ -184,6 +187,7 @@
 
 
     </div>
+    @endif
 
 </body>
 <!-- Include html2pdf.js via CDN -->
