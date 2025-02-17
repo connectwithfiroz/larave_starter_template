@@ -27,7 +27,6 @@
                             <td>{{ $item->name }}</td>
                             <td>
                                 <img src="{{ asset('storage/product_img/' . $item->image) }}" alt="{{ $item->name }}" class="img-responsive" style="width: 100px;"/>
-
                             </td>
                             <td>{{ $item->price }}</td>
                             <td>{{ $item->status }}</td>

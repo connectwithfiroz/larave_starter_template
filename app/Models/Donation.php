@@ -20,5 +20,6 @@ class Donation extends Model
         'razorpay_order_id',
         'razorpay_signature',
         'status',
+        'donation_id',
     ];
 }

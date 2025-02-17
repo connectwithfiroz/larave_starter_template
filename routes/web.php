@@ -34,7 +34,27 @@ Route::get('/optimize', function () {
 
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/about', [HomeController::class, 'about']);
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/achivement', [HomeController::class, 'achivement'])->name('achivement');
+Route::get('/certifications', [HomeController::class, 'certifications'])->name('certifications');
+Route::get('/construction', [HomeController::class, 'construction'])->name('construction');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::get('/dontaion', [HomeController::class, 'dontaion'])->name('dontaion');
+Route::get('/dontaions', [HomeController::class, 'dontaions'])->name('dontaions');
+Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
+Route::get('/index', [HomeController::class, 'index'])->name('index');
+Route::get('/managment-body', [HomeController::class, 'managmentBody'])->name('managment-body');
+Route::get('/mission', [HomeController::class, 'mission'])->name('mission');
+Route::get('/news', [HomeController::class, 'news'])->name('news');
+Route::get('/our-project', [HomeController::class, 'ourProject'])->name('our-project');
+Route::get('/our-team', [HomeController::class, 'ourTeam'])->name('our-team');
+Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('privacy-policy');
+Route::get('/refund-return-policy', [HomeController::class, 'refundReturnPolicy'])->name('refund-return-policy');
+Route::get('/terms-conditions', [HomeController::class, 'termsConditions'])->name('terms-conditions');
+Route::get('/zakat', [HomeController::class, 'zakat'])->name('zakat');
+
+
+
 
 Route::get('/search-donation', [HomeController::class, 'searchDonation'])->name('donations.search.post');
 

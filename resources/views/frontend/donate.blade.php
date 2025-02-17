@@ -14,18 +14,18 @@
 
     <!-- Favicons - Place favicon.ico in the root directory -->
 
-	<link rel="icon" href="{{ asset('frontend/fev.jpg') }}"type="image/jpg">
+	<link rel="icon" href="{{ asset('frontend/assets/fev.jpg') }}"type="image/jpg">
     
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }}">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
 
 </head>
 <body>
 <div class="card my-5 mx-auto" style="max-width: 600px;">
   <div class="card-header text-center">
-    <img src="{{ asset('frontend/img/logo.jpg') }}" alt="Logo" class="img-fluid mb-2" style="max-height: 100px;">
+    <img src="{{ asset('frontend/assets/img/logo.webp') }}" alt="Logo" class="img-fluid mb-2" style="max-height: 100px;">
     <h5 class="card-title">Al Khair Educational & Charitable Trust</h5>
   </div>
   <div class="card-body">
