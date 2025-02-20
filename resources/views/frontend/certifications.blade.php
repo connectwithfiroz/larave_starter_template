@@ -72,14 +72,14 @@
             <img src="{{ asset('frontend/assets/img/certifecate/10.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/10.webp') }}')">
         </div>
-        <div class="custom-certificate-card">
+        <!-- <div class="custom-certificate-card">
             <img src="{{ asset('frontend/assets/img/certifecate/11.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/11.webp') }}')">
         </div>
         <div class="custom-certificate-card">
             <img src="{{ asset('frontend/assets/img/certifecate/12.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/12.webp') }}')">
-        </div>
+        </div> -->
         <div class="custom-certificate-card">
             <img src="{{ asset('frontend/assets/img/certifecate/13.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/13.webp') }}')">

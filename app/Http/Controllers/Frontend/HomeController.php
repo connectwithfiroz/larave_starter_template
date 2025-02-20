@@ -108,6 +108,9 @@ class HomeController extends Controller
     public function donation() {
         return view('frontend.donation');
     }
+    public function donations() {
+        return view('frontend.donations');
+    }
 
     public function sendMail(Request $request)
     {

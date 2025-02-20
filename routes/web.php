@@ -53,6 +53,7 @@ Route::get('/refund-return-policy', [HomeController::class, 'refundReturnPolicy'
 Route::get('/terms-conditions', [HomeController::class, 'termsConditions'])->name('terms-conditions');
 Route::get('/zakat', [HomeController::class, 'zakat'])->name('zakat');
 Route::get('/donation', [HomeController::class, 'donation'])->name('donation');
+Route::get('/donations', [HomeController::class, 'donations'])->name('donations');
 Route::post('/contact/send', [HomeController::class, 'sendMail'])->name('contact.send');
 
 
