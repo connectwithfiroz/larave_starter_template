@@ -49,7 +49,7 @@
             </div>
             <p class="ngo-popup-description">Your generous donation helps us to bring change and provide support to
                 those in need.</p> <!-- Line above the form -->
-            <form class="ngo-popup-form" action="/donate"  id="donationForm">
+            <form class="ngo-popup-form" action="/donate" id="donationForm">
                 <input type="hidden" name="for" value="Not Selected">
                 <div class="row">
                     <div class="col-lg-6">
@@ -115,7 +115,7 @@
         <button class="footer-btn-btn donate donate_btn">
             <i class="fas fa-indian-rupee-sign"></i>Donate Now
         </button>
-        
+
         <button class="footer-btn-btn contact">
             <i class="fas fa-phone"></i>
             <a href="tel:919053758786">Contact</a>
@@ -134,13 +134,13 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="{{ route('index') }}"><img src="{{ asset('frontend/assets/img/logo.webp') }}" alt="al-khair"></a>
+                <a href="{{ route('index') }}"><img src="{{ asset('frontend/assets/img/logo.webp') }}"
+                        alt="al-khair"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
                     <li class="">
-                        <a href="{{ route('index') }}" {{ request()->routeIs('index') ? 'active' : '' }}
-                        >Home</a>
+                        <a href="{{ route('index') }}" {{ request()->routeIs('index') ? 'active' : '' }}>Home</a>
 
                     </li>
                     <li><a href="/about">About Us</a></li>
@@ -160,7 +160,8 @@
                         <a href="{{ route('zakat') }}">Zakat</a>
                     </li>
                     <li class="">
-                        <a href="{{ route('gallery') }}" class="{{ request()->routeIs('gallery') ? 'active' : '' }}">Our Gallery</a>
+                        <a href="{{ route('gallery') }}" class="{{ request()->routeIs('gallery') ? 'active' : '' }}">Our
+                            Gallery</a>
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#">Donations</a>
@@ -177,7 +178,8 @@
                         <ul class="sub-menu">
 
 
-                            <li><a href="{{ route('achivement') }}" class="{{ request()->routeIs('achivement') ? 'active' : '' }}">Achievements</a></li>
+                            <li><a href="{{ route('achivement') }}"
+                                    class="{{ request()->routeIs('achivement') ? 'active' : '' }}">Achievements</a></li>
                             <li><a href="{{ route('news') }}">Press Release</a></li>
                             <li><a href="{{ route('our-team') }}">Our Team</a></li>
 
@@ -346,8 +348,8 @@
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo">
-                                    <a href="{{ route('index') }}"><img src="{{ asset('frontend/assets/img/logo.webp') }}"
-                                            alt="Donat"></a>
+                                    <a href="{{ route('index') }}"><img
+                                            src="{{ asset('frontend/assets/img/logo.webp') }}" alt="Donat"></a>
                                 </div>
                                 <p class="about-text">Our secure online donation system ensures fast and safe
                                     contributions. Support your cause with ease and confidence.</p>
@@ -437,7 +439,8 @@
                                     </div>
                                     <div class="box-content">
                                         <p class="box-text">Address:</p>
-                                        <h4 class="box-title"><a href="">Galleria Mall , Manu Marg Capital Alwar <br>Rajsthan 301001</a></h4>
+                                        <h4 class="box-title"><a href="">Galleria Mall ,<br> Manu Marg Capital Alwar
+                                                <br>Rajsthan 301001</a></h4>
                                     </div>
                                 </div>
                                 <div class="th-social style2">
@@ -457,7 +460,8 @@
                 <div class="row gy-3 align-items-center">
                     <div class="col-lg-12 copy-dcn">
                         <p class="copyright-text text-center">
-                            <i class="fal fa-copyright"></i> Copyright 2024 <a href="{{ route('index') }}">Al Khair Educational &
+                            <i class="fal fa-copyright"></i> Copyright 2024 <a href="{{ route('index') }}">Al Khair
+                                Educational &
                                 Charitable Trust</a>. All Rights Reserved.
                         </p>
                         <a href="https://dcnexus.netlify.app" target="_blank" class="dcn">Design By DCNexus +91
@@ -482,7 +486,7 @@
     </div>
 
 
-    
+
 
 
     <!-- Google Translate Script -->
