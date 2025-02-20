@@ -19,7 +19,7 @@ class ContactMail extends Mailable
 
     public function build()
     {
-        return $this->from($this->formData['email']) // Set sender email
+        return $this->from(config('app.MAIL_FROM_ADDRESS')) // Set sender email
                     ->subject('New Contact Message')
                     ->view('emails.contact')
                     ->with('formData', $this->formData);

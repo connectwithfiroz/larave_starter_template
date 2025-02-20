@@ -19,6 +19,8 @@ return [
     'name' => env('APP_NAME', 'Laravel'),
     'razorpay_key' => env('RAZORPAY_KEY_ID', NULL),
     'razorpay_secret' => env('RAZORPAY_KEY_SECRET', NULL),
+    'MAIL_FROM_ADDRESS' => env('MAIL_FROM_ADDRESS', NULL),
+    'MAIL_TO_ADDRESS' => env('MAIL_TO_ADDRESS', NULL),
 
     /*
     |--------------------------------------------------------------------------

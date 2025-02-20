@@ -8,7 +8,6 @@
     <p><strong>Name:</strong> {{ $formData['name'] }}</p>
     <p><strong>Email:</strong> {{ $formData['email'] }}</p>
     <p><strong>Phone Number:</strong> {{ $formData['number'] }}</p>
-    <p><strong>Message:</strong></p>
-    <p>{{ $formData['message'] }}</p>
+    <p><strong>Message:</strong>{{ $formData['message'] }}</p>
 </body>
 </html>

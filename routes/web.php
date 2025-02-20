@@ -32,6 +32,15 @@ Route::get('/optimize', function () {
     return "optimized";
 });
 
+Route::get('/test-mail', function () {
+    \Illuminate\Support\Facades\Mail::raw('This is a test email.', function ($message) {
+        $message->to('contacttofiroz@gmail.com')
+                ->subject('Test Email from Laravel');
+    });
+    return 'Mail sent!';
+});
+
+
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about'])->name('about');
