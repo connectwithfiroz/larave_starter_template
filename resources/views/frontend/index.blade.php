@@ -241,7 +241,7 @@
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Youth Empowerment</a></h3>
 
-                            <a href="about.html" class="th-btn donate_bt">Donate Now<i
+                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
                             <h3 class="box-title"><a href="about.html">
                                     Women Empowerment</a></h3>
 
-                            <a href="about.html" class="th-btn donate_bt">Donate Now<i
+                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
@@ -274,7 +274,7 @@
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Rural Empowerment</a></h3>
 
-                            <a href="about.html" class="th-btn donate_bt">Donate Now<i
+                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
@@ -290,7 +290,7 @@
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Environmental Help</a></h3>
 
-                            <a href="about.html" class="th-btn donate_bt">Donate Now<i
+                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
@@ -306,7 +306,7 @@
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Education Empowerment</a></h3>
 
-                            <a href="about.html" class="th-btn donate_bt">Donate Now<i
+                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
@@ -322,7 +322,7 @@
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">Health Empowerment</a></h3>
 
-                            <a href="dontaion.html" class="th-btn donate_bt">Donate Now<i
+                            <a href="dontaion.html" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
@@ -1106,10 +1106,9 @@
                                     5.0
                                 </div>
                                 <div class="testi-card_profile">
-
                                     <div class="media-left">
-                                        <h3 class="testi-card_name">Brandon Dixon</h3>
-                                        <span class="testi-card_desig">CEO, Founder</span>
+                                        <h3 class="testi-card_name">Ayaan Khan</h3>
+                                        <span class="testi-card_desig">School Teacher</span>
                                     </div>
                                 </div>
                                 <p class="testi-card_text">✨ "This NGO is truly a blessing! Their dedication to helping
@@ -1126,10 +1125,9 @@
                                     5.0
                                 </div>
                                 <div class="testi-card_profile">
-
                                     <div class="media-left">
-                                        <h3 class="testi-card_name">Brooklyn Simmons</h3>
-                                        <span class="testi-card_desig">CEO, Founder</span>
+                                        <h3 class="testi-card_name">Fatima Shaikh</h3>
+                                        <span class="testi-card_desig">Homemaker</span>
                                     </div>
                                 </div>
                                 <p class="testi-card_text">✨ "I donated with confidence, and I’m amazed at the impact
@@ -1145,10 +1143,9 @@
                                     5.0
                                 </div>
                                 <div class="testi-card_profile">
-
                                     <div class="media-left">
-                                        <h3 class="testi-card_name">Michel Connor</h3>
-                                        <span class="testi-card_desig">Founder</span>
+                                        <h3 class="testi-card_name">Mohammed Irfan</h3>
+                                        <span class="testi-card_desig">Shop Owner</span>
                                     </div>
                                 </div>
                                 <p class="testi-card_text">✨ "A life-changing organization! From education programs to
@@ -1164,10 +1161,9 @@
                                     5.0
                                 </div>
                                 <div class="testi-card_profile">
-
                                     <div class="media-left">
-                                        <h3 class="testi-card_name">Ethan David</h3>
-                                        <span class="testi-card_desig">CEO, Founder</span>
+                                        <h3 class="testi-card_name">Sana Parveen</h3>
+                                        <span class="testi-card_desig">College Student</span>
                                     </div>
                                 </div>
                                 <p class="testi-card_text">✨ "Their food distribution program helped my family when we
@@ -1183,10 +1179,9 @@
                                     5.0
                                 </div>
                                 <div class="testi-card_profile">
-
                                     <div class="media-left">
-                                        <h3 class="testi-card_name">Daniel Thomas</h3>
-                                        <span class="testi-card_desig">CEO, Founder</span>
+                                        <h3 class="testi-card_name">Rizwan Ahmed</h3>
+                                        <span class="testi-card_desig">Auto Driver</span>
                                     </div>
                                 </div>
                                 <p class="testi-card_text">✨ "They provided education support to my daughter, and today
@@ -1202,13 +1197,12 @@
                                     5.0
                                 </div>
                                 <div class="testi-card_profile">
-
                                     <div class="media-left">
-                                        <h3 class="testi-card_name">Michel Vetory</h3>
-                                        <span class="testi-card_desig">CEO, Founder</span>
+                                        <h3 class="testi-card_name">Yasmin Khan</h3>
+                                        <span class="testi-card_desig">NGO Volunteer</span>
                                     </div>
                                 </div>
-                                <p class="testi-card_text">"They didn’t just give me help; they gave me a new beginning.
+                                <p class="testi-card_text">✨ "They didn’t just give me help; they gave me a new beginning.
                                     I am now financially independent, thanks to their skill development program!"</p>
                             </div>
                         </div>
@@ -1219,6 +1213,7 @@
                 <button data-slider-next="#testiSlide3" class="slider-arrow style-border slider-next"><i
                         class="far fa-arrow-right"></i></button>
             </div>
+
         </div>
     </section>
     <!--==============================
@@ -1798,6 +1793,22 @@ Project Area
         });
 
 
+    </script>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('ngo-donation-popup').classList.add('show');
+            }, 500);
+        };
+        function closePopup() {
+            var popup = document.getElementById('ngo-donation-popup');
+            popup.classList.remove('show');
+        }
+        document.getElementById('ngo-donation-popup').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
     </script>
 
 @endpush

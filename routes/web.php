@@ -52,6 +52,8 @@ Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('p
 Route::get('/refund-return-policy', [HomeController::class, 'refundReturnPolicy'])->name('refund-return-policy');
 Route::get('/terms-conditions', [HomeController::class, 'termsConditions'])->name('terms-conditions');
 Route::get('/zakat', [HomeController::class, 'zakat'])->name('zakat');
+Route::get('/donation', [HomeController::class, 'donation'])->name('donation');
+Route::post('/contact/send', [HomeController::class, 'sendMail'])->name('contact.send');
 
 
 

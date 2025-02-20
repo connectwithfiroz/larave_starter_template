@@ -132,5 +132,6 @@ class RazorpayController extends Controller
 
         // Pass the donation data to the view
         return view('frontend.donate.receipt', compact('donation'));
+        // return view('frontend.donate.donation_receipt', compact('donation'));
     }
 }

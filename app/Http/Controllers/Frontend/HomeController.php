@@ -8,7 +8,8 @@ use App\Models\News;
 use App\Models\Faq;
 use App\Models\Product;
 use App\Models\Donation;
-
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 class HomeController extends Controller
 {
     // Handle search logic
@@ -21,7 +22,8 @@ class HomeController extends Controller
         // Attempt to find the donation by donation_id
         $donation = Donation::where('donation_id', $request->donation_id)->first();
 
-        return view('frontend.donate.search', compact('donation'));
+        return view('frontend.donate.search_donation_receipt', compact('donation'));
+        // return view('frontend.donate.search', compact('donation'));
 
     }
     public function index()
@@ -103,5 +105,32 @@ class HomeController extends Controller
     public function zakat() {
         return view('frontend.zakat');
     }
+    public function donation() {
+        return view('frontend.donation');
+    }
 
+    public function sendMail(Request $request)
+    {
+        // Validate the form input
+        $request->validate([
+            'name'    => 'required|string|max:255',
+            'email'   => 'required|email',
+            'number'  => 'required|numeric|digits_between:10,15',
+            'message' => 'required|string|min:10|max:1000',
+        ]);
+
+        // Get form data
+        $formData = [
+            'name'    => $request->name,
+            'email'   => $request->email,
+            'number'  => $request->number,
+            'message' => $request->message,
+        ];
+
+        // Send email
+        Mail::to('contacttofiroz@gmail.com')->send(new ContactMail($formData));
+
+        // Redirect with success message
+        return back()->with('success', 'Your message has been sent successfully!');
+    }
 }

@@ -23999,3 +23999,6 @@ span.select2-selection.select2-selection--single:focus {
   text-align: center; /* Centers the icon */
   margin-bottom: 10px; /* Adds space below the icon */
 }
+.nav li.active, .nav li a.active{
+  background:var(--theme-color2);
+}

@@ -15,7 +15,7 @@
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">About Us</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/index">Home</a></li>
                 <li>About Us</li>
             </ul>
         </div>
@@ -558,16 +558,16 @@ Testimonial Area
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="testi-card3">
-                            <div class="testi-card-shape" data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
+                            <div class="testi-card-shape"
+                                data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
                             <div class="testi-card_review">
                                 <i class="fas fa-star"></i>
                                 5.0
                             </div>
                             <div class="testi-card_profile">
-
                                 <div class="media-left">
-                                    <h3 class="testi-card_name">Brandon Dixon</h3>
-                                    <span class="testi-card_desig">CEO, Founder</span>
+                                    <h3 class="testi-card_name">Ayaan Khan</h3>
+                                    <span class="testi-card_desig">School Teacher</span>
                                 </div>
                             </div>
                             <p class="testi-card_text">✨ "This NGO is truly a blessing! Their dedication to helping
@@ -577,16 +577,16 @@ Testimonial Area
                     </div>
                     <div class="swiper-slide">
                         <div class="testi-card3">
-                            <div class="testi-card-shape" data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
+                            <div class="testi-card-shape"
+                                data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
                             <div class="testi-card_review">
                                 <i class="fas fa-star"></i>
                                 5.0
                             </div>
                             <div class="testi-card_profile">
-
                                 <div class="media-left">
-                                    <h3 class="testi-card_name">Brooklyn Simmons</h3>
-                                    <span class="testi-card_desig">CEO, Founder</span>
+                                    <h3 class="testi-card_name">Fatima Shaikh</h3>
+                                    <span class="testi-card_desig">Homemaker</span>
                                 </div>
                             </div>
                             <p class="testi-card_text">✨ "I donated with confidence, and I’m amazed at the impact
@@ -595,16 +595,16 @@ Testimonial Area
                     </div>
                     <div class="swiper-slide">
                         <div class="testi-card3">
-                            <div class="testi-card-shape" data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
+                            <div class="testi-card-shape"
+                                data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
                             <div class="testi-card_review">
                                 <i class="fas fa-star"></i>
                                 5.0
                             </div>
                             <div class="testi-card_profile">
-
                                 <div class="media-left">
-                                    <h3 class="testi-card_name">Michel Connor</h3>
-                                    <span class="testi-card_desig">Founder</span>
+                                    <h3 class="testi-card_name">Mohammed Irfan</h3>
+                                    <span class="testi-card_desig">Shop Owner</span>
                                 </div>
                             </div>
                             <p class="testi-card_text">✨ "A life-changing organization! From education programs to
@@ -613,16 +613,16 @@ Testimonial Area
                     </div>
                     <div class="swiper-slide">
                         <div class="testi-card3">
-                            <div class="testi-card-shape" data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
+                            <div class="testi-card-shape"
+                                data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
                             <div class="testi-card_review">
                                 <i class="fas fa-star"></i>
                                 5.0
                             </div>
                             <div class="testi-card_profile">
-
                                 <div class="media-left">
-                                    <h3 class="testi-card_name">Ethan David</h3>
-                                    <span class="testi-card_desig">CEO, Founder</span>
+                                    <h3 class="testi-card_name">Sana Parveen</h3>
+                                    <span class="testi-card_desig">College Student</span>
                                 </div>
                             </div>
                             <p class="testi-card_text">✨ "Their food distribution program helped my family when we
@@ -631,16 +631,16 @@ Testimonial Area
                     </div>
                     <div class="swiper-slide">
                         <div class="testi-card3">
-                            <div class="testi-card-shape" data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
+                            <div class="testi-card-shape"
+                                data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
                             <div class="testi-card_review">
                                 <i class="fas fa-star"></i>
                                 5.0
                             </div>
                             <div class="testi-card_profile">
-
                                 <div class="media-left">
-                                    <h3 class="testi-card_name">Daniel Thomas</h3>
-                                    <span class="testi-card_desig">CEO, Founder</span>
+                                    <h3 class="testi-card_name">Rizwan Ahmed</h3>
+                                    <span class="testi-card_desig">Auto Driver</span>
                                 </div>
                             </div>
                             <p class="testi-card_text">✨ "They provided education support to my daughter, and today
@@ -649,19 +649,19 @@ Testimonial Area
                     </div>
                     <div class="swiper-slide">
                         <div class="testi-card3">
-                            <div class="testi-card-shape" data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
+                            <div class="testi-card-shape"
+                                data-mask-src="{{ asset('frontend/assets/img/testi-bg.webp') }}"></div>
                             <div class="testi-card_review">
                                 <i class="fas fa-star"></i>
                                 5.0
                             </div>
                             <div class="testi-card_profile">
-
                                 <div class="media-left">
-                                    <h3 class="testi-card_name">Michel Vetory</h3>
-                                    <span class="testi-card_desig">CEO, Founder</span>
+                                    <h3 class="testi-card_name">Yasmin Khan</h3>
+                                    <span class="testi-card_desig">NGO Volunteer</span>
                                 </div>
                             </div>
-                            <p class="testi-card_text">"They didn’t just give me help; they gave me a new beginning.
+                            <p class="testi-card_text">✨ "They didn’t just give me help; they gave me a new beginning.
                                 I am now financially independent, thanks to their skill development program!"</p>
                         </div>
                     </div>

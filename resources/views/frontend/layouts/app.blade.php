@@ -112,12 +112,13 @@
 
     <!-- Mobile Bottom Fixed Buttons -->
     <div class="footer-nav-btn">
-        <button class="footer-btn-btn donate">
+        <button class="footer-btn-btn donate donate_btn">
             <i class="fas fa-indian-rupee-sign"></i>Donate Now
         </button>
+        
         <button class="footer-btn-btn contact">
             <i class="fas fa-phone"></i>
-            Contact
+            <a href="tel:919053758786">Contact</a>
         </button>
     </div>
 
@@ -133,52 +134,54 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="index.html"><img src="{{ asset('frontend/assets/img/logo.webp') }}" alt="al-khair"></a>
+                <a href="{{ route('index') }}"><img src="{{ asset('frontend/assets/img/logo.webp') }}" alt="al-khair"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
                     <li class="">
-                        <a href="index.html">Home</a>
+                        <a href="{{ route('index') }}" {{ request()->routeIs('index') ? 'active' : '' }}
+                        >Home</a>
 
                     </li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="/about">About Us</a></li>
+
+                    <li class="active">
+                        <a href="/mission">Mission & Vision</a>
+
+                    </li>
 
                     <li class="">
-                        <a href="mission.html">Mission & Vision</a>
-
-                    </li>
-
-                    <li class="">
-                        <a href="managment-body.html">Our Management Body</a>
+                        <a href="{{ route('managment-body') }}">Our Management Body</a>
                     </li>
                     <li class="">
-                        <a href="Certifications.html">Certifications</a>
+                        <a href="{{ route('certifications') }}">Certifications</a>
                     </li>
                     <li class="">
-                        <a href="zakat.html">Zakat</a>
+                        <a href="{{ route('zakat') }}">Zakat</a>
                     </li>
                     <li class="">
-                        <a href="gellery.html">Our Gallery</a>
+                        <a href="{{ route('gallery') }}" class="{{ request()->routeIs('gallery') ? 'active' : '' }}">Our Gallery</a>
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#">Donations</a>
                         <ul class="sub-menu">
-                            <li><a href="dontaions.html">Donations</a></li>
-                            <li><a href="/donate">Donation Details</a></li>
+                            <li><a href="/donate">Donation Now</a></li>
+                            <li><a href="{{  route('dontaions') }}">Donations Details</a></li>
+                            <li><a href="/construction">Our Construction Projects</a></li>
 
                         </ul>
                     </li>
-                    <li><a href="our-project.html">Our Projects</a></li>
+                    <li><a href="{{ route('our-project') }}">Our Projects</a></li>
                     <li class="menu-item-has-children">
                         <a href="#">Other</a>
                         <ul class="sub-menu">
 
 
-                            <li><a href="{{ route('achivement') }}">Achievements</a></li>
-                            <li><a href="news.html">Press Release</a></li>
-                            <li><a href="our-team.html">Our Team</a></li>
+                            <li><a href="{{ route('achivement') }}" class="{{ request()->routeIs('achivement') ? 'active' : '' }}">Achievements</a></li>
+                            <li><a href="{{ route('news') }}">Press Release</a></li>
+                            <li><a href="{{ route('our-team') }}">Our Team</a></li>
 
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="{{ route('contact') }}">Contact Us</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -193,7 +196,7 @@
                 <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-logo">
-                            <a href="index.html"><img src="{{ asset('frontend/assets/img/logo.webp') }}"
+                            <a href="{{ route('index') }}"><img src="{{ asset('frontend/assets/img/logo.webp') }}"
                                     alt="al-khair"></a>
                         </div>
                     </div>
@@ -229,53 +232,53 @@
                     <div class="menu-area-wrap">
                         <div class="col-auto d-inline-block d-lg-none">
                             <div class="header-logo">
-                                <a href="index.html"><img src="{{ asset('frontend/assets/img/logo.webp') }}"
+                                <a href="{{ route('index') }}"><img src="{{ asset('frontend/assets/img/logo.webp') }}"
                                         alt="Donat"></a>
                             </div>
                         </div>
                         <nav class="main-menu d-none d-lg-block">
                             <ul>
                                 <li class="">
-                                    <a href="index.html">Home</a>
+                                    <a href="{{ route('index') }}">Home</a>
 
                                 </li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="/about">About Us</a></li>
 
                                 <li class="">
-                                    <a href="mission.html">Mission & Vision</a>
+                                    <a href="/mission">Mission & Vision</a>
 
                                 </li>
 
                                 <li class="">
-                                    <a href="managment-body.html">Our Management Body</a>
+                                    <a href="{{ route('managment-body') }}">Our Management Body</a>
                                 </li>
                                 <li class="">
-                                    <a href="Certifications.html">Certifications</a>
+                                    <a href="{{ route('certifications') }}">Certifications</a>
                                 </li>
                                 <li class="">
-                                    <a href="zakat.html">Zakat</a>
+                                    <a href="{{ route('zakat') }}">Zakat</a>
                                 </li>
                                 <li class="">
-                                    <a href="gellery.html">Our Gallery</a>
+                                    <a href="{{ route('gallery') }}">Our Gallery</a>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Donations</a>
                                     <ul class="sub-menu">
-                                        <li><a href="dontaions.html">Donations</a></li>
-                                        <li><a href="/donate">Donation Details</a></li>
-
+                                        <li><a href="/donate">Donation Now</a></li>
+                                        <li><a href="{{  route('dontaions') }}">Donations Details</a></li>
+                                        <li><a href="/construction">Our Construction Projects</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="our-project.html">Our Projects</a></li>
+                                <li><a href="{{ route('our-project') }}">Our Projects</a></li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Other</a>
                                     <ul class="sub-menu">
 
                                         <li><a href="{{ route('achivement') }}">Achievements</a></li>
-                                        <li><a href="news.html">Press Release</a></li>
-                                        <li><a href="our-team.html">Our Team</a></li>
+                                        <li><a href="{{ route('news') }}">Press Release</a></li>
+                                        <li><a href="{{ route('our-team') }}">Our Team</a></li>
                                         <!-- <li><a href="blog-details.html">Blog</a></li> -->
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -343,7 +346,7 @@
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo">
-                                    <a href="index.html"><img src="{{ asset('frontend/assets/img/logo.webp') }}"
+                                    <a href="{{ route('index') }}"><img src="{{ asset('frontend/assets/img/logo.webp') }}"
                                             alt="Donat"></a>
                                 </div>
                                 <p class="about-text">Our secure online donation system ensures fast and safe
@@ -358,13 +361,13 @@
                             <h3 class="widget_title">Quick Links</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="mission.html">Mission & Vision</a></li>
-                                    <li><a href="managment-body.html">Our Management Body</a></li>
-                                    <li><a href="Certifications.html">Certifications</a></li>
-                                    <li><a href="zakat.html">Zakat</a></li>
-                                    <li><a href="gellery.html">Our Gallery</a></li>
+                                    <li><a href="{{ route('index') }}">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/mission">Mission & Vision</a></li>
+                                    <li><a href="{{ route('managment-body') }}">Our Management Body</a></li>
+                                    <li><a href="{{ route('certifications') }}">Certifications</a></li>
+                                    <li><a href="{{ route('zakat') }}">Zakat</a></li>
+                                    <li><a href="{{ route('gallery') }}">Our Gallery</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -374,14 +377,14 @@
 
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="dontaions.html">Donations</a></li>
-                                    <li><a href="our-project.html">Our Projects</a></li>
+                                    <li><a href="{{ route('donate.form') }}">Donations</a></li>
+                                    <li><a href="{{ route('our-project') }}">Our Projects</a></li>
                                     <li><a href="{{ route('achivement') }}">Achievements</a></li>
-                                    <li><a href="our-team.html">Our Team</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                                    <li><a href="refund-return-policy.html">Refund & Return Policy</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="{{ route('our-team') }}">Our Team</a></li>
+                                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                                    <li><a href="{{ route('terms-conditions') }}">Terms & Conditions</a></li>
+                                    <li><a href="{{ route('refund-return-policy') }}">Refund & Return Policy</a></li>
+                                    <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -434,9 +437,7 @@
                                     </div>
                                     <div class="box-content">
                                         <p class="box-text">Address:</p>
-                                        <h4 class="box-title"><a href="">Village Chak
-                                                Rangala Tehsil.<br> Ferozepur Jhirka District.<br> Nuh State.
-                                                Haryana</a></h4>
+                                        <h4 class="box-title"><a href="">Galleria Mall , Manu Marg Capital Alwar <br>Rajsthan 301001</a></h4>
                                     </div>
                                 </div>
                                 <div class="th-social style2">
@@ -456,7 +457,7 @@
                 <div class="row gy-3 align-items-center">
                     <div class="col-lg-12 copy-dcn">
                         <p class="copyright-text text-center">
-                            <i class="fal fa-copyright"></i> Copyright 2024 <a href="index.html">Al Khair Educational &
+                            <i class="fal fa-copyright"></i> Copyright 2024 <a href="{{ route('index') }}">Al Khair Educational &
                                 Charitable Trust</a>. All Rights Reserved.
                         </p>
                         <a href="https://dcnexus.netlify.app" target="_blank" class="dcn">Design By DCNexus +91
@@ -481,22 +482,7 @@
     </div>
 
 
-    <script>
-        window.onload = function () {
-            setTimeout(function () {
-                document.getElementById('ngo-donation-popup').classList.add('show');
-            }, 500);
-        };
-        function closePopup() {
-            var popup = document.getElementById('ngo-donation-popup');
-            popup.classList.remove('show');
-        }
-        document.getElementById('ngo-donation-popup').addEventListener('click', function (e) {
-            if (e.target === this) {
-                closePopup();
-            }
-        });
-    </script>
+    
 
 
     <!-- Google Translate Script -->
@@ -567,6 +553,9 @@
     <!-- Isotope Filter -->
     <script src="{{ asset('frontend/assets/js/imagesloaded.pkgd.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.validate.js') }}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script> -->
+
 
 
     <!-- Main Js File -->

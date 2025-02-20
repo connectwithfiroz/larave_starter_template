@@ -1,150 +1,93 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Al Khair Educational &amp; Charitable Trust &#8211; Lets Empower Society</title>
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+@extends('frontend.layouts.app')
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@section('title', 'Donation')
 
-    <!-- Favicons - Place favicon.ico in the root directory -->
+@push('header')
+    <!-- extra header -->
+@endpush
 
-	<link rel="icon" href="{{ asset('frontend/assets/fev.jpg') }}"type="image/jpg">
-    
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }}">
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
+@section('section')
+    <div class="container p-5" style="background-color: antiquewhite;">
+        <div class="row">
+            <div class="col-lg-12 mx-auto text-center">
+                <!-- Logo -->
+                <img src="{{ asset('frontend/assets/img/logo.webp') }}" alt="Logo" class="img-fluid mb-2"
+                    style="max-height: 100px;">
+                <h5 class="card-title">Al Khair Educational & Charitable Trust</h5>
+                <!-- Paragraph -->
+                <p class="mb-4"> Your generous donation helps us to bring change and provide support to those in need.</p>
+            </div>
+        </div>
 
-</head>
-<body>
-<div class="card my-5 mx-auto" style="max-width: 600px;">
-  <div class="card-header text-center">
-    <img src="{{ asset('frontend/assets/img/logo.webp') }}" alt="Logo" class="img-fluid mb-2" style="max-height: 100px;">
-    <h5 class="card-title">Al Khair Educational & Charitable Trust</h5>
-  </div>
-  <div class="card-body">
-    <p class="card-text text-center">
-      Your generous donation helps us to bring change and provide support to those in need.
-    </p>
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+            <form id="donation-form" method="post" action="{{ route('payment.process') }}">
+                @csrf
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="donation_for" class="form-label">Donation For:</label>
+                            <input type="text" id="donation_for" name="donation_for" class="form-control"
+                                value="{{ request('for') }}" required minlength="3"
+                                title="Please enter at least 3 characters.">
+                        </div>
+                        <div class="mb-3">
+                            <label for="donor-name" class="form-label">Name:</label>
+                            <input type="text" id="donor-name" name="donor_name" class="form-control" 
+                                required pattern="^[A-Za-z\s]{2,50}$"
+                                title="Name should only contain alphabets and spaces, and be at least 2 characters long.">
+                        </div>
+                        <div class="mb-3">
+                            <label for="donor-email" class="form-label">Email:</label>
+                            <input type="email" id="donor-email" name="donor_email" class="form-control"
+                                 required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="donor-number" class="form-label">Mobile Number:</label>
+                            <input type="tel" id="donor-number" name="donor_number" class="form-control"
+                                pattern="^[6-9]\d{9}$" title="Please enter a valid 10-digit Indian mobile number starting with 6-9."
+                                 required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="donation-amount" class="form-label">Donation Amount (₹):</label>
+                            <input type="number" id="donation-amount" name="donation_amount" class="form-control"
+                                min="1" required title="Please enter a valid donation amount (minimum ₹1)."
+                                value="{{ request('donation-amount') }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input type="text" placeholder="Enter Address" class="form-control" name="address">
+                        </div>
+                        <h5 class="my-2">If You Want To Claim The Tax Deduction, Then Fill Below Fields Or Leave Blank</h5>
+                        <div class="mb-3">
+                            <label class="form-label">PAN Number</label>
+                            <input type="text" placeholder="Enter PAN Number" class="form-control" name="pan_no"
+                                pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+                                title="Please enter a valid PAN number (e.g., ABCDE1234F).">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Bank Name</label>
+                            <input type="text" placeholder="Enter Bank Name" class="form-control" name="bank_name"
+                                pattern="^[A-Za-z\s]{3,50}$" title="Bank name should only contain letters and spaces.">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Branch Name</label>
+                            <input type="text" placeholder="Enter Bank Branch Name" class="form-control" name="branch_name"
+                                pattern="^[A-Za-z\s]{3,50}$" title="Branch name should only contain letters and spaces.">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" id="donate-button" class="btn btn-success btn-rounded">Donate Now</button>
+                </div>
+            </form>
 
-    <form id="donation-form" method="post" action="{{ route('payment.process') }}">
-      @csrf
-      <div class="mb-3">
-        <label for="donation_for" class="form-label">Donation For:</label>
-        <input
-          type="text"
-          id="donation_for"
-          name="donation_for"
-          class="form-control"
-          value="{{ request('for') }}"
-          required
-        >
-      </div>
-      <div class="mb-3">
-        <label for="donor-name" class="form-label">Name:</label>
-        <input
-          type="text"
-          id="donor-name"
-          name="donor_name"
-          class="form-control"
-          value="{{ request('donor-name') }}"
-          required
-        >
-      </div>
-      <div class="mb-3">
-        <label for="donor-email" class="form-label">Email:</label>
-        <input
-          type="email"
-          id="donor-email"
-          name="donor_email"
-          class="form-control"
-          value="{{ request('donor-email') }}"
-          required
-        >
-      </div>
-      <div class="mb-3">
-        <label for="donor-number" class="form-label">Mobile Number:</label>
-        <input
-          type="tel"
-          id="donor-number"
-          name="donor_number"
-          class="form-control"
-          pattern="[0-9]{10}"
-          title="Please enter a valid 10-digit mobile number."
-          value="{{ request('donor-number') }}"
-          required
-        >
-      </div>
-      <div class="mb-3">
-        <label for="donation-amount" class="form-label">Donation Amount:</label>
-        <input
-          type="number"
-          id="donation-amount"
-          name="donation_amount"
-          class="form-control"
-          min="1"
-          value="{{ request('donation-amount') }}"
-          required
-        >
-      </div>
-      <div class="form-group">
-        <label class="control-label">Address</label>
-        <input
-          type="text"
-          placeholder="Enter Address"
-          class="form-control input-lg"
-          name="address"
-          
-        >
-      </div>
-      <h5 class="my-2 text-center">If You Want To Claim The Tax Deduction, Then Fill Below Fields Or Leave Blank</h5>
-      <div class="form-group">
-        <label class="control-label">PAN Number</label>
-        <input
-          type="text"
-          placeholder="Enter PAN Number"
-          class="form-control input-lg"
-          name="pan_no"
-          pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
-          title="Please enter a valid PAN number (e.g., ABCDE1234F)."
-        >
-      </div>
-      <div class="form-group">
-        <label class="control-label">Bank Name</label>
-        <input
-          type="text"
-          placeholder="Enter Bank Name"
-          class="form-control input-lg"
-          name="bank_name"
-        >
-      </div>
-      <div class="form-group">
-        <label class="control-label">Branch Name</label>
-        <input
-          type="text"
-          placeholder="Enter Bank Branch Name"
-          class="form-control input-lg"
-          name="branch_name"
-        >
-      </div>
-      <div class="text-center">
-        <button type="submit" id="donate-button" class="btn btn-success btn-rounded">Donate Now 
-          
-        </button>
-      </div>
-    </form>
-
-
-  </div>
-</div>
-
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+            </div>
+        </div>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
     document.getElementById('donation-form').addEventListener('submit', function (e) {
         e.preventDefault();
@@ -231,8 +174,7 @@
         );
     });
 </script>
-</body>
+@endsection
+@push('js')
 
-
-</html>
-
+@endpush
