@@ -7,6 +7,9 @@ use Razorpay\Api\Api;
 use Illuminate\Support\Facades\Log;
 use App\Models\Donation;
 
+use Illuminate\Support\Facades\Mail;
+use App\Mail\DonationSuccessMail;
+
 class RazorpayController extends Controller
 {
     public function donationForm()
@@ -93,7 +96,14 @@ class RazorpayController extends Controller
 
                 // Get the donation ID for generating the success URL
                 $donation_success_url = route('donate.success', [$donation->id]);
+                //Here I want to send donation_success_url on mail in quey so user can download it mail in request->donar_email
 
+
+                // Assume $donation_success_url is defined and $request->donar_email contains the recipient's email
+                Mail::to($request->donar_email)
+                ->cc(config('app.MAIL_TO_ADDRESS') )
+                ->cc(config('app.CC_MAIL_ADDRESS')) #for testing only
+                ->queue(new DonationSuccessMail($donation_success_url));
                 return response()->json([
                     'success' => true,
                     'message' => 'Payment verified and donation recorded!',
@@ -131,7 +141,8 @@ class RazorpayController extends Controller
         }
 
         // Pass the donation data to the view
-        return view('frontend.donate.receipt', compact('donation'));
+        // return view('frontend.donate.receipt', compact('donation'));
+        return view('frontend.donate.donation_receipt', compact('donation'));
         // return view('frontend.donate.donation_receipt', compact('donation'));
     }
 }

@@ -21,6 +21,7 @@ return [
     'razorpay_secret' => env('RAZORPAY_KEY_SECRET', NULL),
     'MAIL_FROM_ADDRESS' => env('MAIL_FROM_ADDRESS', NULL),
     'MAIL_TO_ADDRESS' => env('MAIL_TO_ADDRESS', NULL),
+    'CC_MAIL_ADDRESS' => env('CC_MAIL_ADDRESS', NULL),
 
     /*
     |--------------------------------------------------------------------------

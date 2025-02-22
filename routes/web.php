@@ -31,6 +31,12 @@ Route::get('/optimize', function () {
     Artisan::call('optimize');
     return "optimized";
 });
+Route::get('/run-queue', function () {
+    // Process the next job on the queue and then exit.
+    Artisan::call('queue:work', ['--once' => true]);
+
+    return 'Queue job processed.';
+});
 
 Route::get('/test-mail', function () {
     \Illuminate\Support\Facades\Mail::raw('This is a test email.', function ($message) {

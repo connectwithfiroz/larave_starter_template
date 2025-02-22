@@ -21,5 +21,8 @@ class Donation extends Model
         'razorpay_signature',
         'status',
         'donation_id',
+        'pan_no',
+        'branch_name',
+        'bank_name',
     ];
 }
