@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Receipt</title>
+    <title>Volunteer Form</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -29,10 +29,13 @@
             width: 100%;
             border-radius: 10px;
         }
+        div#overlay p {
+            line-height: 1;
+        }
 
         .overlay {
             position: absolute;
-            top: 297px;
+            top: 325px;
             left: 35%;
             color: black;
             font-size: 18px;
@@ -101,29 +104,42 @@
 </head>
 
 <body>
-    @if(empty($donation))
-        <h5 class="text-danger">Invalid Donation Receipt.</h5> <br>
-        <small class="text-danger">Please check donation id.</small>
+    @if ( isset($error))
+        <h5 class="text-danger">{{ $error }}</h5> <br>
+        <small class="text-danger">Please check id.</small>
+    @endif
+    @if(empty($volunteer))
+        <h5 class="text-danger">Invalid Receipt.</h5> <br>
+        <small class="text-danger">Please check id.</small>
     @else
         <div class="container">
             <div class="form-container">
                 <button class="btn-primary btn" onclick="return generatePDF(event)">Download Donation Receipt</button>
+                <br><small><a href="/index" class="link">Go to Home page</a></small>
             </div>
             <div class="image-container" id="image-container">
-                <img src="{{ asset('frontend/donation_receipt.jpeg') }}" class="form-image" id="form-image"
+                <img src="{{ asset('frontend/volunteer_reg_receipt.jpeg') }}" class="form-image" id="form-image"
                     crossorigin="anonymous">
                 <div class="overlay" id="overlay">
-                    <p>{{ $donation->name }}</p>
-                    <p>{{ $donation->donation_for ?? '-' }}</p>
-                    <p>{{ $donation->phone ?? '-' }}</p>
-                    <p id="donation_id">{{ $donation->donation_id ?? '-' }}</p>
-                    <p>₹{{ number_format($donation->amount, 2) }}</p>
-                    <p>{{ $donation->address }}</p>
-                    <p>{{ $donation->pan_no ?? '-' }}</p>
-                    <p>{{ $donation->bank_name ?? '-' }}</p>
-                    <p>{{ $donation->branch_name ?? '-' }}</p>
+                    <p>{{ $volunteer->full_name }}</p>
+                    <p>{{ $volunteer->email ?? '-' }}</p>
+                    <p>{{ $volunteer->phone ?? '-' }}</p>
+                    <p>{{ $volunteer->gender ?? '-' }}</p>
+                    <p>{{ $volunteer->aadhar ?? '-' }}</p>
+                    <p>{{ $volunteer->category ?? '-' }}</p>
+                    <p>{{ $volunteer->dob ?? '-' }}</p>
+                    <p>{{ $volunteer->address ?? '-' }}</p>
+                    <p>{{ $volunteer->district ?? '-' }}</p>
+                    <p>{{ $volunteer->state ?? '-' }}</p>
+                    <p>{{ $volunteer->pincode ?? '-' }}</p>
+                    <p>{{ $volunteer->project_name ?? '-' }}</p>
+                    <p>{{ $volunteer->registration_date ?? '-' }}</p>
+                    <p>{{ $volunteer->message ?? '-' }}</p>
+                    <p id="registration_id">Registraion Id: {{ $volunteer->regisration_id ?? '-' }}</p>
                 
             </div>
+            <h2>Please Keep Your registration certificate at safe place.</h2>
+            
 
             
         </div>
@@ -131,7 +147,7 @@
 
     <script>
         function generatePDF(event) {
-            let donation_id = document.getElementById("donation_id").innerText;
+            let registration_id = document.getElementById("registration_id").innerText ?? '';
             event.preventDefault();
             setTimeout(() => {
                 html2canvas(document.getElementById("image-container"), {
@@ -144,7 +160,7 @@
                     const imgWidth = 210;
                     const imgHeight = (canvas.height * imgWidth) / canvas.width;
                     pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-                    pdf.save(`donation_receipt_${donation_id}.pdf`);
+                    pdf.save(`volunteer_register_receipt_${registration_id}.pdf`);
                     document.getElementById("volunteerForm").reset();
                 });
             }, 500);

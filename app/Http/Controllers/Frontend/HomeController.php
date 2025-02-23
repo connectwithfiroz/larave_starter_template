@@ -18,11 +18,13 @@ class HomeController extends Controller
         $request->validate([
             'donation_id' => 'required|string', // Validate input
         ]);
+        // $request->donation_id = 
 
         // Attempt to find the donation by donation_id
         $donation = Donation::where('donation_id', $request->donation_id)->first();
 
-        return view('frontend.donate.search_donation_receipt', compact('donation'));
+        // return view('frontend.donate.search_donation_receipt', compact('donation'));
+        return view('frontend.donate.donation_receipt', compact('donation'));
         // return view('frontend.donate.search', compact('donation'));
 
     }
@@ -62,7 +64,8 @@ class HomeController extends Controller
     }
 
     public function dontaions() {
-        return view('frontend.dontaions');
+        return view('frontend.donations');
+        // return view('frontend.dontaions');
     }
 
     public function gallery() {

@@ -15,6 +15,7 @@
                     style="max-height: 100px;">
                 <h5 class="card-title">Al Khair Educational & Charitable Trust</h5>
                 <!-- Paragraph -->
+                <h6 class="text-danger">Dont' close browser during payment, Once payment success automatically you'll be redirected to Donation receipt page.</h6>
                 <p class="mb-4"> Your generous donation helps us to bring change and provide support to those in need.</p>
             </div>
         </div>
@@ -26,33 +27,34 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label for="donation_for" class="form-label">Donation For:</label>
+                            <label for="donation_for" class="form-label">Donation For: <span class="text-danger">*</span></label>
                             <input type="text" id="donation_for" name="donation_for" class="form-control"
                                 value="{{ request('for') }}" required minlength="3"
-                                title="Please enter at least 3 characters.">
+                                title="Please enter at least 3 characters." placeholder="Enter purpose of donation">
                         </div>
                         <div class="mb-3">
-                            <label for="donor-name" class="form-label">Name:</label>
+                            <label for="donor-name" class="form-label">Name: <span class="text-danger">*</span></label>
                             <input type="text" id="donor-name" name="donor_name" class="form-control" 
                                 required pattern="^[A-Za-z\s]{2,50}$"
-                                title="Name should only contain alphabets and spaces, and be at least 2 characters long.">
+                                title="Name should only contain alphabets and spaces, and be at least 2 characters long." placeholder="Enter your name">
                         </div>
                         <div class="mb-3">
-                            <label for="donor-email" class="form-label">Email:</label>
+                            <label for="donor-email" class="form-label">Email: <span class="text-danger">*</span></label>
                             <input type="email" id="donor-email" name="donor_email" class="form-control"
-                                 required>
+                                required placeholder="Enter your email">
+                            <div class="form-text">Please type proper email as donation receipt will be shared on it.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="donor-number" class="form-label">Mobile Number:</label>
+                            <label for="donor-number" class="form-label">Mobile Number: <span class="text-danger">*</span></label>
                             <input type="tel" id="donor-number" name="donor_number" class="form-control"
                                 pattern="^[6-9]\d{9}$" title="Please enter a valid 10-digit Indian mobile number starting with 6-9."
-                                 required>
+                                required placeholder="Enter your 10-digit mobile number">
                         </div>
                         <div class="mb-3">
-                            <label for="donation-amount" class="form-label">Donation Amount (₹):</label>
+                            <label for="donation-amount" class="form-label">Donation Amount (₹): <span class="text-danger">*</span></label>
                             <input type="number" id="donation-amount" name="donation_amount" class="form-control"
-                                min="1" required title="Please enter a valid donation amount (minimum ₹1)."
-                                value="{{ request('donation-amount') }}">
+                                min="1" step="1" required title="Please enter a valid donation amount (minimum ₹1)."
+                                value="{{ request('donation-amount') }}" placeholder="Enter donation amount">
                         </div>
                     </div>
                     <div class="col-md-6">

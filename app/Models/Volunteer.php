@@ -1,30 +1,31 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Donation extends Model
+class Volunteer extends Model
 {
     use HasFactory;
-
-    // Define fillable fields
-    
     protected $fillable = [
-        'donation_for',
-        'message',
-        'name',
+        'full_name',
         'email',
-        'mobile_number',
+        'phone',
+        'gender',
+        'aadhar',
+        'category',
+        'dob',
+        'district',
+        'state',
+        'pincode',
+        'project_name',
+        'registration_date',
+        'address',
+        'message',
         'amount',
         'razorpay_payment_id',
         'razorpay_order_id',
         'razorpay_signature',
-        'status',
-        'address',
-        'pan_no',
-        'bank_name',
-        'branch_name',
-        'donation_id',
     ];
 }

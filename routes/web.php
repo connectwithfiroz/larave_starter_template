@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
 
+use App\Mail\DonationSuccessMail;
+use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,6 +41,15 @@ Route::get('/run-queue', function () {
 });
 
 Route::get('/test-mail', function () {
+    // folowing code is not working
+    $email = 'contacttofiroz@gmail.com';
+    // $email = 'firoz000786000ansari@gmail.com';
+    // $cc_email = [config('app.MAIL_TO_ADDRESS'), config('app.CC_MAIL_ADDRESS')];
+    $donation_success_url = 'https://www.google.com';
+    Mail::to($email)->send(new DonationSuccessMail($donation_success_url));
+    return 'Mail sent sumit!';
+    
+    //-----working code
     \Illuminate\Support\Facades\Mail::raw('This is a test email.', function ($message) {
         $message->to('contacttofiroz@gmail.com')
                 ->subject('Test Email from Laravel');
@@ -55,7 +66,7 @@ Route::get('/certifications', [HomeController::class, 'certifications'])->name('
 Route::get('/construction', [HomeController::class, 'construction'])->name('construction');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/dontaion', [HomeController::class, 'dontaion'])->name('dontaion');
-Route::get('/dontaions', [HomeController::class, 'dontaions'])->name('dontaions');
+Route::get('/donation-options', [HomeController::class, 'dontaions'])->name('dontaions');
 Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
 Route::get('/index', [HomeController::class, 'index'])->name('index');
 Route::get('/managment-body', [HomeController::class, 'managmentBody'])->name('managment-body');
@@ -90,9 +101,19 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 use App\Http\Controllers\RazorpayController;
+use App\Http\Controllers\VolunteerController;
 
+// ----- USER DONATION HANDLE >>>
 Route::get('/donate', [RazorpayController::class, 'donationForm'])->name('donate.form');
 Route::post('/process-payment', [RazorpayController::class, 'processPayment'])->name('payment.process');
 Route::post('/verify-payment', [RazorpayController::class, 'verifyPayment'])->name('payment.verify');
 Route::get('/donate-success/{id}', [RazorpayController::class, 'donationSuccess'])->name('donate.success');
+// ----- USER DONATION HANDLE <<<
+
+// -----volunteer REGISTRATION HANDLE >>>
+Route::get('/volunteer', [VolunteerController::class, 'volunteerForm'])->name('volunteer.form');
+Route::post('/process-volunteer-payment', [VolunteerController::class, 'processPayment'])->name('volunteer.payment.process');
+Route::post('/verify-volunteer-payment', [VolunteerController::class, 'verifyPayment'])->name('volunteer.payment.verify');
+Route::get('/volunteer-success/{id}', [VolunteerController::class, 'success'])->name('volunteer.success');
+// -----volunteer REGISTRATION HANDLE <<<
 

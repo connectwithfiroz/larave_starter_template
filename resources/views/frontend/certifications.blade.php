@@ -24,7 +24,7 @@
     <div class="custom-certificate-section mt-5 mb-5">
         <div class="custom-certificate-card">
             <img src="{{ asset('frontend/assets/img/certifecate/10.webp') }}" alt="Registration Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/1.webp') }}')">
+                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/10.webp') }}')">
             <h3>Registration Certificate</h3>
         </div>
 
@@ -64,14 +64,7 @@
             <h3>NGO Darpan</h3>
         </div>
 
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/9.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/9.webp') }}')">
-        </div>
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/10.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/10.webp') }}')">
-        </div>
+
         <!-- <div class="custom-certificate-card">
             <img src="{{ asset('frontend/assets/img/certifecate/11.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/11.webp') }}')">
@@ -80,10 +73,7 @@
             <img src="{{ asset('frontend/assets/img/certifecate/12.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/12.webp') }}')">
         </div> -->
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/13.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/13.webp') }}')">
-        </div>
+
 
         <div class="custom-certificate-card">
             <img src="{{ asset('frontend/assets/img/certifecate/18.webp') }}" alt="12A Certificate" class="custom-certificate-image"
@@ -129,10 +119,7 @@
             <img src="{{ asset('frontend/assets/img/certifecate/28.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/28.webp') }}')">
         </div>
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/29.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/29.webp') }}')">
-        </div>
+
         <div class="custom-certificate-card">
             <img src="{{ asset('frontend/assets/img/certifecate/30.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/30.webp') }}')">
@@ -150,27 +137,7 @@
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/1.webp') }}')">
             <h3>Identity Card</h3>
         </div>
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/8.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/8.webp') }}')">
 
-        </div>
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/14.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/14.webp') }}')">
-        </div>
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/15.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/15.webp') }}')">
-        </div>
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/16.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/16.webp') }}')">
-        </div>
-        <div class="custom-certificate-card">
-            <img src="{{ asset('frontend/assets/img/certifecate/17.webp') }}" alt="12A Certificate" class="custom-certificate-image"
-                onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/17.webp') }}')">
-        </div>
 
     </div>
 

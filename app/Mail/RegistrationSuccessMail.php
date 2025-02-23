@@ -9,18 +9,18 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class DonationSuccessMail extends Mailable
+class RegistrationSuccessMail extends Mailable
 {
-    // use Queueable, SerializesModels;
+    use Queueable, SerializesModels;
 
     /**
      * Create a new message instance.
      */
-    public $donationUrl;
+    public $data;
 
-    public function __construct($donationUrl)
+    public function __construct($data)
     {
-        $this->donationUrl = $donationUrl;
+        $this->data = $data;
     }
 
     /**
@@ -29,7 +29,7 @@ class DonationSuccessMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Donation Success Mail',
+            subject: 'Registration Success Mail',
         );
     }
 
@@ -39,9 +39,9 @@ class DonationSuccessMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.donation_success',
+            view: 'emails.registration_success',
             with: [
-                'donationUrl' => $this->donationUrl,
+                'data' => $this->data,
             ],
         );
     }

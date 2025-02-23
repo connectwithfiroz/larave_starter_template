@@ -27,24 +27,24 @@ Contact Area
 ==============================-->
 <div class="custom-certificate-section mt-5 mb-5">
     <div class="custom-certificate-card">
-      <img src="{{ asset('frontend/assets/img/acchivment/1.webp') }}" alt="Registration Certificate" class="custom-certificate-image" onclick="openCustomPopup('assets/img/acchivment/1.webp')">
+      <img src="{{ asset('frontend/assets/img/acchivment/1.webp') }}" alt="Registration Certificate" class="custom-certificate-image"  onclick="openCustomPopup('{{ asset('frontend/assets/img/acchivment/1.webp') }}')">
       
     </div>
  
     <div class="custom-certificate-card">
-      <img src="{{ asset('frontend/assets/img/acchivment/3.webp') }}" alt="12A Certificate" class="custom-certificate-image" onclick="openCustomPopup('assets/img/acchivment/3.webp')">
+      <img src="{{ asset('frontend/assets/img/acchivment/3.webp') }}" alt="12A Certificate" class="custom-certificate-image"  onclick="openCustomPopup('{{ asset('frontend/assets/img/acchivment/3.webp') }}')">
     
     </div>
     <div class="custom-certificate-card">
-      <img src="{{ asset('frontend/assets/img/acchivment/4.webp') }}" alt="12A Certificate" class="custom-certificate-image" onclick="openCustomPopup('assets/img/acchivment/4.webp')">
+      <img src="{{ asset('frontend/assets/img/acchivment/4.webp') }}" alt="12A Certificate" class="custom-certificate-image"  onclick="openCustomPopup('{{ asset('frontend/assets/img/acchivment/4.webp') }}')">
     
     </div>
     <div class="custom-certificate-card">
-      <img src="{{ asset('frontend/assets/img/acchivment/5.webp') }}" alt="12A Certificate" class="custom-certificate-image" onclick="openCustomPopup('assets/img/acchivment/5.webp')">
+      <img src="{{ asset('frontend/assets/img/acchivment/5.webp') }}" alt="12A Certificate" class="custom-certificate-image"  onclick="openCustomPopup('{{ asset('frontend/assets/img/acchivment/5.webp') }}')">
     
     </div>
     <div class="custom-certificate-card">
-        <img src="{{ asset('frontend/assets/img/acchivment/2.webp') }}" alt="80G Certificate" class="custom-certificate-image" onclick="openCustomPopup('assets/img/acchivment/2.webp')">
+        <img src="{{ asset('frontend/assets/img/acchivment/2.webp') }}" alt="80G Certificate" class="custom-certificate-image"  onclick="openCustomPopup('{{ asset('frontend/assets/img/acchivment/2.webp') }}')">
      
       </div>
   </div>
@@ -57,4 +57,19 @@ Contact Area
 
 @endsection
 @push('js')
+<script>
+function openCustomPopup(imageSrc) {
+  const customPopup = document.getElementById('customImagePopup');
+  const customPopupImage = document.getElementById('customPopupImage');
+  customPopup.style.display = 'flex';
+  customPopupImage.src = imageSrc;
+}
+
+function closeCustomPopup() {
+  const customPopup = document.getElementById('customImagePopup');
+  customPopup.style.display = 'none';
+}
+
+
+</script>
 @endpush

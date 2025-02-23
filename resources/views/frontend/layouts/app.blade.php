@@ -209,7 +209,7 @@
                             <div class="info-card info-card-text">
                                 <span>Al Khair Educational & Charitable Trust</span>
                             </div>
-                            <a href="#" class="membership">
+                            <a href="{{  route('volunteer.form') }}" class="membership">
                                 <p>Apply For Membership</p>
                                 <i class="fas fa-users"></i>
                             </a>
