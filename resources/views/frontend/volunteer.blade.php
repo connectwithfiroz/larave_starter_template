@@ -23,7 +23,15 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-12 mx-auto">
+            <!-- <div class="col-md-4">
+                <ol>
+                    <li>Fill the registraion Form</li>
+                    <li>Pay Rs. 300</li>
+                    <li>Copy payment id for future reference</li>
+                    <li>Please wait after successfull payment you'll redirect to the registraion receipt page.</li>
+                </ol>
+            </div> -->
+            <div class="col-md-12 mx-auto">
                 <div id="errorMessages"></div>
                 <form id="volunteerForm" method="post" action="{{ route('volunteer.payment.process') }}">
                     @csrf
@@ -157,9 +165,6 @@
                         <button type="submit" id="submitBtn" class="btn btn-success btn-rounded">Register Now</button>
                     </div>
                 </form>
-
-
-
             </div>
         </div>
     </div>

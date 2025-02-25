@@ -11,6 +11,8 @@ use App\Models\Admin;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Order;
 use Illuminate\Support\Facades\DB;
+use App\Models\Volunteer;
+
 class AdminHomeController extends Controller
 {
     public function index()
@@ -64,6 +66,16 @@ class AdminHomeController extends Controller
     
         // Pass data to the view
         return view('admin.dashboard', compact('totalDonations', 'totalDonationAmount', 'totalUsers', 'donationData'));
+    }
+
+    
+    public function volunteerList(Request $request)
+    {
+        // Paginate the donations (10 per page)
+        $volunteers = Volunteer::latest('created_at')->paginate(10);
+
+        // Pass volunteers to the view
+        return view('admin.volunteer.index', compact('volunteers'));
     }
     
 }

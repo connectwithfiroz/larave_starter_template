@@ -475,7 +475,7 @@
                         <p class="box-text">Provide resources such as reports, infographics, and educational materials
                             related to the charity's cause. Use a clear and intuitive navigation menu to help users find
                             information quickly.</p>
-                        <a href="contact.html" class="th-btn donate_btn style5">Join Us Now <i
+                        <a href="{{  route('volunteer.form') }}" class="th-btn style5">Join Us Now <i
                                 class="fas fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>

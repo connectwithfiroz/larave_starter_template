@@ -29,10 +29,16 @@
                             <span class="side-menu__label">Donation</span>
                         </a>
                     </li>
+                    <li>
+                        <a class="side-menu__item {{ Request::routeIs('admin.volunteer.index') ? 'active' : '' }}" href="{{ route('admin.volunteer.index') }}">
+                            <i class="side-menu__icon fa fa-tachometer" aria-hiddfen="true"></i>
+                            <span class="side-menu__label">Volunteer</span>
+                        </a>
+                    </li>
                     <li class="slide">
                         <a class="side-menu__item" data-toggle="slide" href="#">
                             <i class="side-menu__icon fa fa-youtube-play" aria-hidden="true"></i>
-                            <span class="side-menu__label">News</span>
+                            <span class="side-menu__label">News & Article</span>
                             <i class="angle fa fa-angle-right"></i>
                         </a>
                         <ul class="slide-menu">
@@ -69,7 +75,7 @@
                     </li>
 
 
-                    <li class="slide">
+                    <li class="slide d-none">
                         <a class="side-menu__item" data-toggle="slide" href="#">
 
                             <i class="side-menu__icon fa fa-picture-o" aria-hidden="true"></i>
@@ -85,7 +91,7 @@
                     </li>
 
 
-                    <li class="slide">
+                    <li class="slide d-none">
                         <a class="side-menu__item" data-toggle="slide" href="#">
 
                             <i class="side-menu__icon fa fa-user" aria-hidden="true"></i>
@@ -103,7 +109,7 @@
 
 
 
-                    <li class="slide">
+                    <li class="slide d-none">
                         <a class="side-menu__item" data-toggle="slide" href="#">
 
                             <i class="side-menu__icon fa fa-users" aria-hidden="true"></i>

@@ -134,13 +134,26 @@ class VolunteerController extends Controller
                     // Generate the URL for the success page
                     $volunteer_success_url = route('volunteer.success', [$volunteer->regisration_id]);
 
-                    // Send success email
-                    Mail::to($volunteer->email)
-                        ->cc(config('app.MAIL_TO_ADDRESS'))
-                        ->cc(config('app.CC_MAIL_ADDRESS'))
-                        ->queue(new RegistrationSuccessMail([
-                            'receipt_url' => $volunteer_success_url
-                        ]));
+                    // Attempt to send the success email
+                    try {
+                        // Send success email
+                        Mail::to($volunteer->email)
+                            ->cc(config('app.MAIL_TO_ADDRESS'))
+                            ->cc(config('app.CC_MAIL_ADDRESS'))
+                            ->queue(new RegistrationSuccessMail([
+                                'receipt_url' => $volunteer_success_url
+                            ]));
+                    } catch (\Exception $mailException) {
+                        Log::error("Failed to send registraion success mail for order id {$orderId}: " . $mailException->getMessage());
+
+                        return response()->json([
+                            'success' => false,
+                            'message' => "Payment verified and registraion recorded, but failed to send mail. Please contact us with order-id = {$orderId}",
+                            'volunteer_url' => $volunteer_success_url,
+                        ]);
+                    }
+
+
 
                     return response()->json([
                         'success' => true,

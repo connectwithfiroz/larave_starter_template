@@ -19,6 +19,7 @@ Route::get('logout', [AdminHomeController::class, 'logout'])->name('admin.logout
 Route::group(['middleware' => 'admin'], function () {
 
     Route::get('/dashboard', [AdminHomeController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('/volunteer', [AdminHomeController::class, 'volunteerList'])->name('admin.volunteer.index');
 
 
     Route::get('/donations', [DonationController::class, 'index'])->name('donations.index');
@@ -27,7 +28,7 @@ Route::group(['middleware' => 'admin'], function () {
 
     Route::resource('news', NewsController::class);
     Route::resource('products', ProductController::class);
-    
+
 
     /*Blog Crud */
     Route::get('/add-blog', [AdminBlogController::class, 'index'])->name('add-blog');

@@ -146,15 +146,16 @@ class RazorpayController extends Controller
     {
         $id = base64_decode($id);
         // Retrieve the email from the session
-        $user_email = session('user_email');
+        // $user_email = session('user_email');
 
-        // Check if the session email is null
-        if (!$user_email) {
-            return redirect()->back()->with('error', 'Unauthorized access: No user email found in session.');
-        }
+        // // Check if the session email is null
+        // if (!$user_email) {
+        //     return redirect()->back()->with('error', 'Unauthorized access: No user email found in session.');
+        // }
 
         // Retrieve the donation record by ID and email
-        $donation = Donation::where('id', $id)->where('email', $user_email)->first();
+        // $donation = Donation::where('id', $id)->where('email', $user_email)->first();
+        $donation = Donation::where('id', $id)->first();
 
         // Check if the donation exists
         if (!$donation) {

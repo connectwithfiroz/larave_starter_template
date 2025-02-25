@@ -4611,9 +4611,10 @@ tr:first-child>td>.fc-day-grid-event {
 }
 
 .userprofile .userpic .userpicimg {
-	height: auto;
+	height: 100%;
 	width: 100%;
 	border-radius: 100%;
+	object-fit: fill;
 }
 
 .username {

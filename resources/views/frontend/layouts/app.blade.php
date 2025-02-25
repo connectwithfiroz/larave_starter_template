@@ -210,7 +210,7 @@
                                 <span>Al Khair Educational & Charitable Trust</span>
                             </div>
                             <a href="{{  route('volunteer.form') }}" class="membership">
-                                <p>Apply For Membership</p>
+                                <p>Apply For Volunteer</p>
                                 <i class="fas fa-users"></i>
                             </a>
                         </div>
