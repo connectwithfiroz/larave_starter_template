@@ -35,7 +35,7 @@
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
                                                     class="fas fa-arrow-up-right ms-2"></i></a>
                                             <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM"
-                                                class="th-btn donate_btn style5 popup-video"><i
+                                                class="th-btn style5 popup-video"><i
                                                     class="fas fa-play me-2"></i> Watch Video</a>
                                         </div>
                                     </div>
@@ -255,7 +255,7 @@
                             <img src="{{ asset('frontend/assets/img/volunteering.webp') }}" alt="Icon">
                         </div>
                         <div class="box-content">
-                            <h3 class="box-title"><a href="about.html">Sadka</a></h3>
+                            <h3 class="box-title"><a href="about.html">Sadqa</a></h3>
 
                             <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>

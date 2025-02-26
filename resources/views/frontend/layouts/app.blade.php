@@ -1,5 +1,5 @@
 <!-- copy before updating withnew design 16/02/2025 -->
-@include('frontend.expiration');
+@include('frontend.expiration')
 <!doctype html>
 <html class="no-js" lang="zxx" dir="ltr">
 

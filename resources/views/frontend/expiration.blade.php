@@ -14,7 +14,6 @@
         <h2>Sorry, This site is temporarily down. We'll get back to you soon.</h2>
     </div>
     <?php
-    exit;
-?>
+    exit() ?>
 @endif
 

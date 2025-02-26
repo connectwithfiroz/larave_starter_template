@@ -28,6 +28,10 @@ class HomeController extends Controller
         // return view('frontend.donate.search', compact('donation'));
 
     }
+    //create a function to show the developer page
+    public function developer() {
+        return view('frontend.developer');
+    }
     public function index()
     {
         // Fetch all news from the database

@@ -59,6 +59,7 @@ Route::get('/test-mail', function () {
 
 
 
+Route::get('/our-developer', [HomeController::class, 'developer'])->name('developer');
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/achivement', [HomeController::class, 'achivement'])->name('achivement');
