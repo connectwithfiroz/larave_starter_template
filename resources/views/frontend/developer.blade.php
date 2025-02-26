@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Home Page')
+@section('title', 'Our Developer')
 
 @push('header')
 <!-- extra header -->
@@ -111,8 +111,8 @@ ul.social li a {
 					<p>3+ years of experiences</p>
 				</div>
 				<ul class="social">
-					<li><a href="https://www.linkedin.com/in/hifiroz" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-					<li><a href="tel:+918789701916"><i class="fa fa-phone-alt"></i> Call</a></li>
+					<li><a href="https://www.linkedin.com/in/hifiroz" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="tel:+918789701916"><i class="fa fa-phone-alt"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -127,8 +127,8 @@ ul.social li a {
 					<p>1+ year of experiences</p>
 				</div>
 				<ul class="social">
-					<li><a href="https://www.linkedin.com/in/shahbaz-anjoom-55461b229" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-					<li><a href="tel:+91 6287 011 200"><i class="fa fa-phone-alt"></i> Call</a></li>
+					<li><a href="https://www.linkedin.com/in/shahbaz-anjoom-55461b229" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="tel:+91 6287 011 200"><i class="fa fa-phone-alt"></i></a></li>
 				</ul>
 			</div>
 		</div>
