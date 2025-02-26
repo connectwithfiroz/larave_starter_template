@@ -239,7 +239,39 @@
                             <img src="{{ asset('frontend/assets/img/boy.webp') }}" alt="Icon">
                         </div>
                         <div class="box-content">
-                            <h3 class="box-title"><a href="about.html">Youth Empowerment</a></h3>
+                            <h3 class="box-title"><a href="about.html">Zakat</a></h3>
+
+                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
+                                    class="fas fa-arrow-up-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="service-card style2">
+                        <div class="box-thumb">
+                            <img src="{{ asset('frontend/assets/img/cherety/EnvironmentalHelp.webp') }}" alt="img">
+                        </div>
+                        <div class="box-icon">
+                            <img src="{{ asset('frontend/assets/img/volunteering.webp') }}" alt="Icon">
+                        </div>
+                        <div class="box-content">
+                            <h3 class="box-title"><a href="about.html">Sadka</a></h3>
+
+                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
+                                    class="fas fa-arrow-up-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="service-card style2">
+                        <div class="box-thumb">
+                            <img src="{{ asset('frontend/assets/img/cherety/RuralEmpowerment.webp') }}" alt="img">
+                        </div>
+                        <div class="box-icon">
+                            <img src="{{ asset('frontend/assets/img/lake.webp') }}" alt="Icon">
+                        </div>
+                        <div class="box-content">
+                            <h3 class="box-title"><a href="about.html">Fitra</a></h3>
 
                             <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
@@ -263,38 +295,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card style2">
-                        <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/RuralEmpowerment.webp') }}" alt="img">
-                        </div>
-                        <div class="box-icon">
-                            <img src="{{ asset('frontend/assets/img/lake.webp') }}" alt="Icon">
-                        </div>
-                        <div class="box-content">
-                            <h3 class="box-title"><a href="about.html">Rural Empowerment</a></h3>
-
-                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
-                                    class="fas fa-arrow-up-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card style2">
-                        <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/EnvironmentalHelp.webp') }}" alt="img">
-                        </div>
-                        <div class="box-icon">
-                            <img src="{{ asset('frontend/assets/img/volunteering.webp') }}" alt="Icon">
-                        </div>
-                        <div class="box-content">
-                            <h3 class="box-title"><a href="about.html">Environmental Help</a></h3>
-
-                            <a href="/donate" class="th-btn donate_btn">Donate Now<i
-                                    class="fas fa-arrow-up-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
@@ -512,11 +513,11 @@
                                     <div class="donation-card_progress-wrap">
 
                                         <div class="progress">
-                                            <div class="progress-bar" style="width: 65%;">
+                                            <div class="progress-bar" style="width: 20%;">
                                             </div>
                                         </div>
                                         <div class="donation-card_progress-content">
-                                            <span class="donation-card_raise">Raised - 50k</span>
+                                            <span class="donation-card_raise">Raised - 60k</span>
                                             <span class="donation-card_goal">Goal - ₹3 Lac</span>
                                         </div>
                                     </div>
@@ -532,18 +533,18 @@
                                     data-mask-src="{{ asset('frontend/assets/img/donation/donation-card-bg-shape1-1.png') }}"></div>
                                 <div class="box-thumb">
                                     <img src="{{ asset('frontend/assets/img/dontaing/RAMADAN_MAY05.webp') }}" alt="image">
-                                    <div class="donation-card-tag">55%</div>
+                                    <div class="donation-card-tag">10%</div>
                                 </div>
                                 <div class="box-content">
                                     <h3 class="box-title"><a href="/donate">Iftaar: Provide Meals for the Needy</a></h3>
                                     <div class="donation-card_progress-wrap">
 
                                         <div class="progress">
-                                            <div class="progress-bar" style="width: 55%;">
+                                            <div class="progress-bar" style="width: 10%;">
                                             </div>
                                         </div>
                                         <div class="donation-card_progress-content">
-                                            <span class="donation-card_raise">Raised - 60k</span>
+                                            <span class="donation-card_raise">Raised - 50k</span>
                                             <span class="donation-card_goal">Goal - ₹5 Lac</span>
                                         </div>
                                     </div>
@@ -559,7 +560,7 @@
                                     data-mask-src="{{ asset('frontend/assets/img/donation/donation-card-bg-shape1-1.png') }}"></div>
                                 <div class="box-thumb">
                                     <img src="{{ asset('frontend/assets/img/dontaing/zakat.webp') }}" alt="image">
-                                    <div class="donation-card-tag">95%</div>
+                                    <div class="donation-card-tag">10%</div>
                                 </div>
                                 <div class="box-content">
                                     <h3 class="box-title"><a href="/donate">Zakat: Help the Poor & Orphans</a>
@@ -567,12 +568,12 @@
                                     <div class="donation-card_progress-wrap">
 
                                         <div class="progress">
-                                            <div class="progress-bar" style="width: 95%;">
+                                            <div class="progress-bar" style="width: 10%;">
                                             </div>
                                         </div>
                                         <div class="donation-card_progress-content">
-                                            <span class="donation-card_raise">Raised - 5M</span>
-                                            <span class="donation-card_goal">Goal - ₹10M</span>
+                                            <span class="donation-card_raise">Raised - 50k</span>
+                                            <span class="donation-card_goal">Goal - ₹5Lac</span>
                                         </div>
                                     </div>
                                     <a href="/donate" class="th-btn donate_btn style6">Donate Now <i
@@ -586,15 +587,15 @@
                                 <div class="donation-card-shape"
                                     data-mask-src="{{ asset('frontend/assets/img/donation/donation-card-bg-shape1-1.png') }}"></div>
                                 <div class="box-thumb">
-                                    <img src="{{ asset('frontend/assets/img/dontaing/3.webp') }}" alt="image">
-                                    <div class="donation-card-tag">95%</div>
+                                    <img src="{{ asset('frontend/assets/img/dontaing/educations.webp') }}" alt="image">
+                                    <div class="donation-card-tag">9%</div>
                                 </div>
                                 <div class="box-content">
                                     <h3 class="box-title"><a href="/donate">Education: Fund a Child’s Future</a></h3>
                                     <div class="donation-card_progress-wrap">
 
                                         <div class="progress">
-                                            <div class="progress-bar" style="width: 95%;">
+                                            <div class="progress-bar" style="width: 9%;">
                                             </div>
                                         </div>
                                         <div class="donation-card_progress-content">
@@ -614,14 +615,14 @@
                                     data-mask-src="{{ asset('frontend/assets/img/donation/donation-card-bg-shape1-1.png') }}"></div>
                                 <div class="box-thumb">
                                     <img src="{{ asset('frontend/assets/img/dontaing/borewill.webp') }}" alt="image">
-                                    <div class="donation-card-tag">85%</div>
+                                    <div class="donation-card-tag">10%</div>
                                 </div>
                                 <div class="box-content">
-                                    <h3 class="box-title"><a href="/donate">Water Crisis: Provide Clean Drinking Water</a></h3>
+                                    <h3 class="box-title"><a href="/donate">Water Crisis: Drinking Water For Needy Place</a></h3>
                                     <div class="donation-card_progress-wrap">
 
                                         <div class="progress">
-                                            <div class="progress-bar" style="width: 85%;">
+                                            <div class="progress-bar" style="width: 10%;">
                                             </div>
                                         </div>
                                         <div class="donation-card_progress-content">
@@ -641,19 +642,19 @@
                                     data-mask-src="{{ asset('frontend/assets/img/donation/donation-card-bg-shape1-1.png') }}"></div>
                                 <div class="box-thumb">
                                     <img src="{{ asset('frontend/assets/img/dontaing/poor.webp') }}" alt="image">
-                                    <div class="donation-card-tag">75%</div>
+                                    <div class="donation-card-tag">7%</div>
                                 </div>
                                 <div class="box-content">
-                                    <h3 class="box-title"><a href="/donate">Food Relief: End Hunger for the Poor</a></h3>
+                                    <h3 class="box-title"><a href="/donate">"Food Relief: Eradicating Hunger for the Needy"</a></h3>
                                     <div class="donation-card_progress-wrap">
 
                                         <div class="progress">
-                                            <div class="progress-bar" style="width: 75%;">
+                                            <div class="progress-bar" style="width: 7%;">
                                             </div>
                                         </div>
                                         <div class="donation-card_progress-content">
-                                            <span class="donation-card_raise">Raised - 3 Lac</span>
-                                            <span class="donation-card_goal">Goal - ₹7Lac</span>
+                                            <span class="donation-card_raise">Raised - 50k</span>
+                                            <span class="donation-card_goal">Goal - ₹7 Lac</span>
                                         </div>
                                     </div>
                                     <a href="/donate" class="th-btn donate_btn style6">Donate Now <i
@@ -1058,13 +1059,13 @@
                             <p>Stay informed about our upcoming events and campaigns.</p>
                             <div class="donation-card_progress-wrap">
                                 <div class="progress">
-                                    <div class="progress-bar" style="width: 20%;">
-                                        <div class="progress-value">20%</div>
+                                    <div class="progress-bar" style="width: 8%;">
+                                        <div class="progress-value">8%</div>
                                     </div>
                                 </div>
                                 <div class="donation-card_progress-content">
                                     <span class="donation-card_raise">40k</span>
-                                    <span class="donation-card_goal text-theme2">Goal - ₹500k</span>
+                                    <span class="donation-card_goal text-theme2">Goal - ₹5 Lac</span>
                                 </div>
                             </div>
                             <a href="/donate" class="th-btn donate_btn style6">Donate Now <i
