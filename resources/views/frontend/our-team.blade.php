@@ -85,6 +85,33 @@ Contact Area
                     </div>
                 </div>
             </div>
+             <!-- Single Item -->
+             <div class="col-lg-3 col-md-6">
+                <div class="th-team team-card3">
+                    <div class="team-img">
+                        <img src="{{ asset('frontend/assets/img/team/team_3_4.png') }}" alt="Team">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="box-title"><a href="team-details">Firoz Anasri</a></h3>
+                                <span class="team-desig">Backend Developer</span>
+                                <p>Al Khair Educational & Charitable Trust <br/>Contact:+91 8789701916</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Single Item -->
+             <div class="col-lg-3 col-md-6">
+                <div class="th-team team-card3">
+                    <div class="team-img">
+                        <img src="{{ asset('frontend/assets/img/team/team_3_4.png') }}" alt="Team">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="box-title"><a href="team-details">Shahbaz Anjoom</a></h3>
+                                <span class="team-desig">Frontend Developer</span>
+                                <p>Al Khair Educational & Charitable Trust<br/>Contact:+91 6287011200</p>
+                    </div>
+                </div>
+            </div>
+
 
 
         </div>
