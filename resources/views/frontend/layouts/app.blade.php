@@ -283,6 +283,8 @@
                                         <li><a href="{{ route('our-team') }}">Our Team</a></li>
                                         <!-- <li><a href="blog-details.html">Blog</a></li> -->
                                         <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                                        <li><a href="{{ route('developer') }}">Our Developer</a></li>
+                                        
                                     </ul>
                                 </li>
                             </ul>
@@ -387,7 +389,6 @@
                                     <li><a href="{{ route('achivement') }}">Achievements</a></li>
                                     <li><a href="{{ route('our-team') }}">Our Team</a></li>
                                     <li><a href="{{ route('contact') }}">Contact Us</a></li>
-                                    <li><a href="{{ route('developer') }}">Our Developer</a></li>
                                     <li><a href="{{ route('terms-conditions') }}">Terms & Conditions</a></li>
                                     <li><a href="{{ route('refund-return-policy') }}">Refund & Return Policy</a></li>
                                     <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
