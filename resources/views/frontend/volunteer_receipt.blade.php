@@ -30,12 +30,12 @@
             border-radius: 10px;
         }
         div#overlay p {
-            line-height: 1;
+            line-height: 1.1rem;
         }
 
         .overlay {
             position: absolute;
-            top: 325px;
+            top: 321px;
             left: 35%;
             color: black;
             font-size: 18px;
@@ -123,6 +123,7 @@
                 <div class="overlay" id="overlay">
                     <p>{{ $volunteer->full_name }}</p>
                     <p>{{ $volunteer->email ?? '-' }}</p>
+                    <p id="regisration_id">{{ $volunteer->regisration_id ?? '-' }}</p>
                     <p>{{ $volunteer->phone ?? '-' }}</p>
                     <p>{{ $volunteer->gender ?? '-' }}</p>
                     <p>{{ $volunteer->aadhar ?? '-' }}</p>
@@ -135,7 +136,6 @@
                     <p>{{ $volunteer->project_name ?? '-' }}</p>
                     <p>{{ $volunteer->registration_date ?? '-' }}</p>
                     <p>{{ $volunteer->message ?? '-' }}</p>
-                    <p id="registration_id">Registraion Id: {{ $volunteer->regisration_id ?? '-' }}</p>
                 
             </div>
             <h2>Please Keep Your registration certificate at safe place.</h2>
@@ -147,7 +147,7 @@
 
     <script>
         function generatePDF(event) {
-            let registration_id = document.getElementById("registration_id").innerText ?? '';
+            let regisration_id = document.getElementById("regisration_id").innerText ?? '';
             event.preventDefault();
             setTimeout(() => {
                 html2canvas(document.getElementById("image-container"), {
@@ -160,7 +160,7 @@
                     const imgWidth = 210;
                     const imgHeight = (canvas.height * imgWidth) / canvas.width;
                     pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-                    pdf.save(`volunteer_register_receipt_${registration_id}.pdf`);
+                    pdf.save(`volunteer_register_receipt_${regisration_id}.pdf`);
                     document.getElementById("volunteerForm").reset();
                 });
             }, 500);

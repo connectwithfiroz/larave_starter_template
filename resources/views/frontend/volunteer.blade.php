@@ -23,14 +23,6 @@
         </div>
 
         <div class="row">
-            <!-- <div class="col-md-4">
-                <ol>
-                    <li>Fill the registraion Form</li>
-                    <li>Pay Rs. 300</li>
-                    <li>Copy payment id for future reference</li>
-                    <li>Please wait after successfull payment you'll redirect to the registraion receipt page.</li>
-                </ol>
-            </div> -->
             <div class="col-md-12 mx-auto">
                 <div id="errorMessages"></div>
                 <form id="volunteerForm" method="post" action="{{ route('volunteer.payment.process') }}">
@@ -40,14 +32,14 @@
                             <label for="full_name">Full Name</label>
                             <input type="text" id="full_name" name="full_name" placeholder="Enter Full Name" required
                                 pattern="^[a-zA-Z\s]+$" title="Only letters and spaces allowed"
-                                value="{{ old('full_name', 'John Doe') }}">
+                                value="{{ old('full_name') }}">
                             @error('full_name')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
 
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="Enter Email" required
-                                value="{{ old('email', 'john@example.com') }}">
+                                value="{{ old('email') }}">
                             @error('email')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -57,7 +49,7 @@
                             <label for="phone">Phone</label>
                             <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required
                                 pattern="[6-9]\d{9}" title="Enter a valid 10-digit phone number starting with 6-9"
-                                value="{{ old('phone', '9876543210') }}">
+                                value="{{ old('phone') }}">
                             @error('phone')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -78,7 +70,7 @@
                             <label for="aadhar">Aadhar Number</label>
                             <input type="text" id="aadhar" name="aadhar" placeholder="Enter Aadhar Number" required
                                 pattern="\d{12}" title="Enter a valid 12-digit Aadhar Number"
-                                value="{{ old('aadhar', '123456789012') }}">
+                                value="{{ old('aadhar') }}">
                             @error('aadhar')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -98,14 +90,14 @@
 
                         <div class="form-group col-md-6">
                             <label for="dob">Date of Birth</label>
-                            <input type="date" id="dob" name="dob" required value="{{ old('dob', '1990-01-01') }}">
+                            <input type="date" id="dob" name="dob" required value="{{ old('dob') }}" placeholder="e.g 2000-01-01">
                             @error('dob')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
 
                             <label for="district">District</label>
                             <input type="text" id="district" name="district" placeholder="Enter District" required
-                                value="{{ old('district', 'Some District') }}">
+                                value="{{ old('district') }}">
                             @error('district')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -114,7 +106,7 @@
                         <div class="form-group col-md-6">
                             <label for="state">State</label>
                             <input type="text" id="state" name="state" placeholder="Enter State" required
-                                value="{{ old('state', 'Some State') }}">
+                                value="{{ old('state') }}">
                             @error('state')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -122,7 +114,7 @@
                             <label for="pincode">Pin Code</label>
                             <input type="text" id="pincode" name="pincode" placeholder="Enter Pin Code" required
                                 pattern="\d{6}" title="Enter a valid 6-digit Pin Code"
-                                value="{{ old('pincode', '123456') }}">
+                                value="{{ old('pincode') }}">
                             @error('pincode')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -131,14 +123,14 @@
                         <div class="form-group col-md-6">
                             <label for="project_name">Project Name</label>
                             <input type="text" id="project_name" name="project_name" placeholder="Enter Project Name"
-                                required value="{{ old('project_name', 'Test Project') }}">
+                                required value="{{ old('project_name') }}">
                             @error('project_name')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
 
                             <label for="registration_date">Registration Date</label>
                             <input type="date" id="registration_date" name="registration_date" required
-                                value="{{ old('registration_date', date('Y-m-d')) }}">
+                                value="{{ old('registration_date') }}">
                             @error('registration_date')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -147,14 +139,14 @@
                         <div class="form-group col-md-6-msj">
                             <label for="address">Full Address</label>
                             <textarea id="address" name="address" placeholder="Enter Full Address"
-                                required>{{ old('address', '123 Testing Avenue, Test City') }}</textarea>
+                                required>{{ old('address') }}</textarea>
                             @error('address')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
 
                             <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="Enter Your Message"
-                                required>{{ old('message', 'This is a test message.') }}</textarea>
+                                required>{{ old('message') }}</textarea>
                             @error('message')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror

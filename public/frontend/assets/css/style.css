@@ -23357,6 +23357,7 @@ span.select2-selection.select2-selection--single:focus {
   .ngo-popup-heading {
     margin-bottom: 0;
     padding-bottom: 0;
+    font-size 20px;
   }
   .ngo-popup-content .ngo-popup-form input {
     padding: 5px;

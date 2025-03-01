@@ -30,9 +30,13 @@
             border-radius: 10px;
         }
 
+        div#overlay p {
+            line-height: 1.2rem;
+        }
+
         .overlay {
             position: absolute;
-            top: 297px;
+            top: 340px;
             left: 35%;
             color: black;
             font-size: 18px;
@@ -110,7 +114,7 @@
                 <button class="btn-primary btn" onclick="return generatePDF(event)">Download Donation Receipt</button>
             </div>
             <div class="image-container" id="image-container">
-                <img src="{{ asset('frontend/donation_receipt.jpeg') }}" class="form-image" id="form-image"
+                <img src="{{ asset('frontend/donation_receipt.jpeg') }}?v=1.1" class="form-image" id="form-image"
                     crossorigin="anonymous">
                 <div class="overlay" id="overlay">
                     <p>{{ $donation->name }}</p>

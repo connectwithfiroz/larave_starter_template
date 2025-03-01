@@ -42,11 +42,13 @@ class RazorpayController extends Controller
         $order_id = $order->id;
 
         // Save donation record
+        //combile donar mobile number with phone coutnry code which in $request->country_code
+        $mobile_number =( $request->country_code ?? '') . $request->donor_number;
         Donation::create([
             'donation_for' => $request->donation_for, // You can customize this or pass it from the form
             'name' => $request->donor_name,
             'email' => $request->donor_email,
-            'mobile_number' => $request->donor_number,
+            'mobile_number' => $mobile_number,
             'amount' => $request->donation_amount,
             'razorpay_order_id' => $order_id,
             'status' => "Pending",
@@ -64,7 +66,7 @@ class RazorpayController extends Controller
             'razorpay_key' => config('app.razorpay_key'),
             'donor_name' => $request->donor_name,
             'donor_email' => $request->donor_email,
-            'donor_number' => $request->donor_number,
+            'donor_number' => $mobile_number,
             'donation_amount' => $request->donation_amount,
             'donation_for' => $request->donation_for,
         ]);

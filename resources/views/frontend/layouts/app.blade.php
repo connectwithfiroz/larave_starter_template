@@ -35,7 +35,7 @@
     <!-- Swiper Js -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/swiper-bundle.min.css') }}">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}?v=1.1">
     @stack('header')
 </head>
 
