@@ -172,7 +172,7 @@
                             <img src="{{ asset('frontend/assets/img/donation.webp') }}" alt="icon">
                         </div>
                         <h3 class="box-title">Donate Us</h3>
-                        <a class="link-btn style2" href="about.html">View Details <i
+                        <a class="link-btn style2 donate_btn" href="/donate">View Details <i
                                 class="fa-solid fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
