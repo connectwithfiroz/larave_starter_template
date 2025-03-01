@@ -1,4 +1,3 @@
-<!-- copy before updating withnew design 16/02/2025 -->
 @include('frontend.expiration')
 <!doctype html>
 <html class="no-js" lang="zxx" dir="ltr">
@@ -564,8 +563,6 @@
     <script src="{{ asset('frontend/assets/js/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('js/jquery.validate.js') }}"></script>
     <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script> -->
-
-
 
     <!-- Main Js File -->
     <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
