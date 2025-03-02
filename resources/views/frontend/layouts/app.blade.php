@@ -58,6 +58,7 @@
     font-size: 14px;
 
 }
+        }
     </style>
     @stack('header')
 </head>
