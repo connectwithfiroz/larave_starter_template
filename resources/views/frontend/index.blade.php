@@ -13,7 +13,7 @@
             data-slider-options='{"effect":"fade", "autoHeight": "true"}'>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/Banner-1.webp') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-a.jpeg') }}"
                         data-overlay="black4" data-opacity="5">
                         <!-- <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
@@ -46,7 +46,7 @@
 
                 </div>
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-2.webp') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/card-1.jpeg') }}"
                         data-overlay="black4" data-opacity="5">
                         <!-- <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-3.webp') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/card-2.jpeg') }}"
                         data-overlay="black4" data-opacity="5">
                         <!-- <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
@@ -111,7 +111,7 @@
                 </div>
                 
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-4.webp') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/card-3.jpeg') }}"
                         data-overlay="black4" data-opacity="5">
                         <!-- <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-5.webp') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/card-4.jpeg') }}"
                         data-overlay="black4" data-opacity="5">
                         <!-- <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
@@ -299,7 +299,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/youth.webp') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/cherety/zakat-a.jpeg') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/boy.webp') }}" alt="Icon">
@@ -354,7 +354,7 @@
                         </div>
                         <div class="box-content">
                             <h3 class="box-title"><a href="about.html">
-                                    Women Empowerment</a></h3>
+                                    Islamic Education</a></h3>
 
                             <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
