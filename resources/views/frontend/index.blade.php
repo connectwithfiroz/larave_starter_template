@@ -13,23 +13,23 @@
             data-slider-options='{"effect":"fade", "autoHeight": "true"}'>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/hero-banner-1.webp') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/Banner-1.webp') }}"
                         data-overlay="black4" data-opacity="5">
-                        <div class="hero-bg-shape1-1">
+                        <!-- <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
-                        </div>
+                        </div> -->
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xl-12">
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
+                                        <!-- <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Together We Can Bring Hope </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Support Changes Lives </span>
-                                        </h1>
+                                        </h1> -->
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -46,23 +46,23 @@
 
                 </div>
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/hero-banner-2.webp') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-2.webp') }}"
                         data-overlay="black4" data-opacity="5">
-                        <div class="hero-bg-shape1-1">
+                        <!-- <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
-                        </div>
+                        </div> -->
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xl-12">
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
+                                        <!-- <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1>
+                                        </h1> -->
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -76,26 +76,25 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/hero-banner-3.webp') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-3.webp') }}"
                         data-overlay="black4" data-opacity="5">
-                        <div class="hero-bg-shape1-1">
+                        <!-- <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
-                        </div>
+                        </div> -->
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xl-12">
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
+                                        <!-- <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
-                                                Your Donation Makes a Difference </span>
+                                                Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
-                                                Together, We Can Save Lives </span>
-                                        </h1>
+                                                Donate Today, Impact Tomorrow </span>
+                                        </h1> -->
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -109,6 +108,73 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-4.webp') }}"
+                        data-overlay="black4" data-opacity="5">
+                        <!-- <div class="hero-bg-shape1-1">
+                            <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
+                        </div> -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-12">
+                                    <div class="hero-style1 text-center">
+                                        <span class="sub-title justify-content-center" data-ani="slideinup"
+                                            data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
+                                        <!-- <h1 class="hero-title text-white">
+                                            <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
+                                                Your Gift Can Change Lives </span>
+                                            <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
+                                                Donate Today, Impact Tomorrow </span>
+                                        </h1> -->
+                                        <div class="btn-wrap justify-content-center" data-ani="slideinup"
+                                            data-ani-delay="0.7s">
+                                            <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
+                                                    class="fas fa-arrow-up-right ms-2"></i></a>
+                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM"
+                                                class="th-btn donate_btn style5 popup-video"><i
+                                                    class="fas fa-play me-2"></i> Watch Video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-5.webp') }}"
+                        data-overlay="black4" data-opacity="5">
+                        <!-- <div class="hero-bg-shape1-1">
+                            <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
+                        </div> -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-12">
+                                    <div class="hero-style1 text-center">
+                                        <span class="sub-title justify-content-center" data-ani="slideinup"
+                                            data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
+                                        <!-- <h1 class="hero-title text-white">
+                                            <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
+                                                Your Gift Can Change Lives </span>
+                                            <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
+                                                Donate Today, Impact Tomorrow </span>
+                                        </h1> -->
+                                        <div class="btn-wrap justify-content-center" data-ani="slideinup"
+                                            data-ani-delay="0.7s">
+                                            <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
+                                                    class="fas fa-arrow-up-right ms-2"></i></a>
+                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM"
+                                                class="th-btn donate_btn style5 popup-video"><i
+                                                    class="fas fa-play me-2"></i> Watch Video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 
                 </div>
             </div>
@@ -506,7 +572,7 @@
                                     data-mask-src="{{ asset('frontend/assets/img/donation/donation-card-bg-shape1-1.png') }}"></div>
                                 <div class="box-thumb">
                                     <img src="{{ asset('frontend/assets/img/dontaing/ramzan.webp') }}" alt="image">
-                                    <div class="donation-card-tag">65%</div>
+                                    <div class="donation-card-tag">20%</div>
                                 </div>
                                 <div class="box-content">
                                     <h3 class="box-title"><a href="/donate">Ramzan: Support Families in Need</a></h3>
@@ -587,7 +653,7 @@
                                 <div class="donation-card-shape"
                                     data-mask-src="{{ asset('frontend/assets/img/donation/donation-card-bg-shape1-1.png') }}"></div>
                                 <div class="box-thumb">
-                                    <img src="{{ asset('frontend/assets/img/dontaing/educations.webp') }}" alt="image">
+                                    <img src="{{ asset('frontend/assets/img/dontaing/education.webp') }}" alt="image">
                                     <div class="donation-card-tag">9%</div>
                                 </div>
                                 <div class="box-content">
@@ -1051,7 +1117,7 @@
                     </div>
                     <div class="donation-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/donation2-1.png') }}" alt="image">
+                            <img src="{{ asset('frontend/assets/img/donate.webp') }}" alt="image">
                         </div>
                         <div class="box-content">
                             <h3 class="box-title"><a href="blog-details.html">Big charity: build school for poor
@@ -1075,7 +1141,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="video-thumb2-1 video-box-center">
-                        <img src="{{ asset('frontend/assets/img/donate-now.webp') }}" alt="img">
+                        <img src="{{ asset('frontend/assets/img/vedio.webp') }}" alt="img">
                         <h2 class="video-title">Watch Now</h2>
                         <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM" class="play-btn style5 popup-video"><i
                                 class="fa-sharp fa-solid fa-play"></i></a>
@@ -1441,7 +1507,7 @@ Project Area
         </div>
     </section>
     <!--==============================
-                Faq Area
+                Faqs Area
                 ==============================-->
     <div class="space overflow-hidden faq-area-2" data-bg-src="{{ asset('frontend/assets/img/faqs.webp') }}">
         <div class="shape-mockup faq-shape2-1 jump-reverse" data-top="20%" data-left="0">
@@ -1524,7 +1590,7 @@ Project Area
                 <div class="col-xl-5">
                     <div class="faq-img-box2">
                         <div class="img1">
-                            <img src="{{ asset('frontend/assets/img/normal/faq_2_1.webp') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/normal/faqss.webp') }}" alt="img">
                         </div>
                         <div class="faq-img-shape">
                             <img src="{{ asset('frontend/assets/img/shape/faq-shape2-1.png') }}" alt="img">
