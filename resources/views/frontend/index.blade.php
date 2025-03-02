@@ -315,7 +315,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/EnvironmentalHelp.webp') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/cherety/sadqa.jpeg') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/volunteering.webp') }}" alt="Icon">
@@ -331,7 +331,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/RuralEmpowerment.webp') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/cherety/fitra-card.jpeg') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/lake.webp') }}" alt="Icon">
