@@ -347,7 +347,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/islamic.jpeg') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/cherety/madrsha.jpeg') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/women.webp') }}" alt="Icon">

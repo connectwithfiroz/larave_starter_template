@@ -28,8 +28,10 @@ Contact Area
 ==============================-->
 <div class="custom-certificate-section mt-5 mb-5">
     <div class="custom-certificate-card-news">
+      <img src="{{ asset('frontend/assets/img/news/news-new.jpeg') }}" alt="Registration Certificate" class="custom-certificate-image" onclick="openCustomPopup('assets/img/news/news-new.jpeg')">
+    </div>
+    <div class="custom-certificate-card-news">
       <img src="{{ asset('frontend/assets/img/news/1.jpeg') }}" alt="Registration Certificate" class="custom-certificate-image" onclick="openCustomPopup('assets/img/news/1.jpeg')">
-      
     </div>
  
     <div class="custom-certificate-card-news">
