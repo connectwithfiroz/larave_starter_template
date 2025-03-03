@@ -758,8 +758,7 @@
                                         <!-- Product Image -->
                                         <div class="box-thumb-two">
                                             <img src="{{ asset('storage/product_img/' . $product->image) }}"
-                                                alt="{{ $product->name }}"
-                                                onerror="this.src='https://via.placeholder.com/150'" />
+                                                alt="{{ $product->name }}" />
                                         </div>
 
                                         <!-- Product Details -->

@@ -502,12 +502,9 @@
                 <div class="row gy-3 align-items-center">
                     <div class="col-lg-12 copy-dcn">
                         <p class="copyright-text text-center">
-                            <i class="fal fa-copyright"></i> Copyright 2024 <a href="{{ route('index') }}">Al Khair
-                                Educational &
-                                Charitable Trust</a>. All Rights Reserved.
+                            <i class="fal fa-copyright"></i> Copyright 2025 <a href="{{ route('index') }}">Al Khair Educational & Charitable Trust</a>. All Rights Reserved.
                         </p>
-                        <a href="https://dcnexus.netlify.app" target="_blank" class="dcn">Design By DCNexus +91
-                            7457024841</a>
+                        <a href="/our-developer" target="_blank" class="">Meet our Designer and Developer</a>
                     </div>
                 </div>
             </div>
