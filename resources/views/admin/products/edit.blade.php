@@ -23,7 +23,7 @@
                    
                     @if ($products->image)
                         <div class="mt-2">
-                            <img src="{{ asset('storage/product_img/' . $products->image) }}" 
+                            <img src="{{ asset('uploads/product_img/' . $products->image) }}" 
                                 alt="Current Image" width="100">
                         </div>
                     @endif

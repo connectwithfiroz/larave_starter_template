@@ -4,8 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
 
-use App\Mail\DonationSuccessMail;
-use Illuminate\Support\Facades\Mail;
+require __DIR__."/dev.php";
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,48 +15,6 @@ use Illuminate\Support\Facades\Mail;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/optimize', function () {
-    Artisan::call('optimize');
-    return "optimized";
-});
-Route::get('/migrate', function () {
-    Artisan::call('migrate');
-    return "Migrate Completed!";
-});
-Route::get('/link-storage', function () {
-    Artisan::call('storage:link');
-    return "Storage Linked!";
-});
-
-Route::get('/optimize', function () {
-    Artisan::call('optimize');
-    return "optimized";
-});
-Route::get('/run-queue', function () {
-    // Process the next job on the queue and then exit.
-    Artisan::call('queue:work', ['--once' => true]);
-
-    return 'Queue job processed.';
-});
-
-Route::get('/test-mail', function () {
-    // folowing code is not working
-    $email = 'contacttofiroz@gmail.com';
-    // $email = 'firoz000786000ansari@gmail.com';
-    // $cc_email = [config('app.MAIL_TO_ADDRESS'), config('app.CC_MAIL_ADDRESS')];
-    $donation_success_url = 'https://www.google.com';
-    Mail::to($email)->send(new DonationSuccessMail($donation_success_url));
-    return 'Mail sent sumit!';
-    
-    //-----working code
-    \Illuminate\Support\Facades\Mail::raw('This is a test email.', function ($message) {
-        $message->to('contacttofiroz@gmail.com')
-                ->subject('Test Email from Laravel');
-    });
-    return 'Mail sent!';
-});
-
-
 
 Route::get('/our-developer', [HomeController::class, 'developer'])->name('developer');
 Route::get('/', [HomeController::class, 'index']);

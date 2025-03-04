@@ -24003,3 +24003,23 @@ span.select2-selection.select2-selection--single:focus {
 .nav li.active, .nav li a.active{
   background:var(--theme-color2);
 }
+
+/* banner */
+@media (max-width: 767px) {
+  .hero-style1 {
+    padding: 120px 0;
+    margin-top: 3rem;
+  }
+  .hero-style1 .sub-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-1 .hero-inner {
+    background-size: contain;
+    background-position: top;
+  }
+}
+.hero-1 .hero-inner {
+  background-size: contain;
+}

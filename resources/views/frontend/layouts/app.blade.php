@@ -34,7 +34,7 @@
     <!-- Swiper Js -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/swiper-bundle.min.css') }}">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}?v=1.1">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}?v=1.2">
     <style>
         @media (min-width: 250px) and (max-width: 576px) {
             #ngo-donation-popup select,
