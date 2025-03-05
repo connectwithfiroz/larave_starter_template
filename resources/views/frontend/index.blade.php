@@ -1865,7 +1865,7 @@ Project Area
             setTimeout(function () {
                 document.getElementById('ngo-donation-popup').classList.add('show');
             }, 500);
-        };
+        };win
         function closePopup() {
             var popup = document.getElementById('ngo-donation-popup');
             popup.classList.remove('show');

@@ -757,7 +757,7 @@
 
                                         <!-- Product Image -->
                                         <div class="box-thumb-two">
-                                            <img src="{{ asset('storage/product_img/' . $product->image) }}"
+                                            <img src="{{ asset('uploads/product_img/' . $product->image) }}"
                                                 alt="{{ $product->name }}" />
                                         </div>
 
@@ -1622,7 +1622,7 @@ Project Area
                                     <div class="blog-img" data-overlay="black" data-opacity="5">
                                         <!-- Thumbnail -->
                                         <a href="blog-details.html">
-                                            <img src="{{ asset('storage/thumbnail/' . $item->thumbnail) }}"
+                                            <img src="{{ asset('uploads/thumbnail/' . $item->thumbnail) }}"
                                                 style="height: 320px; object-fit: cover;" alt="{{ $item->title }}">
                                         </a>
                                         <!-- YouTube URL -->
