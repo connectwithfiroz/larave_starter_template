@@ -24,7 +24,7 @@
                    
                     @if ($news->thumbnail)
                         <div class="mt-2">
-                            <img src="{{ asset('storage/thumbnail/' . $news->thumbnail) }}" 
+                            <img src="{{ asset('uploads/thumbnail/' . $news->thumbnail) }}" 
                                 alt="Current Image" width="100">
                         </div>
                     @endif

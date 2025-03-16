@@ -26,7 +26,7 @@
                         <tr>
                             <td>{{ $item->title }}</td>
                             <td>
-                                <img src="{{ asset('storage/thumbnail/' . $item->thumbnail) }}" alt="{{ $item->name }}" class="img-responsive" style="width: 100px;"/>
+                                <img src="{{ asset('uploads/thumbnail/' . $item->thumbnail) }}" alt="{{ $item->name }}" class="img-responsive" style="width: 100px;"/>
 
                             </td>
                             <td><a href="{{ $item->youtube_url }}" target="_blank">{{ $item->youtube_url }}</a></td>

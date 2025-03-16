@@ -34,14 +34,52 @@
     <!-- Swiper Js -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/swiper-bundle.min.css') }}">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}?v=1.1">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}?v=1.2">
+    <style>
+        @media (min-width: 250px) and (max-width: 576px) {
+            #ngo-donation-popup select,
+            #ngo-donation-popup .form-control,
+            #ngo-donation-popup .form-select,
+            #ngo-donation-popup textarea,
+            #ngo-donation-popup input {
+                height: 36px;
+                padding: 0 25px 0 25px;
+                padding-right: 45px;
+                border: 1px solid transparent;
+                color: var(--body-color);
+                background-color: var(--smoke-color);
+                border-radius: 50px;
+                font-size: 16px;
+                width: 100%;
+                font-family: var(--body-font);
+                -webkit-transition: 0.4s ease-in-out;
+                transition: 0.4s ease-in-out;
+            }
+
+            .ngo-popup-heading {
+                font-size: 18px;
+            }
+
+            .ngo-popup-description {
+                font-size: 14px;
+
+            }
+        }
+    </style>
     @stack('header')
 </head>
 
 <body>
     <!-- popup-form -->
-    <div id="ngo-donation-popup" class="ngo-popup">
-        <div class="ngo-popup-content">
+    <div id="ngo-donation-popup" style="
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+    /* margin-top: 90px; */
+" class="ngo-popup">
+        <div class="ngo-popup-content" style="
+    margin-top: 100px;
+">
             <span class="ngo-popup-close" onclick="closePopup()">×</span> <!-- Close icon -->
             <div class="ngo-popup-header">
                 <img src="{{ asset('frontend/assets/img/logo.webp') }}" alt="Logo" class="ngo-popup-logo">
@@ -283,7 +321,7 @@
                                         <!-- <li><a href="blog-details.html">Blog</a></li> -->
                                         <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                         <li><a href="{{ route('developer') }}">Our Developer</a></li>
-                                        
+
                                     </ul>
                                 </li>
                             </ul>
@@ -464,12 +502,9 @@
                 <div class="row gy-3 align-items-center">
                     <div class="col-lg-12 copy-dcn">
                         <p class="copyright-text text-center">
-                            <i class="fal fa-copyright"></i> Copyright 2024 <a href="{{ route('index') }}">Al Khair
-                                Educational &
-                                Charitable Trust</a>. All Rights Reserved.
+                            <i class="fal fa-copyright"></i> Copyright 2025 <a href="{{ route('index') }}">Al Khair Educational & Charitable Trust</a>. All Rights Reserved.
                         </p>
-                        <a href="https://dcnexus.netlify.app" target="_blank" class="dcn">Design By DCNexus +91
-                            7457024841</a>
+                        <a href="/our-developer" target="_blank" class="">Meet our Designer and Developer</a>
                     </div>
                 </div>
             </div>

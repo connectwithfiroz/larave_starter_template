@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 
+
 class NewsController extends Controller
 {
-    private $image_path = 'uploads/thumbnail';
-
+    private $image_path = 'uploads/product_img';
     public function index()
     {
         $news = News::all();
@@ -30,23 +30,27 @@ class NewsController extends Controller
             'youtube_url' => 'required|url',
             'description' => 'nullable',
         ]);
-
-        $request_data = $request->except('image'); // Exclude image temporarily
-
+        $request_data = $request->all();
         // Handle the image upload
         if ($request->hasFile('image')) {
             $file = $request->file('image');
+            $filename = "thumbnail_".time() . '-' . $file->getClientOriginalName();
+            
+            // Store the file in 'public/testimonials' directory
+            $filePath = $file->storeAs('public/thumbnail', $filename);
+            $request_data['thumbnail'] = $filename;
+        }
+        if($request->hasfile('image'))
+        {
+            $file = $request->file('image');
             $filename = "thumbnail" . time() . '-' . preg_replace('/[^a-zA-Z0-9_.]/', '_', $file->getClientOriginalName());
-
-            // Store in public/uploads/product_img
-            $file->move(public_path($this->image_path), $filename);
-
-            // Save only the filename to the database
+            $filePath = $this->image_path . '/' . $filename;
+            $file->move(public_path($this->image_path), $filePath);
+            //dd($filename);
             $request_data['thumbnail'] = $filename;
         }
 
         News::create($request_data);
-
         return redirect()->route('news.index')->with('success', 'News created successfully.');
     }
 
@@ -62,48 +66,30 @@ class NewsController extends Controller
             'title' => 'required|max:255',
             'youtube_url' => 'required|url',
             'description' => 'nullable',
-            'image' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:5120', // Optional image validation
         ]);
+        $request_data = $request->all();
 
         $news = News::findOrFail($id);
-        $request_data = $request->except('image'); // Exclude image temporarily
-
         // If a new image is uploaded, delete the old one and upload the new one
         if ($request->hasFile('image')) {
-            // Delete old image if exists
-            $oldImagePath = public_path($this->image_path . '/' . $news->thumbnail);
-            if (!empty($news->thumbnail) && file_exists($oldImagePath)) {
-                unlink($oldImagePath);
-            }
+            // Delete the old image from the storage
+            Storage::delete('public/thumbnail/' . $news->image);
 
-            // Upload new image
             $file = $request->file('image');
-            $filename = "thumbnail" . time() . '-' . preg_replace('/[^a-zA-Z0-9_.]/', '_', $file->getClientOriginalName());
-            $file->move(public_path($this->image_path), $filename);
-
-            // Save only the filename to the database
+            $filename = time() . '-' . $file->getClientOriginalName();
+            
+            // Store the new file
+            $file->storeAs('public/thumbnail', $filename);
             $request_data['thumbnail'] = $filename;
         }
-
         $news->update($request_data);
-
         return redirect()->route('news.index')->with('success', 'News updated successfully.');
     }
 
     public function destroy($id)
     {
         $news = News::findOrFail($id);
-
-        // Delete the associated image if exists
-        if (!empty($news->thumbnail)) {
-            $imagePath = public_path($this->image_path . '/' . $news->thumbnail);
-            if (file_exists($imagePath)) {
-                unlink($imagePath);
-            }
-        }
-
         $news->delete();
-
         return redirect()->route('news.index')->with('success', 'News deleted successfully.');
     }
 }

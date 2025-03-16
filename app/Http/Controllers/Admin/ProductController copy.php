@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
-    private $image_path = 'uploads/product_img';
     public function index()
     {
         $products = Product::all();
@@ -31,17 +30,16 @@ class ProductController extends Controller
         ]);
         $request_data = $request->all();
         // Handle the image upload
-        if($request->hasfile('image'))
-        {
+        if ($request->hasFile('image')) {
             $file = $request->file('image');
             $filename = "product_img_" . time() . '-' . preg_replace('/[^a-zA-Z0-9_.]/', '_', $file->getClientOriginalName());
-            $filePath = "$this->image_path . '/' . $filename";
-            $file->move(public_path($this->image_path), $filePath);
-            //dd($filename);
+
+            // $filename = "product_img_".time() . '-' . $file->getClientOriginalName();
+            
+            // Store the file in 'public/testimonials' directory
+            $filePath = $file->storeAs('public/product_img', $filename);
             $request_data['image'] = $filename;
         }
-        
-
 
         Product::create($request_data);
         return redirect()->route('products.index')->with('success', 'Product created successfully.');
@@ -66,17 +64,19 @@ class ProductController extends Controller
         // If a new image is uploaded, delete the old one and upload the new one
         if ($request->hasFile('image')) {
             // Delete the old image from the storage
-            
-            if(!empty($products->image)){
-                @unlink( public_path($this->image_path) . $products->image );
+            if (!empty($products->image)) {
+                Storage::delete('public/product_img/' . $products->image);
             }
         
             $file = $request->file('image');
-            $filename = "product_img_" . time() . '-' . preg_replace('/[^a-zA-Z0-9_.]/', '_', $file->getClientOriginalName());
-            $filePath = "$this->image_path . '/' . $filename";
-            $file->move(public_path($this->image_path), $filePath);
-            //dd($filename);
-            $request_data['image'] = $filename;
+        
+            // Generate a unique filename with extension
+            $extension = $file->getClientOriginalExtension(); // Get file extension
+            $filename = uniqid('product_img_') . '_' . time() . '.' . $extension;
+        
+            // Store the new file
+            $file->storeAs('public/product_img', $filename);
+            $request_data['image'] = $filename; // Save the filename for the database
         }
         
         $products->update($request_data);
@@ -86,9 +86,6 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $products = Product::findOrFail($id);
-        if(!empty($products->image)){
-            @unlink( public_path($this->image_path) . $products->image );
-        }
         $products->delete();
         return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
     }
