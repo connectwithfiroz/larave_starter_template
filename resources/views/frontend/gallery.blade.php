@@ -31,9 +31,9 @@
                     <div class="gallery-card">
                         <div class="gallery-img">
                             <img src="{{ asset('frontend/assets/img/gallery/119.jpeg') }}" alt="gallery image">
-                            <a href="{{ asset('frontend/assets/img/gallery/119.jpeg') }}" class="icon-btn popup-image"><i
-                                    class="fas fa-eye"></i></a>
+                            <a href="{{ asset('frontend/assets/img/gallery/119.jpeg') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">

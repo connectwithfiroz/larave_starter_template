@@ -66,7 +66,6 @@
             <h3>NGO Darpan</h3>
         </div>
 
-
         <!-- <div class="custom-certificate-card">
             <img src="{{ asset('frontend/assets/img/certifecate/11.webp') }}" alt="12A Certificate" class="custom-certificate-image"
                 onclick="openCustomPopup('{{ asset('frontend/assets/img/certifecate/11.webp') }}')">

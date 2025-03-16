@@ -260,7 +260,7 @@
                             <a href="https://www.facebook.com/share/18qqg3kAnL/"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/alkhair_trust/profilecard/?igsh=a2w2aWE0dHh2ZDd1"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.youtube.com/@Alkhairtrust-658"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            <!-- <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -489,7 +489,7 @@
                                  <a href="https://www.facebook.com/share/18qqg3kAnL/"><i class="fab fa-facebook-f"></i></a>
                                  <a href="https://www.instagram.com/alkhair_trust/profilecard/?igsh=a2w2aWE0dHh2ZDd1"><i class="fab fa-instagram"></i></a>
                                  <a href="https://www.youtube.com/@Alkhairtrust-658"><i class="fab fa-youtube"></i></a>
-                                 <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                 <!-- <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                         </div>
