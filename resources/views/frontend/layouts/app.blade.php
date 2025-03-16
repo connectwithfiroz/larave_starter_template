@@ -601,6 +601,21 @@
 
     <!-- Main Js File -->
     <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+            // Attach a click event to all buttons with the class "th-btn donate_btn"
+            $('.donate_btn').on('click', function (e) {
+                e.preventDefault(); // Prevent default behavior of the link
+
+                // Find the nearest `.box-title` and get its text
+                var boxTitle = $(this).closest('.box-content').find('.box-title a').text().trim();
+
+                // Redirect to the donate page with the box title as a query parameter
+                var redirectUrl = '/donate?for=' + encodeURIComponent(boxTitle);
+                window.location.href = redirectUrl;
+            });
+        });
+    </script>
     <!-- Page-specific JS -->
     @stack('js')
 </body>

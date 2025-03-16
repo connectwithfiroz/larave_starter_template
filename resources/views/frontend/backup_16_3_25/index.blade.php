@@ -24,12 +24,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
+                                        <!-- <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Together We Can Bring Hope </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Support Changes Lives </span>
-                                        </h1>
+                                        </h1> -->
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -57,12 +57,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
+                                        <!-- <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1>
+                                        </h1> -->
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -89,12 +89,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
+                                        <!-- <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1>
+                                        </h1> -->
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -122,12 +122,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
+                                        <!-- <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1>
+                                        </h1> -->
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -154,12 +154,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
+                                        <!-- <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1>
+                                        </h1> -->
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -1731,6 +1731,21 @@ Project Area
     </section>
 @endsection
 @push('js')
+    <script>
+        $(document).ready(function () {
+            // Attach a click event to all buttons with the class "th-btn donate_btn"
+            $('.donate_btn').on('click', function (e) {
+                e.preventDefault(); // Prevent default behavior of the link
+
+                // Find the nearest `.box-title` and get its text
+                var boxTitle = $(this).closest('.box-content').find('.box-title a').text().trim();
+
+                // Redirect to the donate page with the box title as a query parameter
+                var redirectUrl = '/donate?for=' + encodeURIComponent(boxTitle);
+                window.location.href = redirectUrl;
+            });
+        });
+    </script>
     <script>
         var totalAmount = 0;
         var totalQuantity = 0;

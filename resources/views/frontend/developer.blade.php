@@ -119,7 +119,7 @@ ul.social li a {
 		<div class="col-sm-6 col-lg-3 my-auto">
 			<div class="box shadow-sm p-4">
 				<div class="image-wrapper mb-3">
-					<img class="img-fluid" src="https://media.licdn.com/dms/image/v2/D5635AQHqmA0CYthwvg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1724653920338?e=1741190400&v=beta&t=WXYJmzNBzyXr1nm2z9VNHt1X4XbZdL43UQuJhpb0iLA" alt="..." />
+					<img class="img-fluid" src="https://media.licdn.com/dms/image/v2/D5635AQHqmA0CYthwvg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1724653920338?e=1742724000&v=beta&t=pfhRgH86q4blBv2JxOc4zph5tGdSJNmzRxfSzSWpwpo" alt="..." />
 				</div>
 				<div class="box-desc">
 					<h5>SHAHBAZ ANJOOM</h5>

@@ -9759,7 +9759,7 @@ ul.comment-list .th-comment-item:has(.children) .th-post-comment {
 }
 
 .hero-title span {
-  display: block;
+  display: none;
   font-size: 70px;
 }
 
