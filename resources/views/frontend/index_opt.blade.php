@@ -199,7 +199,7 @@
                             <img src="{{ asset('frontend/assets/img/press-pass.webp') }}" alt="icon">
                         </div>
                         <h3 class="box-title">Generate ID Card</h3>
-                        <a class="link-btn style2" href="#">View Details <i
+                        <a class="link-btn style2" href="about.html">View Details <i
                                 class="fa-solid fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
@@ -212,7 +212,7 @@
                             <img src="{{ asset('frontend/assets/img/email.webp') }}" alt="icon">
                         </div>
                         <h3 class="box-title">Appointment Letter</h3>
-                        <a class="link-btn style2" href="#">View Details <i
+                        <a class="link-btn style2" href="about.html">View Details <i
                                 class="fa-solid fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                             <img src="{{ asset('frontend/assets/img/certificate.webp') }}" alt="icon">
                         </div>
                         <h3 class="box-title">Generate Certificate</h3>
-                        <a class="link-btn style2" href="#">View Details <i
+                        <a class="link-btn style2" href="about.html">View Details <i
                                 class="fa-solid fa-arrow-up-right ms-2"></i></a>
                     </div>
                 </div>
@@ -305,7 +305,7 @@
                             <img src="{{ asset('frontend/assets/img/boy.webp') }}" alt="Icon">
                         </div>
                         <div class="box-content">
-                            <h3 class="box-title"><a href="#">Zakat</a></h3>
+                            <h3 class="box-title"><a href="about.html">Zakat</a></h3>
 
                             <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
@@ -321,7 +321,7 @@
                             <img src="{{ asset('frontend/assets/img/volunteering.webp') }}" alt="Icon">
                         </div>
                         <div class="box-content">
-                            <h3 class="box-title"><a href="#">Sadqa</a></h3>
+                            <h3 class="box-title"><a href="about.html">Sadqa</a></h3>
 
                             <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
@@ -337,7 +337,7 @@
                             <img src="{{ asset('frontend/assets/img/lake.webp') }}" alt="Icon">
                         </div>
                         <div class="box-content">
-                            <h3 class="box-title"><a href="#">Fitra</a></h3>
+                            <h3 class="box-title"><a href="about.html">Fitra</a></h3>
 
                             <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
@@ -347,13 +347,13 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/madrsha.jpeg') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/cherety/woman.webp') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/women.webp') }}" alt="Icon">
                         </div>
                         <div class="box-content">
-                            <h3 class="box-title"><a href="#">
+                            <h3 class="box-title"><a href="about.html">
                                     Islamic Education</a></h3>
 
                             <a href="/donate" class="th-btn donate_btn">Donate Now<i
@@ -371,7 +371,7 @@
                             <img src="{{ asset('frontend/assets/img/education.webp') }}" alt="Icon">
                         </div>
                         <div class="box-content">
-                            <h3 class="box-title"><a href="#">Education Empowerment</a></h3>
+                            <h3 class="box-title"><a href="about.html">Education Empowerment</a></h3>
 
                             <a href="/donate" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
@@ -387,7 +387,7 @@
                             <img src="{{ asset('frontend/assets/img/empowerment.webp') }}" alt="Icon">
                         </div>
                         <div class="box-content">
-                            <h3 class="box-title"><a href="#">Health Empowerment</a></h3>
+                            <h3 class="box-title"><a href="about.html">Health Empowerment</a></h3>
 
                             <a href="dontaion.html" class="th-btn donate_btn">Donate Now<i
                                     class="fas fa-arrow-up-right ms-2"></i></a>
@@ -462,7 +462,7 @@
                             </div>
                         </div>
                         <div class="btn-wrap mt-40">
-                            <a href="#" class="th-btn style3 style-radius">About More <i
+                            <a href="about.html" class="th-btn style3 style-radius">About More <i
                                     class="fa-solid fa-arrow-up-right ms-2"></i></a>
                         </div>
                     </div>
@@ -757,7 +757,7 @@
 
                                         <!-- Product Image -->
                                         <div class="box-thumb-two">
-                                            <img src="{{ asset('uploads/product_img/' . $product->image) }}"
+                                            <img src="{{ asset('storage/product_img/' . $product->image) }}"
                                                 alt="{{ $product->name }}" />
                                         </div>
 
@@ -855,7 +855,7 @@
                                 donation, every contribution helps organizations focus on their mission and create a
                                 lasting impact in their communities.</p>
                             <div class="btn-wrap mt-35">
-                                <a href="#" class="th-btn style-border">Our Success Story <i
+                                <a href="about.html" class="th-btn style-border">Our Success Story <i
                                         class="fas fa-arrow-up-right ms-2"></i></a>
                             </div>
                         </div>
@@ -1508,7 +1508,7 @@ Project Area
     <!--==============================
                 Faqs Area
                 ==============================-->
-    <div class="space overflow-hidden faq-area-2" >
+    <div class="space overflow-hidden faq-area-2" data-bg-src="{{ asset('frontend/assets/img/faqs.webp') }}">
         <div class="shape-mockup faq-shape2-1 jump-reverse" data-top="20%" data-left="0">
             <img src="{{ asset('frontend/assets/img/shape/hand-bg-shape2-1.png') }}" alt="img">
         </div>
@@ -1622,7 +1622,7 @@ Project Area
                                     <div class="blog-img" data-overlay="black" data-opacity="5">
                                         <!-- Thumbnail -->
                                         <a href="blog-details.html">
-                                            <img src="{{ asset('uploads/thumbnail/' . $item->thumbnail) }}"
+                                            <img src="{{ asset('storage/thumbnail/' . $item->thumbnail) }}"
                                                 style="height: 320px; object-fit: cover;" alt="{{ $item->title }}">
                                         </a>
                                         <!-- YouTube URL -->
