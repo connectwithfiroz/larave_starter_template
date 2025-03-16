@@ -30,8 +30,8 @@
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
-                            <img src="{{ asset('frontend/assets/img/gallery/119.webp') }}" alt="gallery image">
-                            <a href="{{ asset('frontend/assets/img/gallery/119.webp') }}" class="icon-btn popup-image"><i
+                            <img src="{{ asset('frontend/assets/img/gallery/119.jpeg') }}" alt="gallery image">
+                            <a href="{{ asset('frontend/assets/img/gallery/119.jpeg') }}" class="icon-btn popup-image"><i
                                     class="fas fa-eye"></i></a>
                         </div>
                     </div>
@@ -39,8 +39,8 @@
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
-                            <img src="{{ asset('frontend/assets/img/gallery/120.webp') }}" alt="gallery image">
-                            <a href="{{ asset('frontend/assets/img/gallery/120.webp') }}" class="icon-btn popup-image"><i
+                            <img src="{{ asset('frontend/assets/img/gallery/120.jpeg') }}" alt="gallery image">
+                            <a href="{{ asset('frontend/assets/img/gallery/120.jpeg') }}" class="icon-btn popup-image"><i
                                     class="fas fa-eye"></i></a>
                         </div>
                     </div>
@@ -64,16 +64,16 @@
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
-                            <img src="{{ asset('frontend/assets/img/gallery/3.webp') }}" alt="gallery image">
-                            <a href="{{ asset('frontend/assets/img/gallery/3.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
+                            <img src="{{ asset('frontend/assets/img/gallery/3.jpeg') }}" alt="gallery image">
+                            <a href="{{ asset('frontend/assets/img/gallery/3.jpeg') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
-                            <img src="{{ asset('frontend/assets/img/gallery/4.webp') }}" alt="gallery image">
-                            <a href="{{ asset('frontend/assets/img/gallery/4.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
+                            <img src="{{ asset('frontend/assets/img/gallery/4.jpeg') }}" alt="gallery image">
+                            <a href="{{ asset('frontend/assets/img/gallery/4.jpeg') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
@@ -88,24 +88,24 @@
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
-                            <img src="{{ asset('frontend/assets/img/gallery/6.webp') }}" alt="gallery image">
-                            <a href="{{ asset('frontend/assets/img/gallery/6.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
+                            <img src="{{ asset('frontend/assets/img/gallery/6.jpeg') }}" alt="gallery image">
+                            <a href="{{ asset('frontend/assets/img/gallery/6.jpeg') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
+                    <div class="gallery-card">
+                        <div class="gallery-img">
+                            <img src="{{ asset('frontend/assets/img/gallery/7.jpeg') }}" alt="gallery image">
+                            <a href="{{ asset('frontend/assets/img/gallery/7.jpeg') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
-                            <img src="{{ asset('frontend/assets/img/gallery/7.webp') }}" alt="gallery image">
-                            <a href="{{ asset('frontend/assets/img/gallery/7.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img">
-                            <img src="{{ asset('frontend/assets/img/gallery/8.webp') }}" alt="gallery image">
-                            <a href="{{ asset('frontend/assets/img/gallery/8.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
+                            <img src="{{ asset('frontend/assets/img/gallery/8.jpeg') }}" alt="gallery image">
+                            <a href="{{ asset('frontend/assets/img/gallery/8.jpeg') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
@@ -126,22 +126,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
+                <!-- <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
                             <img src="{{ asset('frontend/assets/img/gallery/12.webp') }}" alt="gallery image">
                             <a href="{{ asset('frontend/assets/img/gallery/12.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
+                </div> -->
+                <!-- <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
                             <img src="{{ asset('frontend/assets/img/gallery/13.webp') }}" alt="gallery image">
                             <a href="{{ asset('frontend/assets/img/gallery/13.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
@@ -343,22 +343,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
+                <!-- <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
                             <img src="{{ asset('frontend/assets/img/gallery/42.webp') }}" alt="gallery image">
                             <a href="{{ asset('frontend/assets/img/gallery/42.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
+                </div> -->
+                <!-- <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
                             <img src="{{ asset('frontend/assets/img/gallery/40.webp') }}" alt="gallery image">
                             <a href="{{ asset('frontend/assets/img/gallery/40.webp') }}" class="icon-btn popup-image"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-6 col-xxl-auto col-lg-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img">
