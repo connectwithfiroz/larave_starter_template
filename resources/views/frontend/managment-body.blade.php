@@ -74,7 +74,7 @@ Contact Area
                     <div class="swiper-slide">
                         <div class="th-team team-card3">
                             <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/3.webp') }}" alt="Team">
+                                <img src="{{ asset('frontend/assets/img/volentior/2.jpg') }}" alt="Team">
                             </div>
                             <div class="team-card-content">
                                 <h3 class="box-title"><a href="team-details.html">Mohammad Sazid</a></h3>
@@ -95,25 +95,75 @@ Contact Area
                                 <h3 class="box-title"><a href="team-details.html">Zakir Hussain</a></h3>
                                 <span class="team-desig">(Joint Secretary)</span>
                                 <p>Al Khair Educational & Charitable Trust</p>
-                         
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="th-team team-card3">
+                            <div class="team-img">
+                                <img src="{{ asset('frontend/assets/img/volentior/ceo.JPG') }}" alt="Team">
+                            </div>
+                            <div class="team-card-content">
+                                <h3 class="box-title"><a href="team-details.html">Shahin Salar</a></h3>
+                                <span class="team-desig">(C.E.O)</span>
+                                <p>Al Khair Educational & Charitable Trust</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="th-team team-card3">
+                            <div class="team-img">
+                                <img src="{{ asset('frontend/assets/img/volentior/kavita.jpeg') }}" alt="Team">
+                            </div>
+                            <div class="team-card-content">
+                                <h3 class="box-title"><a href="team-details.html">Kavita Parjapati</a></h3>
+                                <span class="team-desig">(Coordinator)</span>
+                                <p>Al Khair Educational & Charitable Trust</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="th-team team-card3">
+                            <div class="team-img">
+                                <img src="{{ asset('frontend/assets/img/volentior/cordi.jpeg') }}" alt="Team">
+                            </div>
+                            <div class="team-card-content">
+                                <h3 class="box-title"><a href="team-details.html">Muskan Khan</a></h3>
+                                <span class="team-desig">(Coordinator)</span>
+                                <p>Al Khair Educational & Charitable Trust</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Single Item -->
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class="th-team team-card3">
                             <div class="team-img">
                                 <img src="{{ asset('frontend/assets/img/volentior/4.webp') }}" alt="Team">
                             </div>
                             <div class="team-card-content">
                                 <h3 class="box-title"><a href="team-details.html">Arshad Hussain</a></h3>
-                                <span class="team-desig">(Treasurer)</span>
+                                <span class="team-desig">(Membar)</span>
                                 <p>Al Khair Educational & Charitable Trust</p>
                            
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <!-- <div class="swiper-slide">
+                        <div class="th-team team-card3">
+                            <div class="team-img">
+                                <img src="{{ asset('frontend/assets/img/volentior/3.jpg') }}" alt="Team">
+                            </div>
+                            <div class="team-card-content">
+                                <h3 class="box-title"><a href="team-details.html">Shokat Ali</a></h3>
+                                <span class="team-desig">(Membar)</span>
+                                <p>Al Khair Educational & Charitable Trust</p>
+                           
+                            </div>
+                        </div>
+                    </div> -->
 
                  
 

@@ -891,16 +891,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -919,16 +909,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -949,15 +929,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -966,6 +937,65 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="img-wrap">
+                                    <div class="team-img">
+                                        <img src="{{ asset('frontend/assets/img/volentior/cordi.jpeg') }}" alt="Team">
+                                    </div>
+                                    <div class="team-social-hover">
+                                        <a href="#" class="team-social-hover_btn">
+                                            <i class="far fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="box-title"><a href="team-details.html">Muskan Khan</a></h3>
+                                    <span class="team-desig">Coordinator</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="img-wrap">
+                                    <div class="team-img">
+                                        <img src="{{ asset('frontend/assets/img/volentior/ceo.JPG') }}" alt="Team">
+                                    </div>
+                                    <div class="team-social-hover">
+                                        <a href="#" class="team-social-hover_btn">
+                                            <i class="far fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="box-title"><a href="team-details.html">Sahin Salar</a></h3>
+                                    <span class="team-desig">C.E.O</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="img-wrap">
+                                    <div class="team-img">
+                                        <img src="{{ asset('frontend/assets/img/volentior/kavita.jpeg') }}" alt="Team">
+                                    </div>
+                                    <div class="team-social-hover">
+                                        <a href="#" class="team-social-hover_btn">
+                                            <i class="far fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="box-title"><a href="team-details.html">Kavita </a></h3>
+                                    <span class="team-desig">Coordinator</span>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                         <!-- Single Item -->
                         <div class="swiper-slide">
@@ -978,21 +1008,11 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
                                     <h3 class="box-title"><a href="team-details.html">Arshad Hussain</a></h3>
-                                    <span class="team-desig">Treasurer</span>
+                                    <span class="team-desig">Membar</span>
                                 </div>
                             </div>
                         </div>
@@ -1008,16 +1028,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -1038,16 +1048,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -1068,16 +1068,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -1157,7 +1147,7 @@
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title after-none before-none"><i class="far fa-heart text-theme"></i>Testimonials</span>
-                <h2 class="sec-title">What Our Customers Say?</h2>
+                <h2 class="sec-title">What Our Doner Say?</h2>
             </div>
             <div class="testi-slider3 slider-area">
                 <div class="swiper th-slider" id="testiSlide3"

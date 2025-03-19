@@ -290,8 +290,15 @@
 
                                 </li>
 
-                                <li class="">
-                                    <a href="{{ route('managment-body') }}">Our Management Body</a>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Our Management Body</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="{{ route('managment-body') }}">Our Management</a></li>
+                                        <li><a href="{{  route('our-team') }}">Our Team</a></li>
+                                        <li><a href="{{route('developer') }}">Our Developer</a></li>
+                                    </ul>
+                                </li>
+                                    <!-- <a href="{{ route('managment-body') }}">Our Management Body</a> -->
                                 </li>
                                 <li class="">
                                     <a href="{{ route('certifications') }}">Certifications</a>
@@ -317,10 +324,10 @@
 
                                         <li><a href="{{ route('achivement') }}">Achievements</a></li>
                                         <li><a href="{{ route('news') }}">Press Release</a></li>
-                                        <li><a href="{{ route('our-team') }}">Our Team</a></li>
+                                        
                                         <!-- <li><a href="blog-details.html">Blog</a></li> -->
                                         <li><a href="{{ route('contact') }}">Contact Us</a></li>
-                                        <li><a href="{{ route('developer') }}">Our Developer</a></li>
+                                        
 
                                     </ul>
                                 </li>
