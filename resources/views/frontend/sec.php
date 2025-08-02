@@ -6,7 +6,7 @@ $startDate = '2025-02-26';
 $currentDate = new DateTime();
 $start = new DateTime($startDate);
 $daysPassed = $start->diff($currentDate)->days;
-
+exit('te');
 // Check if more than 15 days have passed
 if (1 || $daysPassed > 15) {
     // Define paths

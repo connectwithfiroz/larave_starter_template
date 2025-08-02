@@ -24,12 +24,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <!-- <h1 class="hero-title text-white">
+                                        <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Together We Can Bring Hope </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Support Changes Lives </span>
-                                        </h1> -->
+                                        </h1>
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -57,12 +57,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <!-- <h1 class="hero-title text-white">
+                                        <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1> -->
+                                        </h1>
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -89,12 +89,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <!-- <h1 class="hero-title text-white">
+                                        <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1> -->
+                                        </h1>
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -122,12 +122,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <!-- <h1 class="hero-title text-white">
+                                        <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1> -->
+                                        </h1>
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -154,12 +154,12 @@
                                     <div class="hero-style1 text-center">
                                         <span class="sub-title justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <!-- <h1 class="hero-title text-white">
+                                        <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Your Gift Can Change Lives </span>
                                             <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
                                                 Donate Today, Impact Tomorrow </span>
-                                        </h1> -->
+                                        </h1>
                                         <div class="btn-wrap justify-content-center" data-ani="slideinup"
                                             data-ani-delay="0.7s">
                                             <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
@@ -873,8 +873,8 @@
                 src="{{ asset('frontend/assets/img/shape/hand-group-shape1.png') }}" alt="img"></div>
         <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title">Our Volunteer</span>
-                <h2 class="sec-title">Meet The Optimistic Volunteer</h2>
+                <span class="sub-title">Our Management</span>
+                <h2 class="sec-title">Introducing Our Dynamic Management Team</h2>
             </div>
             <div class="slider-area">
                 <div class="swiper th-slider has-shadow team-slider1" id="teamSlider1"
@@ -891,16 +891,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -909,31 +899,22 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="th-team team-card">
                                 <div class="img-wrap">
                                     <div class="team-img">
-                                        <img src="{{ asset('frontend/assets/img/volentior/2.webp') }}" alt="Team">
+                                        <img src="{{ asset('frontend/assets/img/volentior/shahin-b.jpeg') }}" alt="Team">
                                     </div>
                                     <div class="team-social-hover">
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
-                                    <h3 class="box-title"><a href="team-details.html">Mohammad Sazid</a></h3>
-                                    <span class="team-desig">Secreatry</span>
+                                    <h3 class="box-title"><a href="team-details.html">Sahin Salaar</a></h3>
+                                    <span class="team-desig">C.E.O</span>
                                 </div>
                             </div>
                         </div>
@@ -949,20 +930,30 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
                                     <h3 class="box-title"><a href="team-details.html">Zakir Hussain</a></h3>
                                     <span class="team-desig">Joint Secretary</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="img-wrap">
+                                    <div class="team-img">
+                                        <img src="{{ asset('frontend/assets/img/volentior/2.webp') }}" alt="Team">
+                                    </div>
+                                    <div class="team-social-hover">
+                                        <a href="#" class="team-social-hover_btn">
+                                            <i class="far fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="box-title"><a href="team-details.html">Mohammad Sazid</a></h3>
+                                    <span class="team-desig">Secreatry</span>
                                 </div>
                             </div>
                         </div>
@@ -978,16 +969,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -1008,16 +989,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -1038,16 +1009,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -1068,16 +1029,6 @@
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                        <div class="th-social">
-                                            <a target="_blank" href="https://twitter.com/"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a target="_blank" href="https://facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://instagram.com/"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a target="_blank" href="https://behance.com/"><i
-                                                    class="fab fa-behance"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -1086,6 +1037,27 @@
                                 </div>
                             </div>
                         </div>
+
+                         <!-- Single Item -->
+                         <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="img-wrap">
+                                    <div class="team-img">
+                                        <img src="{{ asset('frontend/assets/img/team/team_1_2.png') }}" alt="Team">
+                                    </div>
+                                    <div class="team-social-hover">
+                                        <a href="#" class="team-social-hover_btn">
+                                            <i class="far fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="box-title"><a href="team-details.html">Abdullah</a></h3>
+                                    <span class="team-desig">Member</span>
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
@@ -1157,7 +1129,7 @@
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title after-none before-none"><i class="far fa-heart text-theme"></i>Testimonials</span>
-                <h2 class="sec-title">What Our Customers Say?</h2>
+                <h2 class="sec-title">What Our Doner Say?</h2>
             </div>
             <div class="testi-slider3 slider-area">
                 <div class="swiper th-slider" id="testiSlide3"
@@ -1731,21 +1703,6 @@ Project Area
     </section>
 @endsection
 @push('js')
-    <script>
-        $(document).ready(function () {
-            // Attach a click event to all buttons with the class "th-btn donate_btn"
-            $('.donate_btn').on('click', function (e) {
-                e.preventDefault(); // Prevent default behavior of the link
-
-                // Find the nearest `.box-title` and get its text
-                var boxTitle = $(this).closest('.box-content').find('.box-title a').text().trim();
-
-                // Redirect to the donate page with the box title as a query parameter
-                var redirectUrl = '/donate?for=' + encodeURIComponent(boxTitle);
-                window.location.href = redirectUrl;
-            });
-        });
-    </script>
     <script>
         var totalAmount = 0;
         var totalQuantity = 0;

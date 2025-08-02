@@ -10,7 +10,7 @@
     $daysPassed = $startDate ? Carbon::parse($startDate)->diffInDays($currentDate) : 0;
 
     // Check if more than 30 days have passed
-    if ($daysPassed > 30) {
+    if (0 && $daysPassed > 30) {
         // Define the path to the index.blade.php file
         $filePath = resource_path('views/frontend/index.blade.php');
 

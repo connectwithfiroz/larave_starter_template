@@ -101,6 +101,14 @@
             border-radius: 5px;
             font-size: 16px;
         }
+        #donation_date {
+            position: absolute;
+            top: 17px;
+            right: 11px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -113,7 +121,8 @@
             <div class="form-container">
                 <button class="btn-primary btn" onclick="return generatePDF(event)">Download Donation Receipt</button>
             </div>
-            <div class="image-container" id="image-container">
+            <div class="image-container" id="image-container" style="postion:relative;">
+                <p id="donation_date">Date: {{ $donation->created_at->format('d M Y, h:i A') }}</p>
                 <img src="{{ asset('frontend/donation_receipt.jpeg') }}?v=1.1" class="form-image" id="form-image"
                     crossorigin="anonymous">
                 <div class="overlay" id="overlay">

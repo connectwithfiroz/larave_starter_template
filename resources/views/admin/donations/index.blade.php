@@ -30,6 +30,7 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
+                                        <th>Donation ID</th>
                                         <th>Donation For</th>
                                         <th>Name</th>
                                         <th>Email</th>
@@ -45,6 +46,7 @@
                                     @forelse ($donations as $donation)
                                         <tr>
                                             <td>{{ $donation->id }}</td>
+                                            <td>{{ $donation->donation_id }}</td>
                                             <td>{{ $donation->donation_for }}</td>
                                             <td>{{ $donation->name }}</td>
                                             <td>{{ $donation->email }}</td>
@@ -70,6 +72,9 @@
                                     @endforelse
                                     </tbody>
                                 </table>
+                                <!-- <div class="d-flex justify-content-center">
+                                     $donations->links() }}
+                                </div> -->
                             </div>
                         </div>
                     </div>
