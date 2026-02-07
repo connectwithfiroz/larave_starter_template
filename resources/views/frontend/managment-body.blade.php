@@ -8,170 +8,135 @@
 
 @section('section')
 
+  <!-- new sections -->
+ <div class="breadcumb-wrapper position-relative">
 
+    <!-- Desktop / Tablet Image -->
+    <div class="d-none d-md-block">
+        <img src="{{ asset('frontend/assets/img/new_2026/Our_Management.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Desktop">
+    </div>
 
-    <!--==============================
-    Breadcumb
-============================== -->
-<div class="breadcumb-wrapper " data-bg-src="{{ asset('frontend/assets/img/bg/breadcumb-bg.webp') }}" data-overlay="theme">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Our Management Body</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="index">Home</a></li>
-                    <li>Our Management Body</li>
-                </ul>
+    <!-- Mobile Image -->
+    <div class="d-block d-md-none">
+        <img src="{{ asset('frontend/assets/img/mobile-imag/managemnt.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Mobile">
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <!-- Content -->
+    <div class="container position-absolute top-50 start-50 translate-middle text-center"
+     style="color: #c70c52;">
+        <h1 class="breadcumb-title">Our Management</h1>
+        <ul class="breadcumb-menu list-inline mb-0">
+            <li class="list-inline-item"><a href="/index" class="text-white">Home</a></li>
+            <li class="list-inline-item">Our Management</li>
+        </ul>
+    </div>
+</div>
+   <!-- main containt -->
+
+    <div class="overflow-hidden space py-3">
+    <div class="container mt-4">
+        <div class="row gy-3 gx-3 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                        <img src="{{ asset('frontend/assets/img/volentior/1.1.webp') }}" alt="Volentior image" class="img-fluid w-100 responsive-img">
+                    </div>
+                    <div class=text-center>
+                    <h6>Parvej Akhtar<br/>Founder</h6>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div><!--==============================
-Contact Area   
-==============================-->
-   
-<section class="space" id="team-sec" data-bg-src="{{ asset('frontend/assets/img/bg/gray-bg2.png') }}">
-    <div class="shape-mockup team-bg-shape3-1 d-xxl-block d-none" data-top="0%" data-left="0%" data-bottom="0"><img src="{{ asset('frontend/assets/img/shape/team_bg_shape3_1.png') }}" alt="img"></div>
-    <div class="shape-mockup team-bg-shape3-2 d-xxl-block d-none" data-top="0%" data-right="0%" data-bottom="0"><img src="{{ asset('frontend/assets/img/shape/team_bg_shape3_2.png') }}" alt="img"></div>
-    <div class="shape-mockup team-bg-shape3-3 spin d-xxl-block d-none" data-top="15%" data-left="20%">
-        <div class="color-masking2">
-            <div class="masking-src" data-mask-src="{{ asset('frontend/assets/img/shape/team_bg_shape3_3.png') }}"></div>
-            <img src="{{ asset('frontend/assets/img/shape/team_bg_shape3_3.png') }}" alt="img">
-        </div>
-    </div>
-    <div class="shape-mockup team-bg-shape3-4 jump d-xxl-block d-none" data-top="18%" data-right="10%">
-        <img src="{{ asset('frontend/assets/img/shape/team_bg_shape3_4.png') }}" alt="img">
-    </div>
-    <div class="shape-mockup team-bg-shape3-5 spin d-xxl-block d-none" data-bottom="18%" data-left="10%">
-        <img src="{{ asset('frontend/assets/img/shape/team_bg_shape3_5.png') }}" alt="img">
-    </div>
-    <div class="shape-mockup team-bg-shape3-6 spin d-xxl-block d-none" data-bottom="10%" data-right="10%">
-        <div class="color-masking">
-            <div class="masking-src" data-mask-src="{{ asset('frontend/assets/img/shape/team_bg_shape3_6.png') }}"></div>
-            <img src="{{ asset('frontend/assets/img/shape/team_bg_shape3_6.png') }}" alt="img">
-        </div>
-    </div>
-    <div class="container">
-        <div class="title-area text-center">
-          
-            <h2 class="sec-title">Our Management Body</h2>
-        </div>
-        <div class="slider-area">
-            <div class="swiper th-slider has-shadow" id="teamSlider3" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
-                <div class="swiper-wrapper">
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card3">
-                            <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/1.1.webp') }}" alt="Team">
-                            </div>
-                            <div class="team-card-content">
-                                <h3 class="box-title"><a href="team-details.html">Parvej Akhtar</a></h3>
-                                <span class="team-desig">(Founder)</span>
-                                <p>Al Khair Educational & Charitable Trust</p>
-                            </div>
-                        </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                        <img src="{{ asset('frontend/assets/img/volentior/shahin-b.jpeg') }}" alt="Volentior image" class="img-fluid w-100 responsive-img">
                     </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card3">
-                            <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/2.jpg') }}" alt="Team">
-                            </div>
-                            <div class="team-card-content">
-                                <h3 class="box-title"><a href="team-details.html">Mohammad Sazid</a></h3>
-                                <span class="team-desig">(Secretary)</span>
-                                <p>Al Khair Educational & Charitable Trust</p>
-                            
-                            </div>
-                        </div>
+                    <div class=text-center>
+                    <h6>Shahin Salaar<br/>C.E.O</h6>
                     </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card3">
-                            <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/1.webp') }}" alt="Team">
-                            </div>
-                            <div class="team-card-content">
-                                <h3 class="box-title"><a href="team-details.html">Zakir Hussain</a></h3>
-                                <span class="team-desig">(Joint Secretary)</span>
-                                <p>Al Khair Educational & Charitable Trust</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                        <img src="{{ asset('frontend/assets/img/volentior/1.webp') }}" alt="Volentior image" class="img-fluid w-100 responsive-img">
                     </div>
-
-                    <div class="swiper-slide">
-                        <div class="th-team team-card3">
-                            <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/ceo.JPG') }}" alt="Team">
-                            </div>
-                            <div class="team-card-content">
-                                <h3 class="box-title"><a href="team-details.html">Shahin Salar</a></h3>
-                                <span class="team-desig">(C.E.O)</span>
-                                <p>Al Khair Educational & Charitable Trust</p>
-                            </div>
-                        </div>
+                    <div class=text-center>
+                    <h6>Zakir Hussain<br/>Joint Secreatry</h6>
                     </div>
-
-                    <div class="swiper-slide">
-                        <div class="th-team team-card3">
-                            <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/kavita.jpeg') }}" alt="Team">
-                            </div>
-                            <div class="team-card-content">
-                                <h3 class="box-title"><a href="team-details.html">Kavita Parjapati</a></h3>
-                                <span class="team-desig">(Coordinator)</span>
-                                <p>Al Khair Educational & Charitable Trust</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                        <img src="{{ asset('frontend/assets/img/volentior/2.webp') }}" alt="Volentior image" class="img-fluid w-100 responsive-img">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="th-team team-card3">
-                            <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/cordi.jpeg') }}" alt="Team">
-                            </div>
-                            <div class="team-card-content">
-                                <h3 class="box-title"><a href="team-details.html">Muskan Khan</a></h3>
-                                <span class="team-desig">(Coordinator)</span>
-                                <p>Al Khair Educational & Charitable Trust</p>
-                            </div>
-                        </div>
+                    <div class=text-center>
+                    <h6>Mohammad Sazid<br/>Secreatry</h6>
                     </div>
-
-                    <!-- Single Item -->
-                    <!-- <div class="swiper-slide">
-                        <div class="th-team team-card3">
-                            <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/4.webp') }}" alt="Team">
-                            </div>
-                            <div class="team-card-content">
-                                <h3 class="box-title"><a href="team-details.html">Arshad Hussain</a></h3>
-                                <span class="team-desig">(Membar)</span>
-                                <p>Al Khair Educational & Charitable Trust</p>
-                           
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="swiper-slide">
-                        <div class="th-team team-card3">
-                            <div class="team-img">
-                                <img src="{{ asset('frontend/assets/img/volentior/3.jpg') }}" alt="Team">
-                            </div>
-                            <div class="team-card-content">
-                                <h3 class="box-title"><a href="team-details.html">Shokat Ali</a></h3>
-                                <span class="team-desig">(Membar)</span>
-                                <p>Al Khair Educational & Charitable Trust</p>
-                           
-                            </div>
-                        </div>
-                    </div> -->
-
-                 
-
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                        <img src="{{ asset('frontend/assets/img/volentior/4.webp') }}" alt="Volentior image" class="img-fluid w-100 responsive-img">
+                    </div>
+                    <div class=text-center>
+                    <h6>Arshad Hussain<br/>Treasurer</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                    <img src="{{ asset('frontend/assets/img/volentior/3.webp') }}" alt="volentior image" class="img-fluid w-100 responsive-img">
+                    </div>
+                    <div class=text-center>
+                    <h6>Shokat Ali<br/>Membar</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                    <img src="{{ asset('frontend/assets/img/team/team_1_1.png') }}" alt="Volentior image"  class="img-fluid w-100 responsive-img">
+                    </div>
+                    <div class=text-center>
+                    <h6>Habib Alam<br/>Membar</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                    <img src="{{ asset('frontend/assets/img/team/team_1_1.png') }}" alt="Volentior image"  class="img-fluid w-100 responsive-img">
+                    </div>
+                    <div class=text-center>
+                    <h6>Ataullah Khan<br/>Membar</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 filter-item">
+                <div class="Volentior-card">
+                    <div class="Volentior-img">
+                    <img src="{{ asset('frontend/assets/img/team/team_1_2.png') }}" alt="Volentior image"  class="img-fluid w-100 responsive-img">
+                    </div>
+                    <div class=text-center>
+                    <h6>Abdullah<br/>Membar</h6>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+
 
 
 @endsection

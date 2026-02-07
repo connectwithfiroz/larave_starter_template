@@ -84,26 +84,45 @@ ul.social li a {
 @endpush
 
 @section('section')
-<!--==============================
-    Breadcumb
-============================== -->
-<div class="breadcumb-wrapper " data-bg-src="{{ asset('frontend/assets/img/bg/breadcumb-bg.webp') }}" data-overlay="theme">
-    <div class="container">
-        <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Our Developer</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="/index">Home</a></li>
-                <li>Our Developer</li>
-            </ul>
-        </div>
+<!-- new sections -->
+ <div class="breadcumb-wrapper position-relative">
+
+    <!-- Desktop / Tablet Image -->
+    <div class="d-none d-md-block">
+        <img src="{{ asset('frontend/assets/img/new_2026/Our_Developer.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Desktop">
     </div>
+
+    <!-- Mobile Image -->
+    <div class="d-block d-md-none">
+        <img src="{{ asset('frontend/assets/img/mobile-imag/dev.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Mobile">
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <!-- Content -->
+    <div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="breadcumb-title">Our Developer</h1>
+        <ul class="breadcumb-menu list-inline mb-0">
+            <li class="list-inline-item"><a href="/index" class="text-white">Home</a></li>
+            <li class="list-inline-item">Our Developer</li>
+        </ul>
+    </div>
+
 </div>
+
+<!-- main containt -->
 <div class="container">
 	<div class="row my-2">
 		<div class="col-sm-6 col-lg-3 my-auto">
 			<div class="box shadow-sm p-4">
 				<div class="image-wrapper mb-3">
-					<img class="img-fluid" src="https://media.licdn.com/dms/image/v2/D4D03AQGrbhSeswniHA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709828290115?e=1746057600&v=beta&t=7csIz8YFCkZ4RubNkwhCcHHcENlFYV4xEms3tjvvPBE" alt="..." />
+					<!-- <img class="img-fluid" src="https://media.licdn.com/dms/image/v2/D4D03AQGrbhSeswniHA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709828290115?e=1746057600&v=beta&t=7csIz8YFCkZ4RubNkwhCcHHcENlFYV4xEms3tjvvPBE" alt="..." /> -->
+					 <img class="img-fluid" src="{{ asset('frontend/assets/img/firoz-img.png') }}" alt="Shahbaz Anjoom" />
 				</div>
 				<div class="box-desc">
 					<h5>Firoz Ansari</h5>
@@ -119,19 +138,39 @@ ul.social li a {
 		<div class="col-sm-6 col-lg-3 my-auto">
 			<div class="box shadow-sm p-4">
 				<div class="image-wrapper mb-3">
-					<img class="img-fluid" src="https://media.licdn.com/dms/image/v2/D5635AQHqmA0CYthwvg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1724653920338?e=1742724000&v=beta&t=pfhRgH86q4blBv2JxOc4zph5tGdSJNmzRxfSzSWpwpo" alt="..." />
-				</div>
+					<!-- <img class="img-fluid" src="https://media.licdn.com/dms/image/v2/D5635AQHqmA0CYthwvg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1724653920338?e=1742724000&v=beta&t=pfhRgH86q4blBv2JxOc4zph5tGdSJNmzRxfSzSWpwpo" alt="..." />  -->
+					<img class="img-fluid" src="{{ asset('frontend/assets/img/pic-shahbaz.png') }}" alt="Shahbaz Anjoom" />
+
+				</div> 
 				<div class="box-desc">
 					<h5>SHAHBAZ ANJOOM</h5>
 					<h6>Frontend Developer</ht>
 					<p>1+ year of experiences</p>
 				</div>
 				<ul class="social">
-					<li><a href="https://www.linkedin.com/in/shahbaz-anjoom-55461b229" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/shahbaz-anjoom-55461b229/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 					<li><a href="tel:+91 6287 011 200"><i class="fa fa-phone-alt"></i></a></li>
 				</ul>
 			</div>
 		</div>
+		<!-- <div class="col-sm-6 col-lg-3 my-auto">
+			<div class="box shadow-sm p-4">
+				<div class="image-wrapper mb-3">
+					
+					<img class="img-fluid" src="{{ asset('frontend/assets/img/abdullah.jpeg') }}" alt="Shahbaz Anjoom" />
+
+				</div> 
+				<div class="box-desc">
+					<h5>Abdullah Siddique</h5>
+					<h6>Fullstack Developer</ht>
+					<p>1+ year of experiences</p>
+				</div>
+				<ul class="social">
+					<li><a href="https://www.linkedin.com/in/abdullah368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="tel:+91 9661700958"><i class="fa fa-phone-alt"></i></a></li>
+				</ul>
+			</div>
+		</div> -->
 		
 	</div>
 </div>	

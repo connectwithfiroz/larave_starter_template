@@ -8,23 +8,71 @@
 
 @section('section')
 
-    <!--==============================
-        Breadcumb
-    ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="{{ asset('frontend/assets/img/bg/breadcumb-bg.webp') }}" data-overlay="theme">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Our Construction Projects</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Our Construction Projects</li>
-                </ul>
-            </div>
-        </div>
-    </div><!--==============================
-    Contact Area   
-    ==============================-->
 
+   <!-- new sections -->
+ <div class="breadcumb-wrapper position-relative">
+
+    <!-- Desktop / Tablet Image -->
+    <div class="d-none d-md-block">
+        <img src="{{ asset('frontend/assets/img/banner-26-jan/Our_Constructions_Projects.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Desktop">
+    </div>
+
+    <!-- Mobile Image -->
+    <div class="d-block d-md-none">
+        <img src="{{ asset('frontend/assets/img/mobile-imag/construction.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Mobile">
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <!-- Content -->
+    <div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="breadcumb-title">Our Construction</h1>
+        <ul class="breadcumb-menu list-inline mb-0">
+            <li class="list-inline-item"><a href="/index" class="text-white">Home</a></li>
+            <li class="list-inline-item">Our Construction</li>
+        </ul>
+    </div>
+
+</div>
+
+
+      <!-- new sections -->
+ <div class="breadcumb-wrapper position-relative">
+
+    <!-- Desktop / Tablet Image -->
+    <div class="d-none d-md-block">
+        <img src="{{ asset('frontend/assets/img/banner-26-jan/Our_Constructions_Projects.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Desktop">
+    </div>
+
+    <!-- Mobile Image -->
+    <div class="d-block d-md-none">
+        <img src="{{ asset('frontend/assets/img/mobile-imag/constrution.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Mobile">
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <!-- Content -->
+    <div class="container position-absolute top-50 start-50 translate-middle text-center"
+     style="color: #c70c52;">
+        <h1 class="breadcumb-title">Bload Donation</h1>
+        <ul class="breadcumb-menu list-inline mb-0">
+            <li class="list-inline-item"><a href="/index" class="text-white">Home</a></li>
+            <li class="list-inline-item">Bload Donation</li>
+        </ul>
+    </div>
+
+</div>
+<!-- New section -->
 
     <section class="overflow-hidden space" id="service-sec" data-bg-src="{{ asset('frontend/assets/img/bg/gray-bg1.png') }}" data-overlay="gray"
         data-opacity="6">

@@ -12,16 +12,20 @@
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicons - Place favicon.ico in the root directory -->
 
     <link rel="icon" href="{{ asset('frontend/assets/img/fev.webp') }}" type="image/webp">
+    <link rel="stylesheet" href="styles.css?v=1.2" />
+
     <!--==============================
 	  Google Fonts
 	============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="{{ asset('frontend/assets/css.fotns/nunito.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <!--==============================
 	    All CSS File
 	============================== -->
@@ -35,6 +39,8 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/swiper-bundle.min.css') }}">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}?v=1.2">
+    
+
     <style>
         @media (min-width: 250px) and (max-width: 576px) {
             #ngo-donation-popup select,
@@ -85,8 +91,7 @@
                 <img src="{{ asset('frontend/assets/img/logo.webp') }}" alt="Logo" class="ngo-popup-logo">
                 <h2 class="ngo-popup-heading">Al Khair Educational & Charitable Trust</h2>
             </div>
-            <p class="ngo-popup-description">Your generous donation helps us to bring change and provide support to
-                those in need.</p> <!-- Line above the form -->
+            <p class="ngo-popup-description">“Your donation helps us create positive impact through our welfare and community programs. Alkhair India does not provide loans support.”</p> <!-- Line above the form -->
             <form class="ngo-popup-form" action="/donate" id="donationForm">
                 <input type="hidden" name="for" value="Not Selected">
                 <div class="row">
@@ -148,6 +153,15 @@
         </div>
     </div>
 
+<!-- Floating Instagram Icon -->
+<div class="floating-instagram" onclick="window.open('https://www.instagram.com/parvej_akhtar8/reels/', '_blank')">
+  <i class="fab fa-instagram"></i>
+</div>
+
+
+
+
+
     <!-- Mobile Bottom Fixed Buttons -->
     <div class="footer-nav-btn">
         <button class="footer-btn-btn donate donate_btn">
@@ -188,9 +202,21 @@
 
                     </li>
 
-                    <li class="">
+                    <!-- <li class="">
                         <a href="{{ route('managment-body') }}">Our Management Body</a>
-                    </li>
+                    </li> -->
+                    <li class="menu-item-has-children">
+                                    <a href="#">Our Management Body</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="{{ route('managment-body') }}">Our Management</a></li>
+                                        <li><a href="{{  route('our-team') }}">Our Team</a></li>
+                                        <li><a href="{{route('developer') }}">Our Developer</a></li>
+                                        <li><a href="{{route('developer') }}">Our Mentors</a></li>
+                                    </ul>
+                     </li>
+
+
+
                     <li class="">
                         <a href="{{ route('certifications') }}">Certifications</a>
                     </li>
@@ -220,7 +246,6 @@
                                     class="{{ request()->routeIs('achivement') ? 'active' : '' }}">Achievements</a></li>
                             <li><a href="{{ route('news') }}">Press Release</a></li>
                             <li><a href="{{ route('our-team') }}">Our Team</a></li>
-
                             <li><a href="{{ route('contact') }}">Contact Us</a></li>
                             <li><a href="{{ route('developer') }}"> Our Developer</a></li>
                         </ul>
@@ -258,7 +283,7 @@
 
                         <div class="th-social">
                             <a href="https://www.facebook.com/share/18qqg3kAnL/"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/alkhair_trust/profilecard/?igsh=a2w2aWE0dHh2ZDd1"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/parvej_akhtar8/reels/"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.youtube.com/@Alkhairtrust-658"><i class="fab fa-youtube"></i></a>
                             <!-- <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
@@ -296,6 +321,7 @@
                                         <li><a href="{{ route('managment-body') }}">Our Management</a></li>
                                         <li><a href="{{  route('our-team') }}">Our Team</a></li>
                                         <li><a href="{{route('developer') }}">Our Developer</a></li>
+                                        <li>Our Mentor</a></li>
                                     </ul>
                                 </li>
                                     <!-- <a href="{{ route('managment-body') }}">Our Management Body</a> -->
@@ -306,8 +332,19 @@
                                 <li class="">
                                     <a href="{{ route('zakat') }}">Zakat</a>
                                 </li>
-                                <li class="">
+                                <!-- <li class="">
                                     <a href="{{ route('gallery') }}">Our Gallery</a>
+                                </li> -->
+                                <li class="menu-item-has-children">
+                                    <a href="#">Our Gallery</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/bload-donation">Bload Donation</a></li>
+                                        <li><a href="/business-needy">Business for the needy</a></li>
+                                        <li><a href="/wheelchair">Wheelchair Donation Program</a></li>
+                                        <li><a href="/water-help">Water Supply Program</a></li>
+                                        <li><a href="/ration-distribution">Ration distribution</a></li>
+                                        
+                                    </ul>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Donations</a>
@@ -494,7 +531,7 @@
                                 </div>
                                 <div class="th-social style2">
                                  <a href="https://www.facebook.com/share/18qqg3kAnL/"><i class="fab fa-facebook-f"></i></a>
-                                 <a href="https://www.instagram.com/alkhair_trust/profilecard/?igsh=a2w2aWE0dHh2ZDd1"><i class="fab fa-instagram"></i></a>
+                                 <a href="https://www.instagram.com/parvej_akhtar8/reels/"><i class="fab fa-instagram"></i></a>
                                  <a href="https://www.youtube.com/@Alkhairtrust-658"><i class="fab fa-youtube"></i></a>
                                  <!-- <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> -->
                                 </div>
@@ -605,6 +642,8 @@
     <script src="{{ asset('frontend/assets/js/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('js/jquery.validate.js') }}"></script>
     <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script> -->
+     
+
 
     <!-- Main Js File -->
     <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
@@ -624,6 +663,8 @@
         });
     </script>
     <!-- Page-specific JS -->
+     
+
     @stack('js')
 </body>
 

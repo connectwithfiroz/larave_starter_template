@@ -11,19 +11,7 @@
     <!--==============================
     Breadcumb
 ============================== -->
-<div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.webp" data-overlay="theme">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Privacy Policy</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Privacy Policy</li>
-                </ul>
-            </div>
-        </div>
-    </div><!--==============================
-Contact Area   
-==============================-->
+
 
 <div class="container">
     <div class="privacy-container">

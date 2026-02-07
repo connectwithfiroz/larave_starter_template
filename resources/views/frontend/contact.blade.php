@@ -8,23 +8,37 @@
 
 @section('section')
 
-    <!--==============================
-            Breadcumb
-        ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="{{ asset('frontend/assets/img/bg/breadcumb-bg.webp') }}"
-        data-overlay="theme">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Contact us</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-        </div>
-    </div><!--==============================
-        Contact Area   
-        ==============================-->
+      <!-- new sections -->
+ <div class="breadcumb-wrapper position-relative">
+
+    <!-- Desktop / Tablet Image -->
+    <div class="d-none d-md-block">
+        <img src="{{ asset('frontend/assets/img/new_2026/Contact-us.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Desktop">
+    </div>
+
+    <!-- Mobile Image -->
+    <div class="d-block d-md-none">
+        <img src="{{ asset('frontend/assets/img/mobile-imag/contact.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Mobile">
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <!-- Content -->
+    <div class="container position-absolute top-50 start-50 translate-middle text-center"
+     style="color: #c70c52;">
+        <h1 class="breadcumb-title">Contact Us</h1>
+        <ul class="breadcumb-menu list-inline mb-0">
+            <li class="list-inline-item"><a href="/index" class="text-white">Home</a></li>
+            <li class="list-inline-item">Contact Us</li>
+        </ul>
+    </div>
+</div>
+<!-- main contact -->
     <div class="space overflow-hidden contact-area-1 position-relative z-index-common">
         <div class="container">
             <div class="contact-wrap1">

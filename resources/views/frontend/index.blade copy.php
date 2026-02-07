@@ -899,7 +899,7 @@
     </div>
  
     <!--============================== Testimonial Area  ==============================-->
-    <section class="overflow-hidden mt-60 overflow-hidden">
+    <section class="overflow-hidden" mt-60 overflow-hidden">
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title after-none before-none"><i class="far fa-heart text-theme"></i>Testimonials</span>

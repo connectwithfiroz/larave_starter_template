@@ -8,16 +8,21 @@
 
 @section('section')
     <!--============================== Hero Area ==============================-->
-    <div class="th-hero-wrapper hero-1" id="hero">
+    <!-- <div class="th-hero-wrapper hero-1" id="hero">
         <div class="swiper th-slider hero-slider1" id="heroSlide1"
             data-slider-options='{"effect":"fade", "autoHeight": "true"}'>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/banner-a.jpeg') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/new-banner/al_khair_1.png') }}"
                         data-overlay="black4" data-opacity="5">
-                        <!-- <div class="hero-bg-shape1-1">
+                        <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
-                        </div> -->
+                        </div> 
+                         
+<div class="mobile-flyer">
+    <img src="{{ asset('frontend/assets/img/new-banner/mobile-1a.jpeg') }}" alt="Flyer">
+</div>
+
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xl-12">
@@ -46,11 +51,11 @@
 
                 </div>
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/card-1.jpeg') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/new-banner/al_khair_2.png') }}"
                         data-overlay="black4" data-opacity="5">
-                        <!-- <div class="hero-bg-shape1-1">
+                        <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
-                        </div> -->
+                        </div>
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xl-12">
@@ -78,11 +83,11 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/card-2.jpeg') }}"
+                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/new-banner/al_khair_3.png') }}"
                         data-overlay="black4" data-opacity="5">
-                        <!-- <div class="hero-bg-shape1-1">
+                        <div class="hero-bg-shape1-1">
                             <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
-                        </div> -->
+                        </div>
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xl-12">
@@ -110,76 +115,89 @@
                     </div>
                 </div>
                 
-                <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/card-3.jpeg') }}"
-                        data-overlay="black4" data-opacity="5">
-                        <!-- <div class="hero-bg-shape1-1">
-                            <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
-                        </div> -->
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-12">
-                                    <div class="hero-style1 text-center">
-                                        <span class="sub-title justify-content-center" data-ani="slideinup"
-                                            data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
-                                            <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
-                                                Your Gift Can Change Lives </span>
-                                            <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
-                                                Donate Today, Impact Tomorrow </span>
-                                        </h1>
-                                        <div class="btn-wrap justify-content-center" data-ani="slideinup"
-                                            data-ani-delay="0.7s">
-                                            <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
-                                                    class="fas fa-arrow-up-right ms-2"></i></a>
-                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM"
-                                                class="th-btn donate_btn style5 popup-video"><i
-                                                    class="fas fa-play me-2"></i> Watch Video</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="hero-inner" data-bg-src="{{ asset('frontend/assets/img/banner/card-4.jpeg') }}"
-                        data-overlay="black4" data-opacity="5">
-                        <!-- <div class="hero-bg-shape1-1">
-                            <img src="{{ asset('frontend/assets/img/hero/hero-bg-shape1-1.png') }}" alt="img">
-                        </div> -->
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-12">
-                                    <div class="hero-style1 text-center">
-                                        <span class="sub-title justify-content-center" data-ani="slideinup"
-                                            data-ani-delay="0.2s">Welcome to Al Khair Educational</span>
-                                        <h1 class="hero-title text-white">
-                                            <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
-                                                Your Gift Can Change Lives </span>
-                                            <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
-                                                Donate Today, Impact Tomorrow </span>
-                                        </h1>
-                                        <div class="btn-wrap justify-content-center" data-ani="slideinup"
-                                            data-ani-delay="0.7s">
-                                            <a href="contact.html" class="th-btn donate_btn style4">Donate Now <i
-                                                    class="fas fa-arrow-up-right ms-2"></i></a>
-                                            <a href="https://www.youtube.com/watch?v=H1oGWXHgHSM"
-                                                class="th-btn donate_btn style5 popup-video"><i
-                                                    class="fas fa-play me-2"></i> Watch Video</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-                </div>
             </div>
         </div>
+    </div> -->
+
+    <!-- New Hero sections -->
+     <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="hero-slide">
+
+                <!-- Desktop Image -->
+                <img src="{{ asset('frontend/assets/img/new-banner/al_khair_1.png') }}"
+                     class="d-none d-md-block w-100 hero-img" alt="Slide 1">
+
+                <!-- Mobile Image -->
+                <img src="{{ asset('frontend/assets/img/new-banner/mobile-1a.jpeg') }}"
+                     class="d-block d-md-none w-100 hero-img" alt="Slide 1 Mobile">
+
+                <div class="carousel-caption d-flex align-items-center justify-content-center">
+                    <div class="text-center text-white">
+                        <span class="sub-title d-block mb-2">Welcome to Al Khair Educational</span>
+                        <h1 class="mb-4">
+                            Together We Can Bring Hope <br>
+                            Your Support Changes Lives
+                        </h1>
+                       <div class="d-flex gap-3 justify-content-center flex-wrap image-btn-wrapper">
+
+    <!-- Donate Button -->
+    <a href="{{ url('/donate') }}" class="image-btn donate-btn">
+        <span class="btn-icon">❤</span>
+        <span class="btn-text">Donate Now</span>
+    </a>
+
+    <!-- Watch Video Button -->
+    <a href="www.youtube.com/@Alkhairtrust-658" class="image-btn video-btn">
+        <span class="btn-icon">▶</span>
+        <span class="btn-text">Watch Video</span>
+    </a>
+
+</div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="hero-slide">
+
+                <img src="{{ asset('frontend/assets/img/new-banner/al_khair_2.png') }}"
+                     class="d-none d-md-block w-100 hero-img">
+
+                <img src="{{ asset('frontend/assets/img/new-banner/mobile-2a.png') }}"
+                     class="d-block d-md-none w-100 hero-img">
+
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <div class="hero-slide">
+
+                <img src="{{ asset('frontend/assets/img/new-banner/al_khair_3.png') }}"
+                     class="d-none d-md-block w-100 hero-img">
+
+                <img src="{{ asset('frontend/assets/img/new-banner/mobile-3a.png') }}"
+                     class="d-block d-md-none w-100 hero-img">
+
+            </div>
+        </div>
+
     </div>
+
+   
+
+</div>
+
     <!--======== / Hero Section ========-->
 
 
@@ -299,7 +317,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/zakat-a.jpeg') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/new_2026/zakat-mobile.jpeg') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/boy.webp') }}" alt="Icon">
@@ -315,7 +333,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/sadqa.jpeg') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/new_2026/sadqa-mobile.png') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/volunteering.webp') }}" alt="Icon">
@@ -331,7 +349,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/fitra-card.jpeg') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/new_2026/fitra-mobile.png') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/lake.webp') }}" alt="Icon">
@@ -347,7 +365,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/madrsha.jpeg') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/new_2026/islamic_edu-mobile.png') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/women.webp') }}" alt="Icon">
@@ -365,7 +383,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/EducationEmpowerment.webp') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/new_2026/education_empo-mobile.png') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/education.webp') }}" alt="Icon">
@@ -381,7 +399,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="service-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/cherety/health.webp') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/new_2026/health-mobile.png') }}" alt="img">
                         </div>
                         <div class="box-icon">
                             <img src="{{ asset('frontend/assets/img/empowerment.webp') }}" alt="Icon">
@@ -417,10 +435,10 @@
                 <div class="col-xl-6">
                     <div class="img-box3">
                         <div class="img1">
-                            <img src="{{ asset('frontend/assets/img/about-img.png.webp') }}" alt="About">
+                            <img src="{{ asset('frontend/assets/img/new-about-img.png') }}" alt="About">
                         </div>
                         <div class="img2 jump">
-                            <img src="{{ asset('frontend/assets/img/abt-1.webp') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/donate-img.png') }}" alt="img">
                         </div>
                         <div class="about-shape3-1 jump-reverse">
                             <div class="color-masking2">
@@ -495,7 +513,7 @@
                 <div class="divider"></div>
                 <div class="counter-card">
                     <div class="media-body">
-                        <h2 class="box-number text-theme"><span class="counter-number">400</span><span
+                        <h2 class="box-number text-theme"><span class="counter-number">500</span><span
                                 class="fw-light">+</span></h2>
                         <p class="box-text">Monthly Donors</p>
                     </div>
@@ -503,7 +521,7 @@
                 <div class="divider"></div>
                 <div class="counter-card">
                     <div class="media-body">
-                        <h2 class="box-number text-theme2"><span class="counter-number">35</span>k<span
+                        <h2 class="box-number text-theme2"><span class="counter-number">38</span>k<span
                                 class="fw-light">+</span></h2>
                         <p class="box-text">Team Support</p>
                     </div>
@@ -823,7 +841,7 @@
                 <div class="col-xl-7">
                     <div class="story-img-box1">
                         <div class="img1">
-                            <img src="{{ asset('frontend/assets/img/we-help.webp') }}" alt="img">
+                            <img src="{{ asset('frontend/assets/img/new_2026/parwej_bhai.png') }}" alt="img">
                         </div>
                         <div class="story-shape1-1 jump-reverse">
                             <img src="{{ asset('frontend/assets/img/shape/story_shape1_1.png') }}" alt="img">
@@ -839,7 +857,7 @@
                         </div>
                         <div class="year-counter">
                             <p class="year-counter_text">Years of <span>Experience</span></p>
-                            <div class="year-counter_number">0<span class="counter-number">8</span></div>
+                            <div class="year-counter_number">1<span class="counter-number">0</span></div>
                         </div>
                     </div>
                 </div>
@@ -873,8 +891,8 @@
                 src="{{ asset('frontend/assets/img/shape/hand-group-shape1.png') }}" alt="img"></div>
         <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title">Our Volunteer</span>
-                <h2 class="sec-title">Meet The Optimistic Volunteer</h2>
+                <span class="sub-title">Our Management</span>
+                <h2 class="sec-title">Introducing Our Dynamic Management Team</h2>
             </div>
             <div class="slider-area">
                 <div class="swiper th-slider has-shadow team-slider1" id="teamSlider1"
@@ -899,24 +917,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="th-team team-card">
-                                <div class="img-wrap">
-                                    <div class="team-img">
-                                        <img src="{{ asset('frontend/assets/img/volentior/2.webp') }}" alt="Team">
-                                    </div>
-                                    <div class="team-social-hover">
-                                        <a href="#" class="team-social-hover_btn">
-                                            <i class="far fa-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="team-card-content">
-                                    <h3 class="box-title"><a href="team-details.html">Mohammad Sazid</a></h3>
-                                    <span class="team-desig">Secreatry</span>
-                                </div>
-                            </div>
-                        </div>
+
+                       
 
                         <!-- Single Item -->
                         <div class="swiper-slide">
@@ -942,7 +944,7 @@
                             <div class="th-team team-card">
                                 <div class="img-wrap">
                                     <div class="team-img">
-                                        <img src="{{ asset('frontend/assets/img/volentior/cordi.jpeg') }}" alt="Team">
+                                        <img src="{{ asset('frontend/assets/img/volentior/2.webp') }}" alt="Team">
                                     </div>
                                     <div class="team-social-hover">
                                         <a href="#" class="team-social-hover_btn">
@@ -951,8 +953,8 @@
                                     </div>
                                 </div>
                                 <div class="team-card-content">
-                                    <h3 class="box-title"><a href="team-details.html">Muskan Khan</a></h3>
-                                    <span class="team-desig">Coordinator</span>
+                                    <h3 class="box-title"><a href="team-details.html">Mohammad Sazid</a></h3>
+                                    <span class="team-desig">Secreatry</span>
                                 </div>
                             </div>
                         </div>
@@ -961,41 +963,20 @@
                             <div class="th-team team-card">
                                 <div class="img-wrap">
                                     <div class="team-img">
-                                        <img src="{{ asset('frontend/assets/img/volentior/ceo.JPG') }}" alt="Team">
+                                        <img src="{{ asset('frontend/assets/img/volentior/national.jpeg') }}" alt="Team">
                                     </div>
                                     <div class="team-social-hover">
                                         <a href="#" class="team-social-hover_btn">
                                             <i class="far fa-plus"></i>
                                         </a>
-                                    </div>
+</div>
                                 </div>
                                 <div class="team-card-content">
-                                    <h3 class="box-title"><a href="team-details.html">Sahin Salar</a></h3>
-                                    <span class="team-desig">C.E.O</span>
+                                    <h3 class="box-title"><a href="team-details.html">Sayed Hammad Akhtar</a></h3>
+                                    <span class="team-desig">National Fundraising Director</span>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide">
-                            <div class="th-team team-card">
-                                <div class="img-wrap">
-                                    <div class="team-img">
-                                        <img src="{{ asset('frontend/assets/img/volentior/kavita.jpeg') }}" alt="Team">
-                                    </div>
-                                    <div class="team-social-hover">
-                                        <a href="#" class="team-social-hover_btn">
-                                            <i class="far fa-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="team-card-content">
-                                    <h3 class="box-title"><a href="team-details.html">Kavita </a></h3>
-                                    <span class="team-desig">Coordinator</span>
-                                </div>
-                            </div>
-                        </div>
-
-
 
                         <!-- Single Item -->
                         <div class="swiper-slide">
@@ -1012,7 +993,7 @@
                                 </div>
                                 <div class="team-card-content">
                                     <h3 class="box-title"><a href="team-details.html">Arshad Hussain</a></h3>
-                                    <span class="team-desig">Membar</span>
+                                    <span class="team-desig">Treasurer</span>
                                 </div>
                             </div>
                         </div>
@@ -1077,6 +1058,27 @@
                             </div>
                         </div>
 
+                         <!-- Single Item -->
+                         <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="img-wrap">
+                                    <div class="team-img">
+                                        <img src="{{ asset('frontend/assets/img/team/team_1_2.png') }}" alt="Team">
+                                    </div>
+                                    <div class="team-social-hover">
+                                        <a href="#" class="team-social-hover_btn">
+                                            <i class="far fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="box-title"><a href="team-details.html">Abdullah</a></h3>
+                                    <span class="team-desig">Member</span>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
                 <button data-slider-prev="#teamSlider1" class="slider-arrow slider-prev"><i
@@ -1106,7 +1108,7 @@
                     </div>
                     <div class="donation-card style2">
                         <div class="box-thumb">
-                            <img src="{{ asset('frontend/assets/img/donate.webp') }}" alt="image">
+                            <img src="{{ asset('frontend/assets/img/education.png') }}" alt="image">
                         </div>
                         <div class="box-content">
                             <h3 class="box-title"><a href="blog-details.html">Big charity: build school for poor
@@ -1143,7 +1145,7 @@
     <!--==============================
     Testimonial Area  
     ==============================-->
-    <section class="overflow-hidden mt-60 overflow-hidden">
+    <section class="overflow-hidden" mt-60 overflow-hidden">
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title after-none before-none"><i class="far fa-heart text-theme"></i>Testimonials</span>
@@ -1851,5 +1853,16 @@ Project Area
             }
         });
     </script>
+    <!-- new js for sliding  -->
+     <script>
+var heroCarousel = document.querySelector('#heroCarousel');
+new bootstrap.Carousel(heroCarousel, {
+    interval: 4000,
+    pause: false,
+    ride: 'carousel'
+});
+</script>
 
+
+</script>
 @endpush

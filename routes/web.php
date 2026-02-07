@@ -38,7 +38,14 @@ Route::get('/terms-conditions', [HomeController::class, 'termsConditions'])->nam
 Route::get('/zakat', [HomeController::class, 'zakat'])->name('zakat');
 Route::get('/donation', [HomeController::class, 'donation'])->name('donation');
 Route::get('/donations', [HomeController::class, 'donations'])->name('donations');
-Route::post('/contact/send', [HomeController::class, 'sendMail'])->name('contact.send');
+Route::get('/contact/send', [HomeController::class, 'sendMail'])->name('contact.send');
+Route::get('/bload-donation', [HomeController::class, 'bload_donation'])->name('bload_donation');
+// Route::get('/business-needy', [HomeController::class, 'business_needy'])->name('business_needy');
+Route::get('/business-needy', [BusinessController::class, 'business_needy']);
+
+Route::get('/wheelchair', [HomeController::class, 'wheelchair'])->name('wheelchair');
+Route::get('/water-help', [HomeController::class, 'water_help'])->name('water-help');
+Route::get('/ration-distribution', [HomeController::class, 'ration_distribution'])->name('ration-distribution');
 
 
 

@@ -8,18 +8,36 @@
 
 @section('section')
 
-    <!--============================== Breadcumb ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="{{ asset('frontend/assets/img/bg/breadcumb-bg.webp') }}" data-overlay="theme">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Our Certifications</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="/index">Home</a></li>
-                    <li>Our Certifications</li>
-                </ul>
-            </div>
-        </div>
+    <!-- new sections -->
+ <div class="breadcumb-wrapper position-relative">
+
+    <!-- Desktop / Tablet Image -->
+    <div class="d-none d-md-block">
+        <img src="{{ asset('frontend/assets/img/banner-26-jan/Certifications-a.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Desktop">
     </div>
+
+    <!-- Mobile Image -->
+    <div class="d-block d-md-none">
+        <img src="{{ asset('frontend/assets/img/mobile-imag/certificat.png') }}"
+             class="img-fluid w-100"
+             alt="About Banner Mobile">
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <!-- Content -->
+    <div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="breadcumb-title">Certifications</h1>
+        <ul class="breadcumb-menu list-inline mb-0">
+            <li class="list-inline-item"><a href="/index" class="text-white">Home</a></li>
+            <li class="list-inline-item">Certifications</li>
+        </ul>
+    </div>
+
+</div>
     <!--============================== Contact Area  ==============================-->
     <div class="custom-certificate-section mt-5 mb-5">
        <div class="custom-certificate-card">

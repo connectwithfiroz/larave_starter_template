@@ -118,6 +118,21 @@ class HomeController extends Controller
     public function donations() {
         return view('frontend.donations');
     }
+    public function bload_donation() {
+        return view('frontend.bload-donation');
+    }
+    public function business_needy() {
+        return view('frontend.business_needy');
+    }
+    public function wheelchair() {
+        return view('frontend.wheelchair');
+    }
+    public function water_help() {
+        return view('frontend.water-help');
+    }
+    public function ration_distribution() {
+        return view('frontend.ration-distribution');
+    }
 
     public function sendMail(Request $request)
     {
